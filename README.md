@@ -1,4 +1,4 @@
-# ViralBioinf Asia 2022
+# Viral Genomics and Bioinformatics Asia 2022
 Base for the Viral Genomics and Bioinformatics Repository
 
 ## Course overview
@@ -23,7 +23,7 @@ The Viral Genomics and Bioinformatics course will teach participants how to anal
 - [Sunitha Manjari Kasibhatla](), Savitribai Phule Pune University
 - [Dhiraj Dhotre](), National Center for Cell Sciences, Pune 
 - [David Studholme](https://biosciences.exeter.ac.uk/staff/profile/index.php?web_id=david_studholme), University of Exeter
-- [Kwanrutai Mairang](), Univ..
+- [Kwanrutai Mairang](), Faculty of Medicine Siriraj Hospital, Mahidol University
 
 
 
