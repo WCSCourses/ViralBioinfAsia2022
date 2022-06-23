@@ -4,7 +4,27 @@ Please list the software you require on the course virtual machine.
 
 | Software  Name | Version | Link | Session |
 |----------------|---------|------|----------|
-|wget| 1.2.1 | https://www.gnu.org/software/wget/manual/wget.html | intro to unix| 
-| example | example | example | example |
-| example | example | example | example |
-| example | example | example | example |
+| wget | 1.2.1 | https://www.gnu.org/software/wget/manual/wget.html | intro to unix | 
+| artic-ncov19 (conda env) | latest | https://github.com/artic-network/artic-ncov2019.git | sars-cov-2 |
+| pangolin (conda env) | latest | https://github.com/cov-lineages/pangolin | sars-cov-2 |
+| civet (conda env) | latest | https://cov-lineages.org/resources/civet/updating.html | sars-cov-2 |
+| spear (conda env) | latest | https://github.com/m-crown/SPEAR | sars-cov-2 |
+| usher (conda-env) | latest | https://usher-wiki.readthedocs.io/en/latest/QuickStart.html#quick-install | sars-cov-2 |
+| ncov2019-artic-nf (nextflow) | latest | https://github.com/connor-lab/ncov2019-artic-nf | sars-cov-2 |
+| trim_galore | latest (0.6.7) | https://github.com/FelixKrueger/TrimGalore | sars-cov-2 |
+| minimap2 | latest (2.2.4) | https://github.com/lh3/minimap2 | sars-cov-2 |
+| samtools | latest | http://www.htslib.org/download/ | sars-cov-2 |
+| ivar | latest (1.3.1) | https://github.com/andersen-lab/ivar | sars-cov-2 |
+| lofreq | lofreq3 | https://github.com/andreas-wilm/lofreq3 | sars-cov-2 |
+| snpeff | latest | http://pcingola.github.io/SnpEff/ | sars-cov-2 |
+| mafft | latest | https://mafft.cbrc.jp/alignment/software/ | sars-cov-2 |
+| iqtree2 | latest (2.2.0) | http://www.iqtree.org/#download | sars-cov-2 |
+| R | latest | https://cran.r-project.org | sars-cov-2 |
+| python3 | latest | https://www.python.org/downloads/ | sars-cov-2 |
+| FigTree | latest | https://github.com/rambaut/figtree/releases | sars-cov-2 |
+| seqtk | latest | https://github.com/lh3/seqtk | sars-cov-2 |
+| bbmap | latest | https://sourceforge.net/projects/bbmap/ | sars-cov-2 |
+| weeSAM | latest | https://github.com/centre-for-virus-research/weeSAM | sars-cov-2 |
+
+ NB: SARS-CoV-2 session - spear will ask if you want to install a pangolin env - options would be to selecte Yes (and not install pangolin separately) - or install pangolin first and then select No when installing spear. 
+
