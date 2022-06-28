@@ -26,9 +26,50 @@ Please list the software you require on the course virtual machine.
 | bbmap | latest | https://sourceforge.net/projects/bbmap/ | sars-cov-2 |
 | weeSAM | latest | https://github.com/centre-for-virus-research/weeSAM | sars-cov-2 |
 | snipit | latest | https://github.com/aineniamh/snipit | sars-cov-2 |
-|example | example | example | example | 
-|example | example | example | example | 
+| **PREVIOUS** | **VM** | **TOOLS** | **BELOW** | 
+| Aliview |||| 
+| Tempest||||
+| Figtree |||| 
+| Beast | v1.10.4 |||
+| fastqc| latest |||
+| spades||||
+| idba_ud||||
+| abyss||||
+| soap-denovo||||
+| garm||||
+| blastn||||
+| quast|||
+| scaffold-builder||||
+| mummer||||
+| diamond||||
+| Krona||||
+| centrifuge||https://ccb.jhu.edu/software/centrifuge/||
+|sra-toolkit ||||
+| trim_galore||||
+|prinseq-lite||||
+|bwa||||
+|bowtie2||||
+|minimap2||||
+|samtools||||
+|bcftools||||
+|htslib||||
+|WeeSAM||||
+|tablet||||
+|ivar||||
+|lofreq||||
+|SnpEff||||
+|VPhaser2||||
+|VarScan2||||
+|Java JDK||||
+|R||||
+| example | example | example | example | 
+| example | example | example | example | 
+
 
 
  NB: SARS-CoV-2 session - spear will ask if you want to install a pangolin env - options would be to selecte Yes (and not install pangolin separately) - or install pangolin first and then select No when installing spear. Also for ncov2019-artic-nf nextflow - I think the easiest will be to install via the conda route "-profile conda"
+ 
+Diamond and Centrifuge - diamond db of viral proteins and the centrifuge db of bacteria, virus, archea and human.  
+
+krona and sra-toolkit - taxonomy and accession scripts for krona and sra-toolkit.
 
