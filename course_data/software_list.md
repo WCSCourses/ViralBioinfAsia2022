@@ -26,6 +26,9 @@ Please list the software you require on the course virtual machine.
 | bbmap | latest | https://sourceforge.net/projects/bbmap/ | sars-cov-2 |
 | weeSAM | latest | https://github.com/centre-for-virus-research/weeSAM | sars-cov-2 |
 | snipit | latest | https://github.com/aineniamh/snipit | sars-cov-2 |
+|example | example | example | example | 
+|example | example | example | example | 
+
 
  NB: SARS-CoV-2 session - spear will ask if you want to install a pangolin env - options would be to selecte Yes (and not install pangolin separately) - or install pangolin first and then select No when installing spear. Also for ncov2019-artic-nf nextflow - I think the easiest will be to install via the conda route "-profile conda"
 
