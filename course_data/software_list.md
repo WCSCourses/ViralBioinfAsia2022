@@ -28,6 +28,10 @@ Please list the software you require on the course virtual machine.
 | snipit | latest | https://github.com/aineniamh/snipit | sars-cov-2 |
 | Trimmomatic-0.39 | 0.39 | https://github.com/usadellab/Trimmomatic/files/5854859/Trimmomatic-0.39.zip | BASH_scripting |
 | Qualimap | latest | http://qualimap.conesalab.org/ | Coverage_plots | 
+| fastqc| latest | https://www.bioinformatics.babraham.ac.uk/projects/fastqc/ |NGS_file_formats|
+|tablet| latest | https://ics.hutton.ac.uk/tablet/download-tablet/| NGS_file_formats Coverage_plots |
+
+
 | **PREVIOUS** | **VM** | **TOOLS** | **BELOW** | 
 | Aliview |||| 
 | Tempest||||
@@ -56,7 +60,7 @@ Please list the software you require on the course virtual machine.
 |bcftools||||
 |htslib||||
 |WeeSAM||||
-|tablet||||
+|tablet|| https://ics.hutton.ac.uk/tablet/download-tablet/||
 |ivar||||
 |lofreq||||
 |SnpEff||||
