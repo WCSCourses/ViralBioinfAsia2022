@@ -31,6 +31,7 @@ Please list the software you require on the course virtual machine.
 | fastqc| latest | https://www.bioinformatics.babraham.ac.uk/projects/fastqc/ |NGS_file_formats|
 |tablet| latest | https://ics.hutton.ac.uk/tablet/download-tablet/| NGS_file_formats Coverage_plots |
 | IGV | latest | https://ics.hutton.ac.uk/tablet/download-tablet/ | NGS_file_formats Coverage_plots | 
+| SRA toolkit | latest | https://github.com/ncbi/sra-tools/wiki/ and https://github.com/ncbi/sra-tools/wiki/03.-Quick-Toolkit-Configuration | NGS_file_formats | 
 | example | example | example | example | 
 | **PREVIOUS** | **VM** | **TOOLS** | **BELOW** | 
 | Aliview |||| 
