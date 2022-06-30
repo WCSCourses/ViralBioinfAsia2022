@@ -23,7 +23,7 @@ Please list the software you require on the course virtual machine.
 | python3 | latest | https://www.python.org/downloads/ | sars-cov-2 |
 | FigTree | latest | https://github.com/rambaut/figtree/releases | sars-cov-2 |
 | seqtk | latest | https://github.com/lh3/seqtk | sars-cov-2 |
-| bbmap | latest | https://sourceforge.net/projects/bbmap/ | sars-cov-2 |
+| bbmap | latest | https://sourceforge.net/projects/bbmap/ | sars-cov-2 NGS_file_formats |
 | weeSAM | latest | https://github.com/centre-for-virus-research/weeSAM | sars-cov-2 |
 | snipit | latest | https://github.com/aineniamh/snipit | sars-cov-2 |
 | Trimmomatic-0.39 | 0.39 | https://github.com/usadellab/Trimmomatic/files/5854859/Trimmomatic-0.39.zip | BASH_scripting |
