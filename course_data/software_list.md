@@ -30,6 +30,8 @@ Please list the software you require on the course virtual machine.
 | Qualimap | latest | http://qualimap.conesalab.org/ | Coverage_plots | 
 | fastqc| latest | https://www.bioinformatics.babraham.ac.uk/projects/fastqc/ |NGS_file_formats|
 |tablet| latest | https://ics.hutton.ac.uk/tablet/download-tablet/| NGS_file_formats Coverage_plots |
+| IGV | latest | https://ics.hutton.ac.uk/tablet/download-tablet/ | NGS_file_formats Coverage_plots | 
+| example | example | example | example | 
 | **PREVIOUS** | **VM** | **TOOLS** | **BELOW** | 
 | Aliview |||| 
 | Tempest||||
@@ -68,6 +70,7 @@ Please list the software you require on the course virtual machine.
 |R||||
 | example | example | example | example | 
 | example | example | example | example | 
+
 
 
 
