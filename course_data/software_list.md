@@ -27,6 +27,7 @@ Please list the software you require on the course virtual machine.
 | weeSAM | latest | https://github.com/centre-for-virus-research/weeSAM | sars-cov-2 |
 | snipit | latest | https://github.com/aineniamh/snipit | sars-cov-2 |
 | Trimmomatic-0.39 | 0.39 | https://github.com/usadellab/Trimmomatic/files/5854859/Trimmomatic-0.39.zip | BASH_scripting |
+| Qualimap | latest | http://qualimap.conesalab.org/ | Coverage_plots | 
 | **PREVIOUS** | **VM** | **TOOLS** | **BELOW** | 
 | Aliview |||| 
 | Tempest||||
