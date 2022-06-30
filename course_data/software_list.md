@@ -13,7 +13,7 @@ Please list the software you require on the course virtual machine.
 | ncov2019-artic-nf (nextflow) | latest | https://github.com/connor-lab/ncov2019-artic-nf | sars-cov-2 |
 | trim_galore | latest (0.6.7) | https://github.com/FelixKrueger/TrimGalore | sars-cov-2 |
 | minimap2 | latest (2.2.4) | https://github.com/lh3/minimap2 | sars-cov-2, BASH_scripting |
-| samtools | latest | http://www.htslib.org/download/ | sars-cov-2, BASH_scripting |
+| samtools | latest | http://www.htslib.org/download/ | sars-cov-2, BASH_scripting Coverage_plots NGS_file_formats|
 | ivar | latest (1.3.1) | https://github.com/andersen-lab/ivar | sars-cov-2 |
 | lofreq | lofreq3 | https://github.com/andreas-wilm/lofreq3 | sars-cov-2 |
 | snpeff | latest | http://pcingola.github.io/SnpEff/ | sars-cov-2 |
