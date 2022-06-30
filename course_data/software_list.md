@@ -12,8 +12,8 @@ Please list the software you require on the course virtual machine.
 | usher (conda-env) | latest | https://usher-wiki.readthedocs.io/en/latest/QuickStart.html#quick-install | sars-cov-2 |
 | ncov2019-artic-nf (nextflow) | latest | https://github.com/connor-lab/ncov2019-artic-nf | sars-cov-2 |
 | trim_galore | latest (0.6.7) | https://github.com/FelixKrueger/TrimGalore | sars-cov-2 |
-| minimap2 | latest (2.2.4) | https://github.com/lh3/minimap2 | sars-cov-2 |
-| samtools | latest | http://www.htslib.org/download/ | sars-cov-2 |
+| minimap2 | latest (2.2.4) | https://github.com/lh3/minimap2 | sars-cov-2, BASH_scripting |
+| samtools | latest | http://www.htslib.org/download/ | sars-cov-2, BASH_scripting |
 | ivar | latest (1.3.1) | https://github.com/andersen-lab/ivar | sars-cov-2 |
 | lofreq | lofreq3 | https://github.com/andreas-wilm/lofreq3 | sars-cov-2 |
 | snpeff | latest | http://pcingola.github.io/SnpEff/ | sars-cov-2 |
@@ -26,6 +26,7 @@ Please list the software you require on the course virtual machine.
 | bbmap | latest | https://sourceforge.net/projects/bbmap/ | sars-cov-2 |
 | weeSAM | latest | https://github.com/centre-for-virus-research/weeSAM | sars-cov-2 |
 | snipit | latest | https://github.com/aineniamh/snipit | sars-cov-2 |
+| Trimmomatic-0.39 | 0.39 | https://github.com/usadellab/Trimmomatic/files/5854859/Trimmomatic-0.39.zip | BASH_scripting |
 | **PREVIOUS** | **VM** | **TOOLS** | **BELOW** | 
 | Aliview |||| 
 | Tempest||||
