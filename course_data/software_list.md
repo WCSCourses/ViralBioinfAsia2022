@@ -17,8 +17,8 @@ Please list the software you require on the course virtual machine.
 | ivar | latest (1.3.1) | https://github.com/andersen-lab/ivar | sars-cov-2 |
 | lofreq | lofreq3 | https://github.com/andreas-wilm/lofreq3 | sars-cov-2 |
 | snpeff | latest | http://pcingola.github.io/SnpEff/ | sars-cov-2 |
-| mafft | latest | https://mafft.cbrc.jp/alignment/software/ | sars-cov-2 |
-| iqtree2 | latest (2.2.0) | http://www.iqtree.org/#download | sars-cov-2 |
+| mafft | latest | https://mafft.cbrc.jp/alignment/software/ | sars-cov-2, Multiple Sequence Alignment |
+| iqtree2 | latest (2.2.0) | http://www.iqtree.org/#download | sars-cov-2, Molecular Phylogeny  |
 | R | latest | https://cran.r-project.org | sars-cov-2 |
 | python3 | latest | https://www.python.org/downloads/ | sars-cov-2 |
 | FigTree | latest | https://github.com/rambaut/figtree/releases | sars-cov-2 |
@@ -33,6 +33,11 @@ Please list the software you require on the course virtual machine.
 | IGV | latest | https://ics.hutton.ac.uk/tablet/download-tablet/ | NGS_file_formats Coverage_plots | 
 | SRA toolkit | latest | https://github.com/ncbi/sra-tools/wiki/ and https://github.com/ncbi/sra-tools/wiki/03.-Quick-Toolkit-Configuration | NGS_file_formats | 
 | Quast | latest | http://quast.sourceforge.net/quast.html | Coverage_plots | 
+| TempEst | latest | http://tree.bio.ed.ac.uk/software/tempest/ | Molecular Phylogeny  |
+| BEAST | latest | https://beast.community/install_on_unix | Molecular Phylogeny | 
+| BEAGLE | latest | https://beast.community/beagle | Molecular Phylogeny | 
+| Tracer | latest | https://github.com/beast-dev/tracer/releases/latest | Molecular Phylogeny | 
+| figtree | latest | : http://tree.bio.ed.ac.uk/software/figtree/ | Molecular Phylogeny | 
 | example | example | example | example | 
 | **PREVIOUS** | **VM** | **TOOLS** | **BELOW** | 
 | Aliview |||| 
@@ -82,3 +87,13 @@ Diamond and Centrifuge - diamond db of viral proteins and the centrifuge db of b
 
 krona and sra-toolkit - taxonomy and accession scripts for krona and sra-toolkit.
 
+**Genotyping servers (only online versions to be used)**
+
+_Alignment-free approaches developed at Savitribai Phule Pune University_
+- Mumps virus: http://bioinfo.unipune.ac.in/Muv/Home.html
+- Rhinoviruses: http://bioinfo.unipune.ac.in/RV-Typer/Home.html
+- Dengue virus: http://bioinfo.unipune.ac.in/Dengue/Home.html
+- West Nile virus: http://bioinfo.unipune.ac.in/WNV/Home.html
+
+_Alignment-based tools_
+- Genome Detective: https://www.genomedetective.com/app/typingtool/virus/
