@@ -1,0 +1,287 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    fermat (AVX2, FMA3, 1009 GB RAM)
+Command: ../../iqtree -s SARS_new_aln.fas -m TEST -bb 1000 -alrt 1000
+Seed:    950496 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Jul  2 15:06:47 2022
+Kernel:  AVX+FMA - 1 threads (128 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 128 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file SARS_new_aln.fas ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 36 sequences with 29891 columns, 470 distinct patterns
+211 parsimony-informative, 253 singleton sites, 29427 constant sites
+WARNING: Some sequence names are changed as follows:
+EPI_ISL_12644861|South_Africa|2021-06-14 -> EPI_ISL_12644861_South_Africa_2021-06-14
+EPI_ISL_6660906|Canada|2021-10-15 -> EPI_ISL_6660906_Canada_2021-10-15
+EPI_ISL_6705120|Argentina|2021-10-18 -> EPI_ISL_6705120_Argentina_2021-10-18
+EPI_ISL_7225062|India|2021-05-11 -> EPI_ISL_7225062_India_2021-05-11
+EPI_ISL_8217102|Germany|2021-11-10 -> EPI_ISL_8217102_Germany_2021-11-10
+EPI_ISL_11449404|France|2021-07-17 -> EPI_ISL_11449404_France_2021-07-17
+EPI_ISL_12388429|Canada|2021-05-27 -> EPI_ISL_12388429_Canada_2021-05-27
+EPI_ISL_13025973|Malaysia|2021-05-26 -> EPI_ISL_13025973_Malaysia_2021-05-26
+EPI_ISL_2811956|New_Zealand|2021-06-15 -> EPI_ISL_2811956_New_Zealand_2021-06-15
+EPI_ISL_5802461|Brazil|2021-03-07 -> EPI_ISL_5802461_Brazil_2021-03-07
+1ins:25617c-25619c|EPI_ISL_11017424|Jamaica|2021-12-30 -> 1ins_25617c-25619c_EPI_ISL_11017424_Jamaica_2021-12-30
+EPI_ISL_13392375|Ghana|2021-08-10 -> EPI_ISL_13392375_Ghana_2021-08-10
+EPI_ISL_13439948|Hong_Kong|2021-10-07 -> EPI_ISL_13439948_Hong_Kong_2021-10-07
+EPI_ISL_8187166|Colombia|2021-02-19 -> EPI_ISL_8187166_Colombia_2021-02-19
+EPI_ISL_8564574|Australia|2021-12-31 -> EPI_ISL_8564574_Australia_2021-12-31
+1ins:28263a-28266a|EPI_ISL_1197002|Italy|2021-02-10 -> 1ins_28263a-28266a_EPI_ISL_1197002_Italy_2021-02-10
+EPI_ISL_2493026|Angola|2021-03-22 -> EPI_ISL_2493026_Angola_2021-03-22
+1ins:28200a-28203a|EPI_ISL_2655713|Canada|2021-04-09 -> 1ins_28200a-28203a_EPI_ISL_2655713_Canada_2021-04-09
+1ins:28215a-28218a|EPI_ISL_4080896|Brazil|2021-07-22 -> 1ins_28215a-28218a_EPI_ISL_4080896_Brazil_2021-07-22
+1ins:28224a-28227a|EPI_ISL_792683|Japan|2021-01-02 -> 1ins_28224a-28227a_EPI_ISL_792683_Japan_2021-01-02
+1ins:29890a-29901a|EPI_ISL_1111130|Peru|2021-01-17 -> 1ins_29890a-29901a_EPI_ISL_1111130_Peru_2021-01-17
+EPI_ISL_1494722|Australia|2021-04-03 -> EPI_ISL_1494722_Australia_2021-04-03
+1ins:29734a-29746a|EPI_ISL_2891522|USA|2021-03-12 -> 1ins_29734a-29746a_EPI_ISL_2891522_USA_2021-03-12
+EPI_ISL_3824488|Switzerland|2021-08-16 -> EPI_ISL_3824488_Switzerland_2021-08-16
+EPI_ISL_4543939|Sint_Maarten|2021-09-06 -> EPI_ISL_4543939_Sint_Maarten_2021-09-06
+1ins:21931t-21933c|EPI_ISL_1962952|Netherlands|2021-04-18 -> 1ins_21931t-21933c_EPI_ISL_1962952_Netherlands_2021-04-18
+1ins:21989t-21991c|EPI_ISL_4458156|Puerto_Rico|2021-08-30 -> 1ins_21989t-21991c_EPI_ISL_4458156_Puerto_Rico_2021-08-30
+1ins:21937t-21939c|EPI_ISL_4984908|Colombia|2021-03-07 -> 1ins_21937t-21939c_EPI_ISL_4984908_Colombia_2021-03-07
+1ins:21967t-21972c|EPI_ISL_8178768|Morocco|2021-07-04 -> 1ins_21967t-21972c_EPI_ISL_8178768_Morocco_2021-07-04
+1ins:21989t-21991c|EPI_ISL_8482926|Mongolia|2021-07-05 -> 1ins_21989t-21991c_EPI_ISL_8482926_Mongolia_2021-07-05
+EPI_ISL_10318197|Denmark|2022-02-15 -> EPI_ISL_10318197_Denmark_2022-02-15
+EPI_ISL_11528229|Switzerland|2022-03-18 -> EPI_ISL_11528229_Switzerland_2022-03-18
+EPI_ISL_11680139|Bahamas|2021-12-15 -> EPI_ISL_11680139_Bahamas_2021-12-15
+EPI_ISL_7834572|Botswana|2021-12-01 -> EPI_ISL_7834572_Botswana_2021-12-01
+1ins:22155g-22163a|EPI_ISL_9419101|India|2022-01-01 -> 1ins_22155g-22163a_EPI_ISL_9419101_India_2022-01-01
+
+                                                           Gap/Ambiguity  Composition  p-value
+   1  EPI_ISL_402124                                               0.00%    passed     99.33%
+   2  EPI_ISL_12644861_South_Africa_2021-06-14                     0.45%    passed     99.99%
+   3  EPI_ISL_6660906_Canada_2021-10-15                            1.19%    passed     99.87%
+   4  EPI_ISL_6705120_Argentina_2021-10-18                         0.66%    passed     99.98%
+   5  EPI_ISL_7225062_India_2021-05-11                             0.33%    passed     99.94%
+   6  EPI_ISL_8217102_Germany_2021-11-10                           0.87%    passed     99.99%
+   7  EPI_ISL_11449404_France_2021-07-17                           0.29%    passed     99.93%
+   8  EPI_ISL_12388429_Canada_2021-05-27                           0.65%    passed     99.98%
+   9  EPI_ISL_13025973_Malaysia_2021-05-26                         0.37%    passed     99.91%
+  10  EPI_ISL_2811956_New_Zealand_2021-06-15                       1.15%    passed     99.76%
+  11  EPI_ISL_5802461_Brazil_2021-03-07                            0.17%    passed     99.98%
+  12  1ins_25617c-25619c_EPI_ISL_11017424_Jamaica_2021-12-30       0.52%    passed     99.99%
+  13  EPI_ISL_13392375_Ghana_2021-08-10                            1.18%    passed     99.87%
+  14  EPI_ISL_13439948_Hong_Kong_2021-10-07                        0.42%    passed     99.80%
+  15  EPI_ISL_8187166_Colombia_2021-02-19                          0.41%    passed     99.85%
+  16  EPI_ISL_8564574_Australia_2021-12-31                         0.37%    passed     99.98%
+  17  1ins_28263a-28266a_EPI_ISL_1197002_Italy_2021-02-10          0.23%    passed     99.60%
+  18  EPI_ISL_2493026_Angola_2021-03-22                            0.26%    passed     99.97%
+  19  1ins_28200a-28203a_EPI_ISL_2655713_Canada_2021-04-09         0.62%    passed     99.92%
+  20  1ins_28215a-28218a_EPI_ISL_4080896_Brazil_2021-07-22         0.29%    passed     99.97%
+  21  1ins_28224a-28227a_EPI_ISL_792683_Japan_2021-01-02           0.32%    passed     99.96%
+  22  1ins_29890a-29901a_EPI_ISL_1111130_Peru_2021-01-17           0.02%    passed     99.85%
+  23  EPI_ISL_1494722_Australia_2021-04-03                         0.70%    passed     99.99%
+  24  1ins_29734a-29746a_EPI_ISL_2891522_USA_2021-03-12            0.58%    passed     99.67%
+  25  EPI_ISL_3824488_Switzerland_2021-08-16                       0.67%    passed     99.98%
+  26  EPI_ISL_4543939_Sint_Maarten_2021-09-06                      0.39%    passed    100.00%
+  27  1ins_21931t-21933c_EPI_ISL_1962952_Netherlands_2021-04-18    1.33%    passed     99.91%
+  28  1ins_21989t-21991c_EPI_ISL_4458156_Puerto_Rico_2021-08-30    0.13%    passed     99.95%
+  29  1ins_21937t-21939c_EPI_ISL_4984908_Colombia_2021-03-07       0.38%    passed     99.97%
+  30  1ins_21967t-21972c_EPI_ISL_8178768_Morocco_2021-07-04        0.23%    passed     99.99%
+  31  1ins_21989t-21991c_EPI_ISL_8482926_Mongolia_2021-07-05       0.17%    passed     99.99%
+  32  EPI_ISL_10318197_Denmark_2022-02-15                          0.45%    passed     99.76%
+  33  EPI_ISL_11528229_Switzerland_2022-03-18                      0.35%    passed     99.25%
+  34  EPI_ISL_11680139_Bahamas_2021-12-15                          0.37%    passed    100.00%
+  35  EPI_ISL_7834572_Botswana_2021-12-01                          0.84%    passed     99.99%
+  36  1ins_22155g-22163a_EPI_ISL_9419101_India_2022-01-01          0.52%    passed     99.99%
+****  TOTAL                                                        0.50%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.002 seconds
+NOTE: ModelFinder requires 4 MB RAM!
+ModelFinder will test 88 DNA models (sample size: 29891) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  JC            46515.348    69  93168.697    93169.021    93741.763
+  2  JC+I          46422.342    70  92984.684    92985.018    93566.056
+  3  JC+G4         46451.963    70  93043.927    93044.260    93625.299
+  4  JC+I+G4       46429.704    71  93001.409    93001.752    93591.086
+  5  F81+F         45567.866    72  91279.732    91280.084    91877.714
+  6  F81+F+I       45479.136    73  91104.273    91104.635    91710.561
+  7  F81+F+G4      45505.529    73  91157.059    91157.421    91763.346
+  8  F81+F+I+G4    45484.635    74  91117.269    91117.641    91731.862
+  9  K2P           46394.003    70  92928.005    92928.338    93509.377
+ 10  K2P+I         46300.538    71  92743.075    92743.418    93332.752
+ 11  K2P+G4        46330.509    71  92803.018    92803.361    93392.695
+ 12  K2P+I+G4      46308.071    72  92760.141    92760.494    93358.124
+ 13  HKY+F         45435.729    73  91017.458    91017.821    91623.746
+ 14  HKY+F+I       45350.506    74  90849.012    90849.384    91463.605
+ 15  HKY+F+G4      45374.301    74  90896.601    90896.974    91511.195
+ 16  HKY+F+I+G4    45354.598    75  90859.195    90859.578    91482.094
+ 17  TNe           46353.074    71  92848.148    92848.491    93437.825
+ 18  TNe+I         46261.086    72  92666.171    92666.524    93264.154
+ 19  TNe+G4        46289.745    72  92723.489    92723.842    93321.472
+ 20  TNe+I+G4      46267.665    73  92681.331    92681.693    93287.619
+ 21  TN+F          45393.662    74  90935.324    90935.696    91549.917
+ 22  TN+F+I        45311.674    75  90773.347    90773.729    91396.246
+ 23  TN+F+G4       45332.970    75  90815.941    90816.323    91438.839
+ 24  TN+F+I+G4     45314.461    76  90780.922    90781.315    91412.126
+ 25  K3P           46381.361    71  92904.721    92905.064    93494.398
+ 26  K3P+I         46287.913    72  92719.827    92720.179    93317.809
+ 27  K3P+G4        46317.861    72  92779.722    92780.075    93377.705
+ 28  K3P+I+G4      46295.361    73  92736.723    92737.085    93343.011
+ 29  K3Pu+F        45419.102    74  90986.204    90986.576    91600.797
+ 30  K3Pu+F+I      45334.994    75  90819.988    90820.371    91442.887
+ 31  K3Pu+F+G4     45357.966    75  90865.933    90866.315    91488.831
+ 32  K3Pu+F+I+G4   45338.622    76  90829.243    90829.636    91460.447
+ 33  TPM2+F        45422.699    74  90993.399    90993.771    91607.992
+ 34  TPM2+F+I      45338.185    75  90826.370    90826.753    91449.269
+ 35  TPM2+F+G4     45361.401    75  90872.802    90873.184    91495.700
+ 36  TPM2+F+I+G4   45341.898    76  90835.796    90836.188    91466.999
+ 37  TPM2u+F       45422.659    74  90993.318    90993.691    91607.911
+ 38  TPM2u+F+I     45338.167    75  90826.333    90826.716    91449.232
+ 39  TPM2u+F+G4    45361.385    75  90872.770    90873.152    91495.668
+ 40  TPM2u+F+I+G4  45341.870    76  90835.741    90836.133    91466.944
+ 41  TPM3+F        45435.606    74  91019.212    91019.584    91633.805
+ 42  TPM3+F+I      45349.699    75  90849.399    90849.781    91472.297
+ 43  TPM3+F+G4     45374.096    75  90898.193    90898.575    91521.091
+ 44  TPM3+F+I+G4   45354.032    76  90860.064    90860.457    91491.268
+ 45  TPM3u+F       45435.663    74  91019.325    91019.698    91633.919
+ 46  TPM3u+F+I     45349.724    75  90849.448    90849.830    91472.346
+ 47  TPM3u+F+G4    45374.069    75  90898.138    90898.520    91521.037
+ 48  TPM3u+F+I+G4  45354.013    76  90860.027    90860.420    91491.231
+ 49  TIMe          46340.428    72  92824.856    92825.209    93422.839
+ 50  TIMe+I        46248.501    73  92643.002    92643.364    93249.290
+ 51  TIMe+G4       46277.126    73  92700.252    92700.615    93306.540
+ 52  TIMe+I+G4     46254.917    74  92657.833    92658.205    93272.426
+ 53  TIM+F         45377.021    75  90904.042    90904.425    91526.941
+ 54  TIM+F+I       45296.065    76  90744.129    90744.522    91375.333
+ 55  TIM+F+G4      45316.629    76  90785.257    90785.650    91416.461
+ 56  TIM+F+I+G4    45298.449    77  90750.898    90751.301    91390.407
+ 57  TIM2e         46346.154    72  92836.307    92836.660    93434.290
+ 58  TIM2e+I       46255.231    73  92656.461    92656.824    93262.749
+ 59  TIM2e+G4      46283.081    73  92712.163    92712.525    93318.451
+ 60  TIM2e+I+G4    46261.185    74  92670.369    92670.741    93284.962
+ 61  TIM2+F        45380.552    75  90911.105    90911.487    91534.003
+ 62  TIM2+F+I      45299.513    76  90751.027    90751.420    91382.231
+ 63  TIM2+F+G4     45320.137    76  90792.273    90792.666    91423.477
+ 64  TIM2+F+I+G4   45301.903    77  90757.806    90758.209    91397.315
+ 65  TIM3e         46350.512    72  92845.023    92845.376    93443.006
+ 66  TIM3e+I       46255.209    73  92656.417    92656.780    93262.705
+ 67  TIM3e+G4      46286.487    73  92718.974    92719.337    93325.262
+ 68  TIM3e+I+G4    46263.220    74  92674.440    92674.813    93289.033
+ 69  TIM3+F        45393.539    75  90937.078    90937.461    91559.977
+ 70  TIM3+F+I      45311.177    76  90774.353    90774.746    91405.557
+ 71  TIM3+F+G4     45332.756    76  90817.512    90817.905    91448.716
+ 72  TIM3+F+I+G4   45313.940    77  90781.880    90782.283    91421.389
+ 73  TVMe          46375.076    73  92896.152    92896.515    93502.440
+ 74  TVMe+I        46279.419    74  92706.839    92707.211    93321.432
+ 75  TVMe+G4       46311.189    74  92770.378    92770.750    93384.971
+ 76  TVMe+I+G4     46287.813    75  92725.625    92726.008    93348.524
+ 77  TVM+F         45412.222    76  90976.443    90976.836    91607.647
+ 78  TVM+F+I       45327.185    77  90808.369    90808.772    91447.878
+ 79  TVM+F+G4      45350.843    77  90855.687    90856.090    91495.196
+ 80  TVM+F+I+G4    45330.972    78  90817.945    90818.358    91465.759
+ 81  SYM           46334.178    74  92816.355    92816.728    93430.949
+ 82  SYM+I         46239.386    75  92628.773    92629.155    93251.671
+ 83  SYM+G4        46270.295    75  92690.590    92690.972    93313.488
+ 84  SYM+I+G4      46247.045    76  92646.090    92646.482    93277.293
+ 85  GTR+F         45370.144    77  90894.289    90894.692    91533.798
+ 86  GTR+F+I       45288.698    78  90733.396    90733.809    91381.210
+ 87  GTR+F+G4      45309.642    78  90775.283    90775.697    91423.098
+ 88  GTR+F+I+G4    45291.150    79  90740.300    90740.724    91396.419
+Akaike Information Criterion:           GTR+F+I
+Corrected Akaike Information Criterion: GTR+F+I
+Bayesian Information Criterion:         TIM+F+I
+Best-fit model: TIM+F+I chosen according to BIC
+
+All model information printed to SARS_new_aln.fas.model.gz
+CPU time for ModelFinder: 1.800 seconds (0h:0m:1s)
+Wall-clock time for ModelFinder: 1.972 seconds (0h:0m:1s)
+Generating 1000 samples for ultrafast bootstrap (seed: 950496)...
+
+NOTE: 2 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -45535.578
+2. Current log-likelihood: -45296.148
+Optimal log-likelihood: -45296.082
+Rate parameters:  A-C: 1.00000  A-G: 1.49877  A-T: 0.40390  C-G: 0.40390  C-T: 4.29889  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.183  G: 0.196  T: 0.322
+Proportion of invariable sites: 0.907
+Parameters optimization took 2 rounds (0.021 sec)
+Computing ML distances based on estimated model parameters... 0.008 sec
+Computing BIONJ tree...
+0.032 seconds
+Log-likelihood of BIONJ tree: -45308.950
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.218 second
+Computing log-likelihood of 98 initial trees ... 0.256 seconds
+Current best score: -45296.004
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -45295.858
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -45295.844
+UPDATE BEST LOG-LIKELIHOOD: -45295.836
+UPDATE BEST LOG-LIKELIHOOD: -45295.836
+Iteration 10 / LogL: -45295.836 / Time: 0h:0m:1s
+Iteration 20 / LogL: -45295.928 / Time: 0h:0m:1s
+Finish initializing candidate tree set (3)
+Current best tree score: -45295.836 / CPU time: 1.286
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -45295.853 / Time: 0h:0m:1s (0h:0m:4s left)
+Iteration 40 / LogL: -45404.567 / Time: 0h:0m:2s (0h:0m:3s left)
+Iteration 50 / LogL: -45298.035 / Time: 0h:0m:2s (0h:0m:2s left)
+Log-likelihood cutoff on original alignment: -45318.283
+Iteration 60 / LogL: -45296.774 / Time: 0h:0m:3s (0h:0m:2s left)
+Iteration 70 / LogL: -45404.576 / Time: 0h:0m:3s (0h:0m:1s left)
+Iteration 80 / LogL: -45295.881 / Time: 0h:0m:3s (0h:0m:1s left)
+Iteration 90 / LogL: -45295.901 / Time: 0h:0m:4s (0h:0m:0s left)
+Iteration 100 / LogL: -45295.919 / Time: 0h:0m:4s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -45321.162
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.994
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:4s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -45295.836
+Optimal log-likelihood: -45295.834
+Rate parameters:  A-C: 1.00000  A-G: 1.49030  A-T: 0.40090  C-G: 0.40090  C-T: 4.31737  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.183  G: 0.196  T: 0.322
+Proportion of invariable sites: 0.907
+Parameters optimization took 1 rounds (0.006 sec)
+BEST SCORE FOUND : -45295.834
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+1.190 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file SARS_new_aln.fas.splits.nex
+Total tree length: 0.017
+
+Total number of iterations: 102
+CPU time used for tree search: 4.336 sec (0h:0m:4s)
+Wall-clock time used for tree search: 4.535 sec (0h:0m:4s)
+Total CPU time used: 5.692 sec (0h:0m:5s)
+Total wall-clock time used: 6.062 sec (0h:0m:6s)
+
+Computing bootstrap consensus tree...
+Reading input file SARS_new_aln.fas.splits.nex...
+36 taxa and 187 splits.
+Consensus tree written to SARS_new_aln.fas.contree
+Reading input trees file SARS_new_aln.fas.contree
+Log-likelihood of consensus tree: -45296.755
+
+Analysis results written to: 
+  IQ-TREE report:                SARS_new_aln.fas.iqtree
+  Maximum-likelihood tree:       SARS_new_aln.fas.treefile
+  Likelihood distances:          SARS_new_aln.fas.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          SARS_new_aln.fas.splits.nex
+  Consensus tree:                SARS_new_aln.fas.contree
+  Screen log file:               SARS_new_aln.fas.log
+
+Date and Time: Sat Jul  2 15:06:56 2022
