@@ -37,7 +37,9 @@ Please list the software you require on the course virtual machine.
 | BEAST | latest | https://beast.community/install_on_unix | Molecular Phylogeny | 
 | BEAGLE | latest | https://beast.community/beagle | Molecular Phylogeny | 
 | Tracer | latest | https://github.com/beast-dev/tracer/releases/latest | Molecular Phylogeny | 
-| figtree | latest | : http://tree.bio.ed.ac.uk/software/figtree/ | Molecular Phylogeny | 
+| figtree | latest | : http://tree.bio.ed.ac.uk/software/figtree/ | Molecular Phylogeny |
+| nano | latest | https://www.nano-editor.org/download.php | intro_to_linux | 
+| vim | latest | https://www.vim.org/download.php | intro_to_linux | 
 | example | example | example | example | 
 | **PREVIOUS** | **VM** | **TOOLS** | **BELOW** | 
 | Aliview |||| 
