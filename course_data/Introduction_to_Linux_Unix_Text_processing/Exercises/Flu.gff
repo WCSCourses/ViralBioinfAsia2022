@@ -1,0 +1,60 @@
+##gff-version 3
+#!gff-spec-version 1.21
+#!processor NCBI annotwriter
+#!genome-build ViralMultiSegProj15622
+#!genome-build-accession NCBI_Assembly:GCF_000865085.1
+##sequence-region NC_007373.1 1 2341
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=335341
+NC_007373.1	RefSeq	region	1	2341	.	+	.	ID=NC_007373.1:1..2341;Dbxref=taxon:335341;Name=1;collection-date=21-Dec-2004;country=USA: Tompkins County%2C NY;gbkey=Src;genome=genomic;isolation-source=gender:M%3B age:16y;lab-host=RhMK 1 passage(s);mol_type=viral cRNA;nat-host=Homo sapiens;segment=1;serotype=H3N2;strain=A/New York/392/2004
+NC_007373.1	RefSeq	gene	28	2307	.	+	.	ID=gene-FLUAVH3N2_s1p1;Dbxref=GeneID:3655161;Name=PB2;gbkey=Gene;gene=PB2;gene_biotype=protein_coding;locus_tag=FLUAVH3N2_s1p1
+NC_007373.1	RefSeq	CDS	28	2307	.	+	0	ID=cds-YP_308849.1;Parent=gene-FLUAVH3N2_s1p1;Dbxref=Genbank:YP_308849.1,GeneID:3655161;Name=YP_308849.1;gbkey=CDS;gene=PB2;locus_tag=FLUAVH3N2_s1p1;product=polymerase PB2;protein_id=YP_308849.1
+##sequence-region NC_007372.1 1 2341
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=335341
+NC_007372.1	RefSeq	region	1	2341	.	+	.	ID=NC_007372.1:1..2341;Dbxref=taxon:335341;Name=2;collection-date=21-Dec-2004;country=USA: Tompkins County%2C NY;gbkey=Src;genome=genomic;isolation-source=gender:M%3B age:16y;lab-host=RhMK 1 passage(s);mol_type=viral cRNA;nat-host=Homo sapiens;segment=2;serotype=H3N2;strain=A/New York/392/2004
+NC_007372.1	RefSeq	gene	25	2298	.	+	.	ID=gene-FLUAVH3N2_s2p1;Dbxref=GeneID:3655159;Name=PB1;gbkey=Gene;gene=PB1;gene_biotype=protein_coding;locus_tag=FLUAVH3N2_s2p1
+NC_007372.1	RefSeq	CDS	25	2298	.	+	0	ID=cds-YP_308847.1;Parent=gene-FLUAVH3N2_s2p1;Dbxref=Genbank:YP_308847.1,GeneID:3655159;Name=YP_308847.1;gbkey=CDS;gene=PB1;locus_tag=FLUAVH3N2_s2p1;product=polymerase PB1;protein_id=YP_308847.1
+NC_007372.1	RefSeq	gene	119	391	.	+	.	ID=gene-FLUAVH3N2_s2p2;Dbxref=GeneID:3655160;Name=PB1-F2;gbkey=Gene;gene=PB1-F2;gene_biotype=protein_coding;locus_tag=FLUAVH3N2_s2p2
+NC_007372.1	RefSeq	CDS	119	391	.	+	0	ID=cds-YP_308848.1;Parent=gene-FLUAVH3N2_s2p2;Dbxref=Genbank:YP_308848.1,GeneID:3655160;Name=YP_308848.1;gbkey=CDS;gene=PB1-F2;locus_tag=FLUAVH3N2_s2p2;product=PB1-F2 protein;protein_id=YP_308848.1
+##sequence-region NC_007371.1 1 2233
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=335341
+NC_007371.1	RefSeq	region	1	2233	.	+	.	ID=NC_007371.1:1..2233;Dbxref=taxon:335341;Name=3;collection-date=21-Dec-2004;country=USA: Tompkins County%2C NY;gbkey=Src;genome=genomic;isolation-source=gender:M%3B age:16y;lab-host=RhMK 1 passage(s);mol_type=viral cRNA;nat-host=Homo sapiens;segment=3;serotype=H3N2;strain=A/New York/392/2004
+NC_007371.1	RefSeq	gene	25	2175	.	+	.	ID=gene-FLUAVH3N2_s3p1;Dbxref=GeneID:3655158;Name=PA;gbkey=Gene;gene=PA;gene_biotype=protein_coding;locus_tag=FLUAVH3N2_s3p1
+NC_007371.1	RefSeq	CDS	25	2175	.	+	0	ID=cds-YP_308846.1;Parent=gene-FLUAVH3N2_s3p1;Dbxref=Genbank:YP_308846.1,GeneID:3655158;Name=YP_308846.1;gbkey=CDS;gene=PA;locus_tag=FLUAVH3N2_s3p1;product=polymerase PA;protein_id=YP_308846.1
+NC_007371.1	RefSeq	gene	25	784	.	+	.	ID=gene-FLUAVH3N2_s3p2;Dbxref=GeneID:13229459;Name=PA-X;gbkey=Gene;gene=PA-X;gene_biotype=protein_coding;locus_tag=FLUAVH3N2_s3p2
+NC_007371.1	RefSeq	CDS	25	597	.	+	0	ID=cds-YP_006575868.1;Parent=gene-FLUAVH3N2_s3p2;Dbxref=Genbank:YP_006575868.1,GeneID:13229459;Name=YP_006575868.1;exception=ribosomal slippage;gbkey=CDS;gene=PA-X;locus_tag=FLUAVH3N2_s3p2;product=PA-X protein;protein_id=YP_006575868.1
+NC_007371.1	RefSeq	CDS	599	784	.	+	0	ID=cds-YP_006575868.1;Parent=gene-FLUAVH3N2_s3p2;Dbxref=Genbank:YP_006575868.1,GeneID:13229459;Name=YP_006575868.1;exception=ribosomal slippage;gbkey=CDS;gene=PA-X;locus_tag=FLUAVH3N2_s3p2;product=PA-X protein;protein_id=YP_006575868.1
+##sequence-region NC_007366.1 1 1762
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=335341
+NC_007366.1	RefSeq	region	1	1762	.	+	.	ID=NC_007366.1:1..1762;Dbxref=taxon:335341;Name=4;collection-date=21-Dec-2004;country=USA: Tompkins County%2C NY;gbkey=Src;genome=genomic;isolation-source=gender:M%3B age:16y;lab-host=RhMK 1 passage(s);mol_type=viral cRNA;nat-host=Homo sapiens;segment=4;serotype=H3N2;strain=A/New York/392/2004
+NC_007366.1	RefSeq	gene	30	1730	.	+	.	ID=gene-FLUAVH3N2_s4p1;Dbxref=GeneID:3655151;Name=HA;gbkey=Gene;gene=HA;gene_biotype=protein_coding;locus_tag=FLUAVH3N2_s4p1
+NC_007366.1	RefSeq	CDS	30	1730	.	+	0	ID=cds-YP_308839.1;Parent=gene-FLUAVH3N2_s4p1;Dbxref=Genbank:YP_308839.1,GeneID:3655151;Name=YP_308839.1;gbkey=CDS;gene=HA;locus_tag=FLUAVH3N2_s4p1;product=hemagglutinin;protein_id=YP_308839.1
+NC_007366.1	RefSeq	signal_peptide_region_of_CDS	30	77	.	+	.	ID=id-YP_308839.1:1..16;Parent=cds-YP_308839.1;gbkey=Prot
+NC_007366.1	RefSeq	mature_protein_region_of_CDS	78	1064	.	+	.	ID=id-YP_308839.1:17..345;Parent=cds-YP_308839.1;gbkey=Prot;product=HA1;protein_id=YP_308875.1
+NC_007366.1	RefSeq	mature_protein_region_of_CDS	1065	1727	.	+	.	ID=id-YP_308839.1:346..566;Parent=cds-YP_308839.1;gbkey=Prot;product=HA2;protein_id=YP_308876.1
+##sequence-region NC_007369.1 1 1566
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=335341
+NC_007369.1	RefSeq	region	1	1566	.	+	.	ID=NC_007369.1:1..1566;Dbxref=taxon:335341;Name=5;collection-date=21-Dec-2004;country=USA: Tompkins County%2C NY;gbkey=Src;genome=genomic;isolation-source=gender:M%3B age:16y;lab-host=RhMK 1 passage(s);mol_type=viral cRNA;nat-host=Homo sapiens;segment=5;serotype=H3N2;strain=A/New York/392/2004
+NC_007369.1	RefSeq	gene	46	1542	.	+	.	ID=gene-FLUAVH3N2_s5p1;Dbxref=GeneID:3655155;Name=NP;gbkey=Gene;gene=NP;gene_biotype=protein_coding;locus_tag=FLUAVH3N2_s5p1
+NC_007369.1	RefSeq	CDS	46	1542	.	+	0	ID=cds-YP_308843.1;Parent=gene-FLUAVH3N2_s5p1;Dbxref=Genbank:YP_308843.1,GeneID:3655155;Name=YP_308843.1;gbkey=CDS;gene=NP;locus_tag=FLUAVH3N2_s5p1;product=nucleocapsid protein;protein_id=YP_308843.1
+##sequence-region NC_007368.1 1 1467
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=335341
+NC_007368.1	RefSeq	region	1	1467	.	+	.	ID=NC_007368.1:1..1467;Dbxref=taxon:335341;Name=6;collection-date=21-Dec-2004;country=USA: Tompkins County%2C NY;gbkey=Src;genome=genomic;isolation-source=gender:M%3B age:16y;lab-host=RhMK 1 passage(s);mol_type=viral cRNA;nat-host=Homo sapiens;segment=6;serotype=H3N2;strain=A/New York/392/2004
+NC_007368.1	RefSeq	gene	20	1429	.	+	.	ID=gene-FLUAVH3N2_s6p1;Dbxref=GeneID:3655154;Name=NA;gbkey=Gene;gene=NA;gene_biotype=protein_coding;locus_tag=FLUAVH3N2_s6p1
+NC_007368.1	RefSeq	CDS	20	1429	.	+	0	ID=cds-YP_308842.1;Parent=gene-FLUAVH3N2_s6p1;Dbxref=Genbank:YP_308842.1,GeneID:3655154;Name=YP_308842.1;gbkey=CDS;gene=NA;locus_tag=FLUAVH3N2_s6p1;product=neuraminidase;protein_id=YP_308842.1
+##sequence-region NC_007367.1 1 1027
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=335341
+NC_007367.1	RefSeq	region	1	1027	.	+	.	ID=NC_007367.1:1..1027;Dbxref=taxon:335341;Name=7;collection-date=21-Dec-2004;country=USA: Tompkins County%2C NY;gbkey=Src;genome=genomic;isolation-source=gender:M%3B age:16y;lab-host=RhMK 1 passage(s);mol_type=viral cRNA;nat-host=Homo sapiens;segment=7;serotype=H3N2;strain=A/New York/392/2004
+NC_007367.1	RefSeq	gene	26	1007	.	+	.	ID=gene-FLUAVH3N2_s7p1;Dbxref=GeneID:3655153;Name=M2;gbkey=Gene;gene=M2;gene_biotype=protein_coding;locus_tag=FLUAVH3N2_s7p1
+NC_007367.1	RefSeq	CDS	26	51	.	+	0	ID=cds-YP_308840.1;Parent=gene-FLUAVH3N2_s7p1;Dbxref=Genbank:YP_308840.1,GeneID:3655153;Name=YP_308840.1;gbkey=CDS;gene=M2;locus_tag=FLUAVH3N2_s7p1;product=matrix protein 2;protein_id=YP_308840.1
+NC_007367.1	RefSeq	CDS	740	1007	.	+	1	ID=cds-YP_308840.1;Parent=gene-FLUAVH3N2_s7p1;Dbxref=Genbank:YP_308840.1,GeneID:3655153;Name=YP_308840.1;gbkey=CDS;gene=M2;locus_tag=FLUAVH3N2_s7p1;product=matrix protein 2;protein_id=YP_308840.1
+NC_007367.1	RefSeq	gene	26	784	.	+	.	ID=gene-FLUAVH3N2_s7p2;Dbxref=GeneID:3655152;Name=M1;gbkey=Gene;gene=M1;gene_biotype=protein_coding;locus_tag=FLUAVH3N2_s7p2
+NC_007367.1	RefSeq	CDS	26	784	.	+	0	ID=cds-YP_308841.1;Parent=gene-FLUAVH3N2_s7p2;Dbxref=Genbank:YP_308841.1,GeneID:3655152;Name=YP_308841.1;gbkey=CDS;gene=M1;locus_tag=FLUAVH3N2_s7p2;product=matrix protein 1;protein_id=YP_308841.1
+##sequence-region NC_007370.1 1 890
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=335341
+NC_007370.1	RefSeq	region	1	890	.	+	.	ID=NC_007370.1:1..890;Dbxref=taxon:335341;Name=8;collection-date=21-Dec-2004;country=USA: Tompkins County%2C NY;gbkey=Src;genome=genomic;isolation-source=gender:M%3B age:16y;lab-host=RhMK 1 passage(s);mol_type=viral cRNA;nat-host=Homo sapiens;segment=8;serotype=H3N2;strain=A/New York/392/2004
+NC_007370.1	RefSeq	gene	27	864	.	+	.	ID=gene-FLUAVH3N2_s8p1;Dbxref=GeneID:3655157;Name=NEP;gbkey=Gene;gene=NEP;gene_biotype=protein_coding;gene_synonym=NS2;locus_tag=FLUAVH3N2_s8p1
+NC_007370.1	RefSeq	CDS	27	56	.	+	0	ID=cds-YP_308844.1;Parent=gene-FLUAVH3N2_s8p1;Dbxref=Genbank:YP_308844.1,GeneID:3655157;Name=YP_308844.1;gbkey=CDS;gene=NEP;locus_tag=FLUAVH3N2_s8p1;product=nonstructural protein 2;protein_id=YP_308844.1
+NC_007370.1	RefSeq	CDS	529	864	.	+	0	ID=cds-YP_308844.1;Parent=gene-FLUAVH3N2_s8p1;Dbxref=Genbank:YP_308844.1,GeneID:3655157;Name=YP_308844.1;gbkey=CDS;gene=NEP;locus_tag=FLUAVH3N2_s8p1;product=nonstructural protein 2;protein_id=YP_308844.1
+NC_007370.1	RefSeq	gene	27	719	.	+	.	ID=gene-FLUAVH3N2_s8p2;Dbxref=GeneID:3655156;Name=NS1;gbkey=Gene;gene=NS1;gene_biotype=protein_coding;locus_tag=FLUAVH3N2_s8p2
+NC_007370.1	RefSeq	CDS	27	719	.	+	0	ID=cds-YP_308845.1;Parent=gene-FLUAVH3N2_s8p2;Dbxref=Genbank:YP_308845.1,GeneID:3655156;Name=YP_308845.1;gbkey=CDS;gene=NS1;locus_tag=FLUAVH3N2_s8p2;product=nonstructural protein 1;protein_id=YP_308845.1
+###

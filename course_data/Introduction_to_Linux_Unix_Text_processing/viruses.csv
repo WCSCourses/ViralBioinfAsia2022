@@ -1,0 +1,130 @@
+Virus|Genus, Family|Host|Transmission|Disease|Genome_id
+Adeno-associated virus|Dependovirus,Parvoviridae|Human, vertebrates|Respiratory|None|NC_001401
+Aichi virus|Kobuvirus,Picornaviridae|Human|Fecal-oral|Gastroenteritis|NC_001918
+Australian bat lyssavirus|Lyssavirus,Rhabdoviridae|Human, bats|Zoonosis, animal bite|Fatal encephalitis|NC_003243
+BK polyomavirus|Polyomavirus,Polyomaviridae|Human|Respiratory fluids or urine|None|NC_001538
+Banna virus|Seadornavirus,Reoviridae|Human, cattle, pig, mosquitoes|Zoonosis, arthropod bite|Encephalitis|NC_004211
+Barmah forest virus|Alphavirus,Togaviridae|Human, marsupials, mosquitoes|Zoonosis, arthropod bite|Fever, joint pain|NC_001786
+Bunyamwera virus|Orthobunyavirus,Bunyaviridae|Human, mosquitoes|Zoonosis, arthropod bite|Encephalitis|NC_001925
+Bunyavirus La Crosse|Orthobunyavirus,Bunyaviridae|Human, deer, mosquitoes, tamias|Zoonosis, arthropod bite|Encephalitis|NC_004108
+Bunyavirus snowshoe hare|Orthobunyavirus,Bunyaviridae|Human, rodents, mosquitoes|Zoonosis, arthropod bite|Encephalitis|Not available
+Cercopithecine herpesvirus|Lymphocryptovirus,Herpesviridae|Human, monkeys|Zoonosis, animal bite|Encephalitis|NC_006560
+Chandipura virus|Vesiculovirus,Rhabdoviridae|Human, sandflies|Zoonosis, athropod bite|Encephalitis|Not available
+Chikungunya virus|Alphavirus,Togaviridae|Human, monkeys, mosquitoes|Zoonosis, arthropod bite|Fever, joint pain|NC_004162
+Cosavirus A|Cosavirus,Picornaviridae|Human|Fecal-oral (probable)|-|NC_012800
+Cowpox virus|Orthopoxvirus,Poxviridae|Human, mammals|Zoonosis, contact|None|NC_003663
+Coxsackievirus|Enterovirus,Picornaviridae|Human|Fecal-oral|Meningitis, myocarditis, paralysis|NC_001612
+Crimean-Congo hemorrhagic fever virus|Nairovirus,Bunyaviridae|Human, vertebrates, ticks|Zoonosis, arthropod bite|Hemorrhagic fever|NC_005301
+Dengue virus|Flavivirus,Flaviviridae|Human, mosquitoes|Zoonosis, arthropod bite|Hemorrhagic fever|NC_001477
+Dhori virus|Thogotovirus,Orthomyxoviridae|Human, ticks|Zoonosis, arthropod bite|Fever, encephalitis|Not available
+Dugbe virus|Nairovirus,Bunyaviridae|Human, ticks|Zoonosis, arthropod bite|Thrombocytopaenia|NC_004159
+Duvenhage virus|Lyssavirus,Rhabdoviridae|Human, mammals|Zoonosis, animal bite|Fatal encephalitis|Not available
+Eastern equine encephalitis virus|Alphavirus,Togaviridae|Human, birds, mosquitoes|Zoonosis, arthropod bite|Encephalitis|NC_003899
+Ebolavirus|Ebolavirus,Filoviridae|Human, monkeys, bats|Zoonosis, contact|Hemorrhagic fever|NC_002549
+Echovirus|Enterovirus,Picornaviridae|Human|Fecal-oral|Common cold|NC_001897
+Encephalomyocarditis virus|Cardiovirus,Picornaviridae|Human, mouse, rat, pig|Zoonosis|Encephalitis|NC_001479
+Epstein-Barr virus|Lymphocryptovirus,Herpesviridae|Human|Contact, saliva|Mononucleosis|NC_007605
+European bat lyssavirus|Lyssavirus,Rhabdovirus|Human, bats|Zoonosis, animal bite|Fatal encephalitis|NC_009527
+GB virus C/Hepatitis G virus|Pegivirus,Flaviviridae|Human|Blood, occasionally sexual|None|NC_001710
+Hantaan virus|Hantavirus,Bunyaviridae|Human, rodents|Zoonosis, urine, saliva|Renal or respiratory syndrome|NC_005222
+Hendra virus|Henipavirus,paramyxoviridae|Human, horse, bats|Zoonosis, animal bite|Encephalitis|NC_001906
+Hepatitis A virus|Hepatovirus,picornaviridae|Human|Fecal-oral|Hepatitis|NC_001489
+Hepatitis B virus|Orthohepadnavirus,Hepadnaviridae|Human, Chimpanzees|Sexual contact, blood|Hepatitis|NC_003977
+Hepatitis C virus|Hepacivirus,Flaviviridae|Human|Sexual, blood|Hepatitis|NC_004102
+Hepatitis E virus|Hepevirus,Unassigned|Human, pig, monkeys, some rodents, chicken|Zoonosis, food|Hepatitis|NC_001434
+Hepatitis delta virus|Deltavirus,Unassigned|Human|Sexual contact, blood|Hepatitis|NC_001653
+Horsepox virus|Orthopoxvirus,Poxviridae|Human, horses|Zoonosis, contact|None|Not available
+Human adenovirus|Mastadenovirus,Adenoviridae|Human|Respiratory, fecal-oral|Respiratory|NC_001405
+Human astrovirus|Mamastrovirus,Astroviridae|Human|Fecal-oral|Gastroenteritis|NC_001943
+Human coronavirus|Alphacoronavirus,Coronaviridae|Human|Respiratory|Respiratory|NC_002645
+Human cytomegalovirus|Cytomegalovirus,Herpesviridae|Human|Contact, urine, saliva|Mononucleosis, pneumonia|NC_001347
+Human enterovirus 68, 70|Enterovirus,Picornaviridae|Human|Fecal-oral|Diarrhea, neurological disorder|NC_001430
+Human herpesvirus 1|Simplexvirus,Herpesviridae|Human|Sexual contact, saliva|Skin lesions|NC_001806
+Human herpesvirus 2|Simplexvirus,Herpesviridae|Human|Sexual contact, saliva|Skin lesions|NC_001798
+Human herpesvirus 6|Roseolovirus,Herpesviridae|Human|Respiratory, contact|Skin lesions|NC_001664
+Human herpesvirus 7|Roseolovirus,Herpesviridae|Human|Respiratory, contact|Skin lesions|NC_001716
+Human herpesvirus 8|Rhadinovirus,Herpesviridae|Human|Sexual contact, saliva|Skin lymphoma|NC_009333
+Human immunodeficiency virus|Lentivirus,Retroviridae|Human|Sexual contact, blood|AIDS|NC_001802
+Human papillomavirus 1|Mupapillomavirus,Papillomaviridae|Human|Contact|Skin warts|NC_001356
+Human papillomavirus 2|Alphapapillomavirus,Papillomaviridae|Human|Contact|Skin warts|NC_001352
+Human papillomavirus 16,18|Alphapapillomavirus,Papillomaviridae|Human|Sexual|Genital warts,|NC_001526
+Human parainfluenza|Respirovirus,Paramyxoviridae|Human|Respiratory|Respiratory|NC_003461
+Human parvovirus B19|Erythrovirus,Parvoviridae|Human|Respiratory|Skin lesion|NC_000883
+Human respiratory syncytial virus|Pneumovirus,Paramyxoviridae|Human|Respiratory|Respiratory|NC_001781
+Human rhinovirus|Enterovirus,Picornaviridae|Human|Respiratory|Respiratory|NC_001617
+Human SARS coronavirus|Betacoronavirus,Coronaviridae|Human, palm civet|Zoonosis|Respiratory|NC_004718
+Human spumaretrovirus|Spumavirus,Retroviridae|Human|Contact, saliva|None|Not available
+Human T-lymphotropic virus|Deltaretrovirus,Retroviridae|Human|Sexual contact, maternal-neonatal|Leukemia|NC_001436
+Human torovirus|Torovirus,Coronaviridae|Human|Fecal-oral|Gastroenteritis|Not available
+Influenza A virus|Influenzavirus A,Orthomyxoviridae|Human, birds, pigs|Respiratory or Zoonosis, animal contact|Flu|NC_002023
+Influenza B virus|Influenzavirus B,Orthomyxoviridae|Human|Respiratory|Flu|NC_002204
+Influenza C virus|Influenzavirus C,Orthomyxoviridae|Human|Respiratory|Flu|NC_006307
+Isfahan virus|Vesiculovirus,Rhabdoviridae|Human, sandflies, gerbils|Zoonosis, arthropod bite|Undocumented, encephalitis?|Not available
+JC polyomavirus|Polyomavirus,Polyomaviridae|Human|Fecal-oral or urine|Encephalitis|NC_001699
+Japanese encephalitis virus|Flavivirus,Flaviviridae|Human, horses, birds, mosquitoes|Zoonosis, arthropod borne|Encephalitis|NC_001437
+Junin arenavirus|Arenavirus,Arenaviridae|Human, rodents|Zoonosis, fomite|Hemorrhagic fever|NC_005081
+KI Polyomavirus|Polyomavirus,Polyomaviridae|Human|Fecal-oral or urine|Encephalitis|NC_009238
+Kunjin virus|Flavivirus,Flaviviridae|Human, horses, birds, mosquitoes|Zoonosis, arthropod borne|Encephalitis|Not available
+Lagos bat virus|Lyssavirus,Rhabdoviridae|Human, mammals|Zoonosis, animal bite|Fatal encephalitis|Not available
+Lake Victoria marburgvirus|Marburgvirus,Filoviridae|Human, monkeys, bats|Zoonosis, fomite|Hemorrhagic fever|NC_001608
+Langat virus|Flavivirus,Flaviviridae|Human, ticks|Zoonosis, arthropod borne|Encephalitis|NC_003690
+Lassa virus|Arenavirus,Arenaviridae|Human, rats|Zoonosis, fomites|Hemorrhagic fever|NC_004297
+Lordsdale virus|Norovirus,Caliciviridae|Human|Fecal-oral|Gastroenteritis|Not available
+Louping ill virus|Flavivirus,Flaviviridae|Human, mammals, ticks|Zoonosis, arthropod bite|Encephalitis|NC_001809
+Lymphocytic choriomeningitis virus|Arenavirus,Arenaviridae|Human, rodents|Zoonosis, fomite|Encephalitis|NC_004291
+Machupo virus|Arenavirus,Arenaviridae|Human, monkeys, mouse|Zoonosis, fomite|Encephalitis|NC_005079
+Mayaro virus|Alphavirus,Togaviridae|Human, mosquitoes|Zoonosis, arthropod bite|Fever, joint pain|NC_003417
+MERS coronavirus|Betacoronavirus,Coronaviridae|Human, Tomb bat|Zoonosis|Respiratory|NC_019843
+Measles virus|Morbilivirus,Paramyxoviridae|Human|Respiratory|Fever, rash|NC_001498
+Mengo encephalomyocarditis virus|Cardiovirus,Picornaviridae|Human, mouse, rabbit|Zoonosis|Encephalitis|Not available
+Merkel cell polyomavirus|Polyomavirus,Polyomaviridae|Human|-|Merkel cell carcinoma|NC_010277
+Mokola virus|Lyssavirus,Rhabdoviridae|Human, rodents, cat, dog shrew|Zoonosis, animal bite|Encephalitis|NC_006429
+Molluscum contagiosum virus|Molluscipoxvirus,Poxviridae|Human|Contact|Skin lesions|NC_001731
+Monkeypox virus|Orthopoxvirus,Poxviridae|Human, mouse, prairie dog|Zoonosis, contact|Skin lesions|NC_003310
+Mumps virus|Rubulavirus,Paramyxoviridae|Human|Respiratory, saliva|Mumps|NC_002200
+Murray valley encephalitis virus|Flavivirus,Flaviviridae|Human, mosquitoes|Zoonosis, arthropod bite|Encephalitis|NC_000943
+New York virus|Hantavirus,Bunyavirus|Human, mouse|Zoonosis, urine, saliva|Hemorrhagic fever|Not available
+Nipah virus|Henipavirus,Paramyxoviridae|Human, bats|Zoonosis, animal bite|Encephalitis|NC_002728
+Norwalk virus|Norovirus,Caliciviridae|Human|Fecal-oral|Gastroenteritis|NC_001959
+O'nyong-nyong virus|Alphavirus,Togaviridae|Human, mosquitoes|Zoonosis, arthropod bite|Fever, joint pain|NC_001512
+Orf virus|Parapoxvirus,Poxviridae|Human, mammals|Zoonosis, contact|Skin lesions|NC_005336
+Oropouche virus|Orthobunyavirus,Bunyaviridae|Human, wild animals(sloths)|Zoonosis, arthropod bite|Fever, joint pain|NC_005777
+Pichinde virus|Arenavirus,Arenaviridae|Human, rat, guinea pig|Zoonosis, fomite|Hemorrhagic fever|NC_006447
+Poliovirus|Enterovirus,Picornaviridae|Human, mammals|Fecal-oral|Poliomyelitis|NC_002058
+Punta toro phlebovirus|Phlebovirus,Bunyaviridae|Human, sandflies|Zoonosis, arthropod bite|Hemorrhagic fever|Not available
+Puumala virus|Hantavirus,Bunyavirus|Human, bank vole|Zoonosis, urine, saliva|Hemorrhagic fever|NC_005223
+Rabies virus|Lyssavirus,Rhabdoviridae|Human, mammals|Zoonosis, animal bite|Fatal encephalitis|NC_001542
+Rift valley fever virus|Phlebovirus,Bunyaviridae|Human, mammals, mosquitoes, sandflies|Zoonosis, arthropod bite|Hemorrhagic fever|NC_002043
+Rosavirus A|Rosavirus,Picornaviridae|Human|||NC_024070
+Ross river virus|Alphavirus,Togaviridae|Human, mosquitoes, marsupials|Zoonosis, arthropod bite|Fever, joint pain|NC_001544
+Rotavirus A|Rotavirus,Reoviridae|Human|Fecal-oral|Gastroenteritis|NC_011507
+Rotavirus B|Rotavirus,Reoviridae|Human|Fecal-oral|Gastroenteritis|NC_007548
+Rotavirus C|Rotavirus,Reoviridae|Human|Fecal-oral|Gastroenteritis|NC_007547
+Rubella virus|Rubivirus,Togaviridae|Human|Respiratory|Rubella|NC_001545
+Sagiyama virus|Alphavirus,Togaviridae|Human, horse, pig, mosquitoes|Zoonosis, arthropod bite|Fever, joint pain|Not available
+Salivirus A|Salivirus,Picornaviridae|Human||Gastroenteritis|NC_012957
+Sandfly fever sicilian virus|Phlebovirus,Bunyaviridae|Human, sandflies|Zoonosis, arthropod bite|Hemorrhagic fever|Not available
+Sapporo virus|Sapovirus,Caliciviridae|Human|Fecal-oral|Gastroenteritis|NC_006554
+Semliki forest virus|Alphavirus,Togaviridae|Human, birds, hedgehog, mosquitoes|Zoonosis, arthropod bite|Fever, joint pain|NC_003215
+Seoul virus|Hantavirus,Bunyavirus|Human, rats|Zoonosis, urine, saliva|Hemorrhagic fever|NC_005236
+Simian foamy virus|Spumavirus,Retroviridae|Human, monkeys|Zoonosis, contact|None|NC_001364
+Simian virus 5|Rubulavirus,Paramyxoviridae|Human, dog|Zoonosis, contact|Undocumented|Not available
+Sindbis virus|Alphavirus,Togaviridae|Human, birds, mosquitoes|Zoonosis, arthropod bite|Fever, joint pain|NC_001547
+Southampton virus|Norovirus,Caliciviridae|Human|Fecal-oral|Gastroenteritis|Not available
+St. louis encephalitis virus|Flavivirus,Flaviviridae|Human, birds, mosquitoes|Zoonosis, arthropod bite|Encephalitis|NC_007580
+Tick-borne powassan virus|Flavivirus,Flaviviridae|Human, ticks|Zoonosis, arthropod bite|Encephalitis|NC_003687
+Torque teno virus|Alphatorquevirus,Anelloviridae|Human|Sexual, blood|None|NC_002076
+Toscana virus|Phlebovirus,Bunyaviridae|Human, mosquitoes|Zoonosis, arthropod bite|Hemorrhagic fever|NC_006318
+Uukuniemi virus|Phlebovirus,Bunyaviridae|Human, ticks|Zoonosis, arthropod bite|Hemorrhagic fever|NC_005214
+Vaccinia virus|Orthopoxvirus,Poxviridae|Human, mammals|Contact|None|NC_006998
+Varicella-zoster virus|Varicellovirus,Herpesviridae|Human|Respiratory, contact|Varicella|NC_001348
+Variola virus|Orthopoxvirus,Poxviridae|Human|Respiratory|Variola|NC_001611
+Venezuelan equine encephalitis virus|Alphavirus,Togaviridae|Human, rodents, mosquitoes|Zoonosis, arthropod bite|Fever, joint pain|NC_001449
+Vesicular stomatitis virus|Vesiculovirus,Rhabdoviridae|Human, cattle, horse, pig, flies|Zoonosis, athropod bite|Encephalitis|NC_001560
+Western equine encephalitis virus|Alphavirus,Togaviridae|Human, vertebrates, mosquitoes|Zoonosis, arthropod bite|Fever, joint pain|NC_003908
+WU polyomavirus|Polyomavirus,Polyomaviridae|Human|Respiratory fluids or urine|None|NC_009539
+West Nile virus|Flavivirus,Flaviviridae|Human, birds, ticks, mosquitoes|Zoonosis, arthropod bite|Hemorrhagic fever|NC_001563
+Yaba monkey tumor virus|Orthopoxvirus,Poxviridae|Human, monkeys|Zoonosis, contact|None|NC_005179
+Yaba-like disease virus|Orthopoxvirus,Poxviridae|Human, monkeys|Zoonosis, contact|None|NC_002642
+Yellow fever virus|Flavivirus,Flaviviridae|Human, monkeys, mosquitoes|Zoonosis, arthropod bite|Hemorrhagic fever|NC_002031
+Zika virus|Flavivirus,Flaviviridae|Human, monkeys, mosquitoes|Zoonosis, arthropod bite|Fever, joint pain, rash|NC_012532
