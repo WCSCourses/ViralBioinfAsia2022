@@ -1,3 +1,12 @@
+## ~/SARS-CoV-2/
+
+* MinION: folder with an example MinION run data - fast5, fastq, seq_sum etc - 3 samples to keep size down ~5GB
+* Illumina: folder with a small example Illumina run data - fastq - 3 samples ~0.5GB
+* Variants: folder with various sample genome consensus seqs for varaint calling - size is ~10MB
+* Phylo: folder with sample genome sequences along with pre-built alignments, trees and metadata size is ~100MB
+* Group: folder with various illumina sample data for full analysis ~0.5GB
+* Extra: extra data, simulated, size is ~100MB
+
 ## Modular directory for data
 
 Upload corresponding data in the course materials directory- course_data under your specific module 
