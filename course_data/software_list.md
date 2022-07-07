@@ -40,9 +40,9 @@ Please list the software you require on the course virtual machine.
 | figtree | latest | : http://tree.bio.ed.ac.uk/software/figtree/ | Molecular Phylogeny |
 | nano | latest | https://www.nano-editor.org/download.php | intro_to_linux | 
 | vim | latest | https://www.vim.org/download.php | intro_to_linux | 
+| Aliview |latest | https://ormbunkar.se/aliview/ | Multiple Sequence Alignment, Molecular Phylogeny | 
 | example | example | example | example | 
 | **PREVIOUS** | **VM** | **TOOLS** | **BELOW** | 
-| Aliview ||| Multiple Sequence Alignment| Molecular Phylogeny |
 | Tempest||||
 | Figtree |||| 
 | Beast | v1.10.4 |||
