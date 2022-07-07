@@ -41,24 +41,24 @@ Please list the software you require on the course virtual machine.
 | nano | latest | https://www.nano-editor.org/download.php | intro_to_linux | 
 | vim | latest | https://www.vim.org/download.php | intro_to_linux | 
 | Aliview |latest | https://ormbunkar.se/aliview/ | Multiple Sequence Alignment, Molecular Phylogeny | 
-|	bcftools | https://samtools.github.io/bcftools/bcftools.html | ngs/reference alignment/consensus	|
-|	tablet | https://ics.hutton.ac.uk/tablet/download-tablet/ | ngs/reference alignment/consensus	|
-|	Lofreq | https://csb5.github.io/lofreq/| ngs/reference alignment/consensus	|
-|	STAR | https://github.com/alexdobin/STAR| ngs/reference alignment/consensus	|
-|	HISAT2 | http://daehwankimlab.github.io/hisat2/ | ngs/reference alignment/consensus	|
-|	bwa | http://bio-bwa.sourceforge.net/ | ngs/reference alignment/consensus	|
-|	GATK | https://gatk.broadinstitute.org/hc/en-us | ngs/reference alignment/consensus	|
-|	PicardTools | https://broadinstitute.github.io/picard/ | ngs/reference alignment/consensus	|
-|	IGV | https://software.broadinstitute.org/software/igv/ | ngs/reference alignment/consensus	|
-|	VIVA  | https://github.com/compbiocore/VariantVisualization.jl | ngs/reference alignment/consensus	|
-|	FastQC | https://www.bioinformatics.babraham.ac.uk/projects/fastqc/ | ngs/reference alignment/consensus	|
-|	MultiQC | multiqc.info | ngs/reference alignment/consensus	|
-|	Samtools/htslib/bcftools | http://samtools.sourceforge.net/ / http://www.htslib.org/ | ngs/reference alignment/consensus	|
-|	trimgalore | https://github.com/FelixKrueger/TrimGalore | ngs/reference alignment/consensus	|
-|	prinseq | http://prinseq.sourceforge.net/ | ngs/reference alignment/consensus	|
-|	bam2fastq | https://github.com/jts/bam2fastq | ngs/reference alignment/consensus	|
-|	weesam | https://bioinformatics.cvr.ac.uk/weesam-version-1-5/ | ngs/reference alignment/consensus	|
-|	SameerReport | (developed by Sreenu Vattipally) for generating mapping statistics. | ngs/reference alignment/consensus	|
+|	bcftools 	|	latest	|	 https://samtools.github.io/bcftools/bcftools.html 	|	 ngs/reference alignment/consensus	|
+|	tablet 	|	latest	|	 https://ics.hutton.ac.uk/tablet/download-tablet/ 	|	 ngs/reference alignment/consensus	|
+|	Lofreq 	|	latest	|	 https://csb5.github.io/lofreq/	|	 ngs/reference alignment/consensus	|
+|	STAR 	|	latest	|	 https://github.com/alexdobin/STAR	|	 ngs/reference alignment/consensus	|
+|	HISAT2 	|	latest	|	 http://daehwankimlab.github.io/hisat2/ 	|	 ngs/reference alignment/consensus	|
+|	bwa 	|	latest	|	 http://bio-bwa.sourceforge.net/ 	|	 ngs/reference alignment/consensus	|
+|	GATK 	|	latest	|	 https://gatk.broadinstitute.org/hc/en-us 	|	 ngs/reference alignment/consensus	|
+|	PicardTools 	|	latest	|	 https://broadinstitute.github.io/picard/ 	|	 ngs/reference alignment/consensus	|
+|	IGV 	|	latest	|	 https://software.broadinstitute.org/software/igv/ 	|	 ngs/reference alignment/consensus	|
+|	VIVA  	|	latest	|	 https://github.com/compbiocore/VariantVisualization.jl 	|	 ngs/reference alignment/consensus	|
+|	FastQC 	|	latest	|	 https://www.bioinformatics.babraham.ac.uk/projects/fastqc/ 	|	 ngs/reference alignment/consensus	|
+|	MultiQC 	|	latest	|	 multiqc.info 	|	 ngs/reference alignment/consensus	|
+|	Samtools/htslib/bcftools 	|	latest	|	 http://samtools.sourceforge.net/ / http://www.htslib.org/ 	|	 ngs/reference alignment/consensus	|
+|	trimgalore 	|	latest	|	 https://github.com/FelixKrueger/TrimGalore 	|	 ngs/reference alignment/consensus	|
+|	prinseq 	|	latest	|	 http://prinseq.sourceforge.net/ 	|	 ngs/reference alignment/consensus	|
+|	bam2fastq 	|	latest	|	 https://github.com/jts/bam2fastq 	|	 ngs/reference alignment/consensus	|
+|	weesam 	|	latest	|	 https://bioinformatics.cvr.ac.uk/weesam-version-1-5/ 	|	 ngs/reference alignment/consensus	|
+|	SameerReport 	|	latest	|	 (developed by Sreenu Vattipally) for generating mapping statistics. 	|	 ngs/reference alignment/consensus	|
 | example | example | example | example | 
 | **PREVIOUS** | **VM** | **TOOLS** | **BELOW** | 
 | Tempest||||
