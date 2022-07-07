@@ -1,3 +1,7 @@
+## Delete
+
+The data for this is being included in SARS-CoV2 workflows - in a group subfolder there
+
 ## Modular directory for data
 
 Upload corresponding data in the course materials directory- course_data under your specific module 
