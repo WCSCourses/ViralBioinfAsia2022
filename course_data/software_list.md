@@ -21,7 +21,7 @@ Please list the software you require on the course virtual machine.
 | iqtree2 | latest (2.2.0) | http://www.iqtree.org/#download | sars-cov-2, Molecular Phylogeny  |
 | R | latest | https://cran.r-project.org | sars-cov-2 |
 | python3 | latest | https://www.python.org/downloads/ | sars-cov-2 |
-| FigTree | latest | https://github.com/rambaut/figtree/releases | sars-cov-2 |
+| FigTree | latest | https://github.com/rambaut/figtree/releases | sars-cov-2 | Molecular Phylogeny |
 | seqtk | latest | https://github.com/lh3/seqtk | sars-cov-2 |
 | bbmap | latest | https://sourceforge.net/projects/bbmap/ | sars-cov-2 NGS_file_formats |
 | weeSAM | latest | https://github.com/centre-for-virus-research/weeSAM | sars-cov-2 |
@@ -42,7 +42,7 @@ Please list the software you require on the course virtual machine.
 | vim | latest | https://www.vim.org/download.php | intro_to_linux | 
 | example | example | example | example | 
 | **PREVIOUS** | **VM** | **TOOLS** | **BELOW** | 
-| Aliview |||| 
+| Aliview ||| Multiple Sequence Alignment| Molecular Phylogeny |
 | Tempest||||
 | Figtree |||| 
 | Beast | v1.10.4 |||
