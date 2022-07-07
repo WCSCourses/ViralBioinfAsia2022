@@ -1,0 +1,25 @@
+
+Operator analysis
+Operator                                          Tuning   Count      Time     Time/Op  Pr(accept) 
+scale(CP1.kappa)                                  0.37    376148     142674   0.38     0.2395      
+scale(CP2.kappa)                                  0.22    375575     121607   0.32     0.2399      
+scale(CP3.kappa)                                  0.535   376546     301903   0.8      0.236       
+CP1.frequencies                                   0.142   377132     145349   0.39     0.2407      
+CP2.frequencies                                   0.165   376049     125663   0.33     0.2398      
+CP3.frequencies                                   0.09    376175     304713   0.81     0.2395      
+scale(CP1.alpha)                                  0.323   376652     140973   0.37     0.238       
+scale(CP2.alpha)                                  0.159   375495     121394   0.32     0.2392      
+scale(CP3.alpha)                                  0.335   374861     300147   0.8      0.2384      
+scale(ucld.mean)                                  0.79    1126665    1035524  0.92     0.2337      
+scale(ucld.stdev)                                 0.624   1127432    1036475  0.92     0.2351      
+up:nodeHeights(treeModel) down:ucld.mean          0.819   1127024    763275   0.68     0.2323      
+branchRates.quantiles                             5.511   3759709    816688   0.22     0.2393      
+allNus                                            0.072   1127453    697849   0.62     0.2392      
+subtreeSlide(treeModel)                           49.954  11280460   2017541  0.18     0.2398      
+Narrow Exchange(treeModel)                                11277852   1748857  0.16     0.1295      
+Wide Exchange(treeModel)                                  1126557    127025   0.11     0.0024      
+wilsonBalding(treeModel)                                  1126063    305280   0.27     0.0031      
+scale(treeModel.rootHeight)                       0.303   1127920    193459   0.17     0.2388      
+uniform(nodeHeights(treeModel))                           11278990   2715416  0.24     0.4303      
+scale(constant.popSize)                           0.476   1129242    27663    0.02     0.2374      
+

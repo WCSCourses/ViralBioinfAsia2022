@@ -1,0 +1,219 @@
+IQ-TREE multicore version 2.1.3 COVID-edition for Windows 64-bit built Apr 21 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    Caro (AVX, 5 GB RAM)
+Command: G:\CaRo en Virología\5 Otros\Docencia\3 Otros cursos de posgrado\2022 Virtual Bioinformatic Course LAC\1_LAC_MSA_and_phylogenetics\DENV\Ready\iqtree2.exe -s .\LAC_DENV_aln_ready_cut.fasta -m MFP -B 1000 -alrt 1000
+Seed:    901075 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Jul 06 21:58:42 2022
+Kernel:  AVX - 1 threads (4 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 4 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file .\LAC_DENV_aln_ready_cut.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 37 sequences with 10161 columns, 2891 distinct patterns
+3898 parsimony-informative, 1524 singleton sites, 4739 constant sites
+                                    Gap/Ambiguity  Composition  p-value
+   1  AY618988|TH|1997|III                  0.00%    passed     96.49%
+   2  AY618989|TH|1997|III                  0.00%    passed     95.13%
+   3  AY618990|TH|1991|I                    0.00%    passed     93.62%
+   4  AY618991|TH|1977|I                    0.00%    passed     97.49%
+   5  AY618992|TH|2001|I                    0.00%    passed     93.83%
+   6  AY947539|PH|1956|I                    0.00%    passed     98.28%
+   7  EF457906|MY|1975|Sylvatic             0.00%    passed     94.80%
+   8  FJ196845|DENV1|CO|2005                0.17%    passed     20.16%
+   9  FJ196849|CN|1978|II                   0.00%    passed     94.32%
+  10  FJ196850|CN|1990|I                    0.00%    passed     93.05%
+  11  FJ850095|VE|2000|II                   0.00%    passed     98.05%
+  12  FJ882580|VE|2007|II                   0.00%    passed     98.96%
+  13  FJ882588|VE|2007|II                   0.00%    passed     98.40%
+  14  FJ882592|VE|2008|II                   0.00%    passed     99.57%
+  15  GQ199880|PR|1995|II                   0.00%    passed     97.32%
+  16  GQ868585|CO|2005|II                   0.00%    passed     99.92%
+  17  GQ868594|PH|1956|I                    0.00%    passed     98.87%
+  18  GU289913|CO|1982|II                   0.00%    passed     99.06%
+  19  HQ332172|VE|2007|II                   0.00%    passed     99.62%
+  20  JF262781|VE|1995|II                   0.01%    passed     99.63%
+  21  JF262782|HT|1994|II                   0.02%    passed     99.56%
+  22  JF262783|IN|1961|I                    0.00%    passed     98.85%
+  23  JN697379|DENV3|BR|2006                0.13%    failed      3.56%
+  24  JN796245|DENV-2|US|2008               0.24%    failed      0.02%
+  25  JN983813|BR|2010|II                   0.00%    passed     99.48%
+  26  JQ513332|BR|2010|II                   0.00%    passed     99.95%
+  27  JQ513339|BR|2011|II                   0.00%    passed     98.80%
+  28  JQ513344|BR|2011|II                   0.07%    passed     97.64%
+  29  JQ513345|BR|2011|I                    0.01%    passed     87.27%
+  30  JQ915086|NC|2009|II                   0.00%    passed     97.29%
+  31  JX024757|SG|2010|II                   0.00%    passed     99.58%
+  32  KC333651|CN|2012|II                   0.00%    passed     97.91%
+  33  KC762697|ID|2008|II                   0.00%    passed     99.99%
+  34  KF041260|PK|2009|I                    0.00%    passed     87.51%
+  35  query|BR/SJRP/614/2013                0.00%    passed     99.73%
+  36  query|DENV-4/MT/BR20_TVP17906/2012    0.00%    passed     99.91%
+  37  query|DENV-4/MT/BR24_TVP17910/2012    0.00%    passed     99.69%
+****  TOTAL                                 0.02%  2 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Creating fast initial parsimony tree by random order stepwise addition...
+2.125 seconds, parsimony score: 12765 (based on 5422 sites)
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -67581.206
+2. Current log-likelihood: -67580.153
+Optimal log-likelihood: -67579.075
+Rate parameters:  A-C: 2.83273  A-G: 11.80393  A-T: 3.07601  C-G: 1.63409  C-T: 32.49057  G-T: 1.00000
+Base frequencies:  A: 0.311  C: 0.207  G: 0.262  T: 0.220
+Proportion of invariable sites: 0.241
+Gamma shape alpha: 0.576
+Parameters optimization took 2 rounds (0.493 sec)
+Time for fast ML tree search: 5.017 seconds
+
+NOTE: ModelFinder requires 45 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 10161) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         71483.181    79  143124.363   143125.617   143695.242
+  2  GTR+F+I       67996.550    80  136153.100   136154.386   136731.205
+  3  GTR+F+G4      67617.797    80  135395.594   135396.879   135973.698
+  4  GTR+F+I+G4    67546.168    81  135254.336   135255.654   135839.667
+  5  GTR+F+R2      68096.221    81  136354.442   136355.760   136939.773
+  6  GTR+F+R3      67768.962    83  135703.925   135705.308   136303.709
+  7  GTR+F+R4      67652.503    85  135475.006   135476.457   136089.243
+  8  GTR+F+R5      67601.947    87  135377.895   135379.415   136006.584
+  9  GTR+F+R6      67554.205    89  135286.411   135288.001   135929.553
+ 10  GTR+F+R7      67537.163    91  135256.325   135257.988   135913.919
+ 11  GTR+F+R8      67537.026    93  135260.051   135261.788   135932.098
+ 17  SYM+I+G4      67844.536    78  135845.072   135846.295   136408.725
+ 30  TVM+F+I+G4    67955.476    80  136070.952   136072.238   136649.057
+ 43  TVMe+I+G4     68005.737    77  136165.473   136166.665   136721.899
+ 56  TIM3+F+I+G4   67623.186    79  135404.372   135405.626   135975.251
+ 69  TIM3e+I+G4    67946.975    76  136045.950   136047.111   136595.150
+ 82  TIM2+F+I+G4   67553.389    79  135264.777   135266.031   135835.656
+ 95  TIM2e+I+G4    67850.396    76  135852.791   135853.952   136401.991
+108  TIM+F+I+G4    67615.198    79  135388.396   135389.650   135959.275
+121  TIMe+I+G4     67940.827    76  136033.653   136034.814   136582.853
+134  TPM3u+F+I+G4  68017.071    78  136190.142   136191.365   136753.795
+147  TPM3+F+I+G4   68017.071    78  136190.142   136191.365   136753.795
+160  TPM2u+F+I+G4  67962.863    78  136081.726   136082.948   136645.378
+173  TPM2+F+I+G4   67962.863    78  136081.726   136082.948   136645.378
+186  K3Pu+F+I+G4   68010.709    78  136177.418   136178.641   136741.071
+199  K3P+I+G4      68102.200    75  136354.400   136355.530   136896.373
+212  TN+F+I+G4     67623.193    78  135402.385   135403.607   135966.037
+225  TNe+I+G4      67946.970    75  136043.939   136045.070   136585.913
+238  HKY+F+I+G4    68017.553    77  136189.107   136190.298   136745.533
+251  K2P+I+G4      68107.574    74  136363.149   136364.249   136897.896
+264  F81+F+I+G4    71823.796    76  143799.592   143800.752   144348.792
+277  JC+I+G4       71950.085    73  144046.169   144047.240   144573.690
+Akaike Information Criterion:           GTR+F+I+G4
+Corrected Akaike Information Criterion: GTR+F+I+G4
+Bayesian Information Criterion:         TIM2+F+I+G4
+Best-fit model: TIM2+F+I+G4 chosen according to BIC
+
+All model information printed to .\LAC_DENV_aln_ready_cut.fasta.model.gz
+CPU time for ModelFinder: 320.859 seconds (0h:5m:20s)
+Wall-clock time for ModelFinder: 327.144 seconds (0h:5m:27s)
+Generating 1000 samples for ultrafast bootstrap (seed: 901075)...
+
+NOTE: 24 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.082 / Estimate: 0.000, 0.310 / LogL: -67626.223
+Init pinv, alpha: 0.052, 1.082 / Estimate: 0.057, 0.349 / LogL: -67621.060
+Init pinv, alpha: 0.104, 1.082 / Estimate: 0.375, 1.074 / LogL: -67553.573
+Init pinv, alpha: 0.155, 1.082 / Estimate: 0.376, 1.073 / LogL: -67553.511
+Init pinv, alpha: 0.207, 1.082 / Estimate: 0.376, 1.079 / LogL: -67553.494
+Init pinv, alpha: 0.259, 1.082 / Estimate: 0.376, 1.075 / LogL: -67553.553
+Init pinv, alpha: 0.311, 1.082 / Estimate: 0.375, 1.072 / LogL: -67553.554
+Init pinv, alpha: 0.363, 1.082 / Estimate: 0.376, 1.075 / LogL: -67553.452
+Init pinv, alpha: 0.415, 1.082 / Estimate: 0.385, 1.141 / LogL: -67553.394
+Init pinv, alpha: 0.466, 1.082 / Estimate: 0.385, 1.137 / LogL: -67553.505
+Optimal pinv,alpha: 0.385, 1.141 / LogL: -67553.394
+
+Parameters optimization took 59.042 sec
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.424946 sec (of wall-clock time) 0.187500 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.001832 sec (of wall-clock time) 0.000000 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -67761.917
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.829 second
+Computing log-likelihood of 98 initial trees ... 3.407 seconds
+Current best score: -67553.394
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -67553.352
+Iteration 10 / LogL: -67556.677 / Time: 0h:1m:14s
+Iteration 20 / LogL: -67557.210 / Time: 0h:1m:21s
+Finish initializing candidate tree set (2)
+Current best tree score: -67553.352 / CPU time: 19.160
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+UPDATE BEST LOG-LIKELIHOOD: -67553.346
+Iteration 30 / LogL: -67553.497 / Time: 0h:1m:32s (0h:3m:45s left)
+Iteration 40 / LogL: -67555.994 / Time: 0h:1m:42s (0h:2m:40s left)
+Iteration 50 / LogL: -67555.207 / Time: 0h:1m:54s (0h:1m:58s left)
+Log-likelihood cutoff on original alignment: -67608.052
+UPDATE BEST LOG-LIKELIHOOD: -67553.345
+Iteration 60 / LogL: -67555.765 / Time: 0h:2m:5s (0h:1m:27s left)
+Iteration 70 / LogL: -67553.418 / Time: 0h:2m:18s (0h:1m:2s left)
+UPDATE BEST LOG-LIKELIHOOD: -67553.343
+Iteration 80 / LogL: -67553.348 / Time: 0h:2m:32s (0h:0m:40s left)
+Iteration 90 / LogL: -67556.033 / Time: 0h:2m:45s (0h:0m:20s left)
+Iteration 100 / LogL: -67555.153 / Time: 0h:2m:54s (0h:0m:1s left)
+Log-likelihood cutoff on original alignment: -67608.052
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:2m:57s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -67553.343
+2. Current log-likelihood: -67553.322
+3. Current log-likelihood: -67553.309
+Optimal log-likelihood: -67553.299
+Rate parameters:  A-C: 2.23037  A-G: 9.21982  A-T: 2.23037  C-G: 1.00000  C-T: 26.97119  G-T: 1.00000
+Base frequencies:  A: 0.311  C: 0.207  G: 0.262  T: 0.220
+Proportion of invariable sites: 0.382
+Gamma shape alpha: 1.122
+Parameters optimization took 3 rounds (0.406 sec)
+BEST SCORE FOUND : -67553.299
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+14.071 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file .\LAC_DENV_aln_ready_cut.fasta.splits.nex
+Total tree length: 3.831
+
+Total number of iterations: 102
+CPU time used for tree search: 111.766 sec (0h:1m:51s)
+Wall-clock time used for tree search: 114.966 sec (0h:1m:54s)
+Total CPU time used: 187.594 sec (0h:3m:7s)
+Total wall-clock time used: 192.199 sec (0h:3m:12s)
+
+Computing bootstrap consensus tree...
+Reading input file .\LAC_DENV_aln_ready_cut.fasta.splits.nex...
+37 taxa and 124 splits.
+Consensus tree written to .\LAC_DENV_aln_ready_cut.fasta.contree
+Reading input trees file .\LAC_DENV_aln_ready_cut.fasta.contree
+Log-likelihood of consensus tree: -67553.319
+
+Analysis results written to: 
+  IQ-TREE report:                .\LAC_DENV_aln_ready_cut.fasta.iqtree
+  Maximum-likelihood tree:       .\LAC_DENV_aln_ready_cut.fasta.treefile
+  Likelihood distances:          .\LAC_DENV_aln_ready_cut.fasta.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          .\LAC_DENV_aln_ready_cut.fasta.splits.nex
+  Consensus tree:                .\LAC_DENV_aln_ready_cut.fasta.contree
+  Screen log file:               .\LAC_DENV_aln_ready_cut.fasta.log
+
+Date and Time: Wed Jul 06 22:07:23 2022

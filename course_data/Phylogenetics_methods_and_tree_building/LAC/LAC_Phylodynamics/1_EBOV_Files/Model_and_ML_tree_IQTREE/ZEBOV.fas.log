@@ -1,0 +1,348 @@
+IQ-TREE multicore version 2.1.3 COVID-edition for Windows 64-bit built Apr 21 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    Caro (AVX, 5 GB RAM)
+Command: G:\CaRo en Virología\5 Otros\Docencia\3 Otros cursos de posgrado\2022 Virtual Bioinformatic Course LAC\ViralBioinfoLAC2022\3_Phylodynamics\EBOV_Files\ML_tree_IQTREE\iqtree2.exe -s .\ZEBOV.fas -m -MFP
+Seed:    589148 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Jul 06 21:20:15 2022
+Kernel:  AVX - 1 threads (4 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 4 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file .\ZEBOV.fas ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 34 sequences with 2031 columns, 37 distinct patterns
+58 parsimony-informative, 4 singleton sites, 1969 constant sites
+                                                             Gap/Ambiguity  Composition  p-value
+   1  EBOV_KC242784_Luebo9_Luebo_DRC_2007                            0.00%    passed     97.98%
+   2  EBOV_HQ613403_M-M_DRC_2007-08-31                              24.62%    passed     23.70%
+   3  EBOV_HQ613402_034-KS_DRC_2008-12-31                           24.62%    passed     22.54%
+   4  EBOV_KC242785_Luebo0_Luebo_DRC_2007                            0.00%    passed     97.98%
+   5  EBOV_KC242786_Luebo1_Luebo_DRC_2007                            0.00%    passed     97.98%
+   6  EBOV_KC242787_Luebo23_Luebo_DRC_2007                           0.00%    passed     97.98%
+   7  EBOV_KC242788_Luebo43_Luebo_DRC_2007                           0.00%    passed     97.98%
+   8  EBOV_KC242789_Luebo4_Luebo_DRC_2007                            0.00%    passed     98.61%
+   9  EBOV_KC242790_Luebo5_Luebo_DRC_2007                            0.00%    passed     97.98%
+  10  EBOV_KJ660346_Kissidougou-C15_Kissidougou_Guinea_2014-03-17    1.18%    passed     96.68%
+  11  EBOV_KJ660347_Gueckedou-C07_Gueckedou_Guinea_2014-03-20        1.18%    passed     96.68%
+  12  EBOV_KJ660348_Gueckedou-C05_Gueckedou_Guinea_2014-03-19        1.18%    passed     97.19%
+  13  EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02                  0.00%    passed     99.77%
+  14  EBOV_AA000000_EM112_SierraLeone_EM_2014-06-03                  0.00%    passed     99.77%
+  15  EBOV_AA000000_EM121_SierraLeone_EM_2014-06-04                  0.00%    passed     99.77%
+  16  EBOV_AA000000_G3707_SierraLeone_G_2014-05-31                   0.00%    passed     99.77%
+  17  EBOV_AA000000_G3729_SierraLeone_G_2014-06-07                   0.00%    passed     99.77%
+  18  EBOV_AA000000_G3750_SierraLeone_G_2014-06-10                   0.00%    passed     99.77%
+  19  EBOV_AA000000_G3758_SierraLeone_G_2014-06-11                   0.00%    passed     99.77%
+  20  EBOV_AA000000_G3770_SierraLeone_G_2014-06-12                   0.00%    passed     99.77%
+  21  EBOV_AA000000_G3787_SierraLeone_G_2014-06-14                   0.00%    passed     99.77%
+  22  EBOV_AA000000_G3795_SierraLeone_G_2014-06-15                   0.00%    passed     99.77%
+  23  EBOV_AA000000_G3827_SierraLeone_G_2014-06-16                   0.00%    passed     99.77%
+  24  EBOV_AA000000_G3841_SierraLeone_G_2014-06-17                   0.00%    passed     99.77%
+  25  EBOV_AA000000_G3846_SierraLeone_G_2014-06-18                   0.00%    passed     99.77%
+  26  EBOV_AA000000_NM042_SierraLeone_NM_2014-06-04                  0.00%    passed     99.77%
+  27  EBOV_KM034550_EM095_SierraLeone_EM_2014-05-25                  0.00%    passed     99.77%
+  28  EBOV_KM034552_EM098_SierraLeone_EM_2014-05-26                  0.00%    passed     99.77%
+  29  EBOV_KM034554_G3676_SierraLeone_G_2014-05-27                   0.00%    passed     99.77%
+  30  EBOV_KM034559_G3680_SierraLeone_G_2014-05-28                   0.00%    passed     99.77%
+  31  EBOV_KM034560_G3682_SierraLeone_G_2014-05-28                   0.00%    passed     99.77%
+  32  EBOV_KM034561_G3683_SierraLeone_G_2014-05-28                   0.00%    passed     99.77%
+  33  EBOV_KM034562_G3686_SierraLeone_G_2014-05-28                   0.00%    passed     99.77%
+  34  EBOV_KM034563_G3687_SierraLeone_G_2014-05-28                   2.22%    passed     92.31%
+****  TOTAL                                                          1.62%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: EBOV_KC242785_Luebo0_Luebo_DRC_2007 is identical to EBOV_KC242784_Luebo9_Luebo_DRC_2007 but kept for subsequent analysis
+NOTE: EBOV_KJ660347_Gueckedou-C07_Gueckedou_Guinea_2014-03-20 is identical to EBOV_KJ660346_Kissidougou-C15_Kissidougou_Guinea_2014-03-17 but kept for subsequent analysis
+NOTE: EBOV_AA000000_EM112_SierraLeone_EM_2014-06-03 is identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02 but kept for subsequent analysis
+NOTE: 23 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: EBOV_KC242786_Luebo1_Luebo_DRC_2007 (identical to EBOV_KC242784_Luebo9_Luebo_DRC_2007) is ignored but added at the end
+NOTE: EBOV_KC242787_Luebo23_Luebo_DRC_2007 (identical to EBOV_KC242784_Luebo9_Luebo_DRC_2007) is ignored but added at the end
+NOTE: EBOV_KC242788_Luebo43_Luebo_DRC_2007 (identical to EBOV_KC242784_Luebo9_Luebo_DRC_2007) is ignored but added at the end
+NOTE: EBOV_KC242790_Luebo5_Luebo_DRC_2007 (identical to EBOV_KC242784_Luebo9_Luebo_DRC_2007) is ignored but added at the end
+NOTE: EBOV_AA000000_EM121_SierraLeone_EM_2014-06-04 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_AA000000_G3707_SierraLeone_G_2014-05-31 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_AA000000_G3729_SierraLeone_G_2014-06-07 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_AA000000_G3750_SierraLeone_G_2014-06-10 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_AA000000_G3758_SierraLeone_G_2014-06-11 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_AA000000_G3770_SierraLeone_G_2014-06-12 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_AA000000_G3787_SierraLeone_G_2014-06-14 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_AA000000_G3795_SierraLeone_G_2014-06-15 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_AA000000_G3827_SierraLeone_G_2014-06-16 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_AA000000_G3841_SierraLeone_G_2014-06-17 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_AA000000_G3846_SierraLeone_G_2014-06-18 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_AA000000_NM042_SierraLeone_NM_2014-06-04 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_KM034550_EM095_SierraLeone_EM_2014-05-25 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_KM034552_EM098_SierraLeone_EM_2014-05-26 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_KM034554_G3676_SierraLeone_G_2014-05-27 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_KM034559_G3680_SierraLeone_G_2014-05-28 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_KM034560_G3682_SierraLeone_G_2014-05-28 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_KM034561_G3683_SierraLeone_G_2014-05-28 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_KM034562_G3686_SierraLeone_G_2014-05-28 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+Alignment was printed to .\ZEBOV.fas.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to .\ZEBOV.fas.uniqueseq.phy
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.008 seconds
+ERROR: File not found -MFP
+
+******************************************************
+CHECKPOINT: Resuming analysis from .\ZEBOV.fas.ckp.gz
+
+IQ-TREE multicore version 2.1.3 COVID-edition for Windows 64-bit built Apr 21 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    Caro (AVX, 5 GB RAM)
+Command: G:\CaRo en Virología\5 Otros\Docencia\3 Otros cursos de posgrado\2022 Virtual Bioinformatic Course LAC\ViralBioinfoLAC2022\3_Phylodynamics\EBOV_Files\ML_tree_IQTREE\iqtree2.exe -s .\ZEBOV.fas -m MFP
+Seed:    824849 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Jul 06 21:20:31 2022
+Kernel:  AVX - 1 threads (4 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 4 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+WARNING: Command-line argument `MFP` differs from checkpoint `-MFP`
+WARNING: Command-line differs from checkpoint!
+Reading alignment file .\ZEBOV.fas ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 34 sequences with 2031 columns, 37 distinct patterns
+58 parsimony-informative, 4 singleton sites, 1969 constant sites
+                                                             Gap/Ambiguity  Composition  p-value
+   1  EBOV_KC242784_Luebo9_Luebo_DRC_2007                            0.00%    passed     97.98%
+   2  EBOV_HQ613403_M-M_DRC_2007-08-31                              24.62%    passed     23.70%
+   3  EBOV_HQ613402_034-KS_DRC_2008-12-31                           24.62%    passed     22.54%
+   4  EBOV_KC242785_Luebo0_Luebo_DRC_2007                            0.00%    passed     97.98%
+   5  EBOV_KC242786_Luebo1_Luebo_DRC_2007                            0.00%    passed     97.98%
+   6  EBOV_KC242787_Luebo23_Luebo_DRC_2007                           0.00%    passed     97.98%
+   7  EBOV_KC242788_Luebo43_Luebo_DRC_2007                           0.00%    passed     97.98%
+   8  EBOV_KC242789_Luebo4_Luebo_DRC_2007                            0.00%    passed     98.61%
+   9  EBOV_KC242790_Luebo5_Luebo_DRC_2007                            0.00%    passed     97.98%
+  10  EBOV_KJ660346_Kissidougou-C15_Kissidougou_Guinea_2014-03-17    1.18%    passed     96.68%
+  11  EBOV_KJ660347_Gueckedou-C07_Gueckedou_Guinea_2014-03-20        1.18%    passed     96.68%
+  12  EBOV_KJ660348_Gueckedou-C05_Gueckedou_Guinea_2014-03-19        1.18%    passed     97.19%
+  13  EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02                  0.00%    passed     99.77%
+  14  EBOV_AA000000_EM112_SierraLeone_EM_2014-06-03                  0.00%    passed     99.77%
+  15  EBOV_AA000000_EM121_SierraLeone_EM_2014-06-04                  0.00%    passed     99.77%
+  16  EBOV_AA000000_G3707_SierraLeone_G_2014-05-31                   0.00%    passed     99.77%
+  17  EBOV_AA000000_G3729_SierraLeone_G_2014-06-07                   0.00%    passed     99.77%
+  18  EBOV_AA000000_G3750_SierraLeone_G_2014-06-10                   0.00%    passed     99.77%
+  19  EBOV_AA000000_G3758_SierraLeone_G_2014-06-11                   0.00%    passed     99.77%
+  20  EBOV_AA000000_G3770_SierraLeone_G_2014-06-12                   0.00%    passed     99.77%
+  21  EBOV_AA000000_G3787_SierraLeone_G_2014-06-14                   0.00%    passed     99.77%
+  22  EBOV_AA000000_G3795_SierraLeone_G_2014-06-15                   0.00%    passed     99.77%
+  23  EBOV_AA000000_G3827_SierraLeone_G_2014-06-16                   0.00%    passed     99.77%
+  24  EBOV_AA000000_G3841_SierraLeone_G_2014-06-17                   0.00%    passed     99.77%
+  25  EBOV_AA000000_G3846_SierraLeone_G_2014-06-18                   0.00%    passed     99.77%
+  26  EBOV_AA000000_NM042_SierraLeone_NM_2014-06-04                  0.00%    passed     99.77%
+  27  EBOV_KM034550_EM095_SierraLeone_EM_2014-05-25                  0.00%    passed     99.77%
+  28  EBOV_KM034552_EM098_SierraLeone_EM_2014-05-26                  0.00%    passed     99.77%
+  29  EBOV_KM034554_G3676_SierraLeone_G_2014-05-27                   0.00%    passed     99.77%
+  30  EBOV_KM034559_G3680_SierraLeone_G_2014-05-28                   0.00%    passed     99.77%
+  31  EBOV_KM034560_G3682_SierraLeone_G_2014-05-28                   0.00%    passed     99.77%
+  32  EBOV_KM034561_G3683_SierraLeone_G_2014-05-28                   0.00%    passed     99.77%
+  33  EBOV_KM034562_G3686_SierraLeone_G_2014-05-28                   0.00%    passed     99.77%
+  34  EBOV_KM034563_G3687_SierraLeone_G_2014-05-28                   2.22%    passed     92.31%
+****  TOTAL                                                          1.62%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: EBOV_KC242785_Luebo0_Luebo_DRC_2007 is identical to EBOV_KC242784_Luebo9_Luebo_DRC_2007 but kept for subsequent analysis
+NOTE: EBOV_KJ660347_Gueckedou-C07_Gueckedou_Guinea_2014-03-20 is identical to EBOV_KJ660346_Kissidougou-C15_Kissidougou_Guinea_2014-03-17 but kept for subsequent analysis
+NOTE: EBOV_AA000000_EM112_SierraLeone_EM_2014-06-03 is identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02 but kept for subsequent analysis
+NOTE: 23 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: EBOV_KC242786_Luebo1_Luebo_DRC_2007 (identical to EBOV_KC242784_Luebo9_Luebo_DRC_2007) is ignored but added at the end
+NOTE: EBOV_KC242787_Luebo23_Luebo_DRC_2007 (identical to EBOV_KC242784_Luebo9_Luebo_DRC_2007) is ignored but added at the end
+NOTE: EBOV_KC242788_Luebo43_Luebo_DRC_2007 (identical to EBOV_KC242784_Luebo9_Luebo_DRC_2007) is ignored but added at the end
+NOTE: EBOV_KC242790_Luebo5_Luebo_DRC_2007 (identical to EBOV_KC242784_Luebo9_Luebo_DRC_2007) is ignored but added at the end
+NOTE: EBOV_AA000000_EM121_SierraLeone_EM_2014-06-04 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_AA000000_G3707_SierraLeone_G_2014-05-31 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_AA000000_G3729_SierraLeone_G_2014-06-07 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_AA000000_G3750_SierraLeone_G_2014-06-10 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_AA000000_G3758_SierraLeone_G_2014-06-11 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_AA000000_G3770_SierraLeone_G_2014-06-12 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_AA000000_G3787_SierraLeone_G_2014-06-14 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_AA000000_G3795_SierraLeone_G_2014-06-15 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_AA000000_G3827_SierraLeone_G_2014-06-16 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_AA000000_G3841_SierraLeone_G_2014-06-17 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_AA000000_G3846_SierraLeone_G_2014-06-18 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_AA000000_NM042_SierraLeone_NM_2014-06-04 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_KM034550_EM095_SierraLeone_EM_2014-05-25 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_KM034552_EM098_SierraLeone_EM_2014-05-26 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_KM034554_G3676_SierraLeone_G_2014-05-27 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_KM034559_G3680_SierraLeone_G_2014-05-28 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_KM034560_G3682_SierraLeone_G_2014-05-28 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_KM034561_G3683_SierraLeone_G_2014-05-28 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+NOTE: EBOV_KM034562_G3686_SierraLeone_G_2014-05-28 (identical to EBOV_AA000000_EM104_SierraLeone_EM_2014-06-02) is ignored but added at the end
+Alignment was printed to .\ZEBOV.fas.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to .\ZEBOV.fas.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.008 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -3130.996
+Optimal log-likelihood: -3130.995
+Rate parameters:  A-C: 5.57271  A-G: 17.30266  A-T: 0.92260  C-G: 0.92283  C-T: 35.95875  G-T: 1.00000
+Base frequencies:  A: 0.301  C: 0.248  G: 0.232  T: 0.219
+Proportion of invariable sites: 0.485
+Gamma shape alpha: 998.445
+Parameters optimization took 1 rounds (0.028 sec)
+Time for fast ML tree search: 0.067 seconds
+
+NOTE: ModelFinder requires 0 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 2031) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         3130.744     27  6315.488     6316.243     6467.128
+  2  GTR+F+I       3130.744     28  6317.488     6318.299     6474.744
+  3  GTR+F+G4      3130.744     28  6317.489     6318.300     6474.745
+  4  GTR+F+I+G4    3130.995     29  6319.989     6320.859     6482.861
+  5  GTR+F+R2      3130.866     29  6319.732     6320.601     6482.604
+  6  GTR+F+R3      3130.904     31  6323.809     6324.801     6497.914
+ 14  SYM           3146.375     24  6340.750     6341.348     6475.541
+ 15  SYM+I         3146.374     25  6342.748     6343.396     6483.155
+ 16  SYM+G4        3146.376     25  6342.752     6343.401     6483.159
+ 27  TVM+F         3134.045     26  6320.090     6320.791     6466.113
+ 28  TVM+F+I       3134.044     27  6322.088     6322.843     6473.728
+ 29  TVM+F+G4      3134.044     27  6322.088     6322.843     6473.728
+ 40  TVMe          3148.685     23  6343.370     6343.920     6472.545
+ 41  TVMe+I        3148.685     24  6345.369     6345.968     6480.160
+ 42  TVMe+G4       3148.684     24  6345.368     6345.967     6480.159
+ 53  TIM3+F        3132.521     25  6315.041     6315.690     6455.449
+ 54  TIM3+F+I      3132.521     26  6317.042     6317.742     6463.065
+ 55  TIM3+F+G4     3132.521     26  6317.042     6317.742     6463.065
+ 66  TIM3e         3148.475     22  6340.950     6341.454     6464.508
+ 67  TIM3e+I       3148.471     23  6342.942     6343.492     6472.116
+ 68  TIM3e+G4      3148.471     23  6342.942     6343.492     6472.117
+ 79  TIM2+F        3132.822     25  6315.645     6316.293     6456.052
+ 80  TIM2+F+I      3132.834     26  6317.667     6318.368     6463.691
+ 81  TIM2+F+G4     3132.831     26  6317.663     6318.363     6463.686
+ 92  TIM2e         3148.651     22  6341.301     6341.805     6464.859
+ 93  TIM2e+I       3148.659     23  6343.318     6343.868     6472.493
+ 94  TIM2e+G4      3148.656     23  6343.313     6343.863     6472.487
+105  TIM+F         3132.241     25  6314.483     6315.131     6454.890
+106  TIM+F+I       3132.241     26  6316.483     6317.184     6462.506
+107  TIM+F+G4      3132.242     26  6316.483     6317.184     6462.507
+118  TIMe          3148.340     22  6340.680     6341.184     6464.238
+119  TIMe+I        3148.340     23  6342.681     6343.231     6471.855
+120  TIMe+G4       3148.342     23  6342.683     6343.233     6471.858
+131  TPM3u+F       3135.847     24  6319.695     6320.293     6454.486
+132  TPM3u+F+I     3135.847     25  6321.694     6322.342     6462.101
+133  TPM3u+F+G4    3135.847     25  6321.694     6322.342     6462.101
+144  TPM3+F        3135.847     24  6319.695     6320.293     6454.485
+145  TPM3+F+I      3135.847     25  6321.693     6322.342     6462.100
+146  TPM3+F+G4     3135.847     25  6321.694     6322.342     6462.101
+157  TPM2u+F       3136.160     24  6320.320     6320.918     6455.111
+158  TPM2u+F+I     3136.137     25  6322.274     6322.923     6462.681
+159  TPM2u+F+G4    3136.138     25  6322.275     6322.924     6462.682
+170  TPM2+F        3136.160     24  6320.320     6320.918     6455.111
+171  TPM2+F+I      3136.137     25  6322.274     6322.923     6462.681
+172  TPM2+F+G4     3136.138     25  6322.275     6322.924     6462.682
+183  K3Pu+F        3135.554     24  6319.108     6319.706     6453.899
+184  K3Pu+F+I      3135.554     25  6321.108     6321.757     6461.515
+185  K3Pu+F+G4     3135.554     25  6321.109     6321.757     6461.516
+196  K3P           3150.661     21  6343.322     6343.782     6461.264
+197  K3P+I         3150.661     22  6345.322     6345.826     6468.881
+198  K3P+G4        3150.661     22  6345.323     6345.827     6468.881
+209  TN+F          3134.063     24  6316.127     6316.725     6450.918
+210  TN+F+I        3134.057     25  6318.114     6318.763     6458.521
+211  TN+F+G4       3134.056     25  6318.113     6318.761     6458.520
+222  TNe           3150.185     21  6342.369     6342.829     6460.311
+223  TNe+I         3150.185     22  6344.370     6344.874     6467.929
+224  TNe+G4        3150.185     22  6344.370     6344.874     6467.928
+235  HKY+F         3137.372     23  6320.744     6321.294     6449.919
+236  HKY+F+I       3137.372     24  6322.744     6323.343     6457.535
+237  HKY+F+G4      3137.372     24  6322.745     6323.343     6457.535
+248  K2P           3152.514     20  6345.029     6345.447     6457.354
+249  K2P+I         3152.514     21  6347.029     6347.489     6464.971
+250  K2P+G4        3152.514     21  6347.029     6347.489     6464.971
+261  F81+F         3171.239     22  6386.479     6386.983     6510.037
+262  F81+F+I       3171.239     23  6388.479     6389.029     6517.653
+263  F81+F+G4      3171.239     23  6388.479     6389.029     6517.653
+274  JC            3186.300     19  6410.601     6410.979     6517.310
+275  JC+I          3186.300     20  6412.601     6413.019     6524.926
+276  JC+G4         3186.300     20  6412.601     6413.019     6524.927
+Akaike Information Criterion:           TIM+F
+Corrected Akaike Information Criterion: TIM+F
+Bayesian Information Criterion:         HKY+F
+Best-fit model: HKY+F chosen according to BIC
+
+All model information printed to .\ZEBOV.fas.model.gz
+CPU time for ModelFinder: 0.172 seconds (0h:0m:0s)
+Wall-clock time for ModelFinder: 0.650 seconds (0h:0m:0s)
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -3137.414
+Optimal log-likelihood: -3137.370
+Rate parameters:  A-C: 1.00000  A-G: 10.66733  A-T: 1.00000  C-G: 1.00000  C-T: 10.66733  G-T: 1.00000
+Base frequencies:  A: 0.301  C: 0.248  G: 0.232  T: 0.219
+Parameters optimization took 1 rounds (0.016 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.010168 sec (of wall-clock time) 0.000000 sec(of CPU time)
+Computing RapidNJ tree took 0.000203 sec (of wall-clock time) 0.000000 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -3148.658
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.051 second
+Computing log-likelihood of 98 initial trees ... 0.038 seconds
+Current best score: -3137.370
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -3137.370
+Iteration 10 / LogL: -3137.370 / Time: 0h:0m:0s
+Iteration 20 / LogL: -3137.370 / Time: 0h:0m:0s
+Finish initializing candidate tree set (15)
+Current best tree score: -3137.370 / CPU time: 0.149
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+BETTER TREE FOUND at iteration 23: -3137.370
+BETTER TREE FOUND at iteration 27: -3137.369
+BETTER TREE FOUND at iteration 29: -3137.369
+Iteration 30 / LogL: -3144.879 / Time: 0h:0m:0s (0h:0m:1s left)
+BETTER TREE FOUND at iteration 33: -3137.369
+Iteration 40 / LogL: -3137.388 / Time: 0h:0m:0s (0h:0m:1s left)
+BETTER TREE FOUND at iteration 46: -3137.369
+UPDATE BEST LOG-LIKELIHOOD: -3137.369
+Iteration 50 / LogL: -3137.379 / Time: 0h:0m:0s (0h:0m:1s left)
+Iteration 60 / LogL: -3137.378 / Time: 0h:0m:0s (0h:0m:1s left)
+Iteration 70 / LogL: -3137.374 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -3137.369
+Iteration 80 / LogL: -3137.374 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 90 / LogL: -3137.379 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 100 / LogL: -3137.370 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 110 / LogL: -3137.385 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 120 / LogL: -3137.376 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 130 / LogL: -3137.370 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 140 / LogL: -3137.369 / Time: 0h:0m:0s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 147 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -3137.369
+Optimal log-likelihood: -3137.369
+Rate parameters:  A-C: 1.00000  A-G: 10.66655  A-T: 1.00000  C-G: 1.00000  C-T: 10.66655  G-T: 1.00000
+Base frequencies:  A: 0.301  C: 0.248  G: 0.232  T: 0.219
+Parameters optimization took 1 rounds (0.016 sec)
+BEST SCORE FOUND : -3137.369
+Total tree length: 0.031
+
+Total number of iterations: 147
+CPU time used for tree search: 0.594 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.568 sec (0h:0m:0s)
+Total CPU time used: 0.828 sec (0h:0m:0s)
+Total wall-clock time used: 0.996 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                .\ZEBOV.fas.iqtree
+  Maximum-likelihood tree:       .\ZEBOV.fas.treefile
+  Likelihood distances:          .\ZEBOV.fas.mldist
+  Screen log file:               .\ZEBOV.fas.log
+
+Date and Time: Wed Jul 06 21:20:34 2022

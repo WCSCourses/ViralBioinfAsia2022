@@ -1,0 +1,132 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=30;
+	taxlabels
+	'CHIKV|KP164568|BHI3734_H804698|Brazil_Feira_de_Santana-BA|2014-08-26'[&!color=#ff0000]
+	'CHIKV|KP164569|BHI3741_H804705|Brazil_Feira_de_Santana-BA|2014-08-28'[&!color=#ff0000]
+	'CHIKV|KP164570|BHI3745_H804709|Brazil_Feira_de_Santana-BA|2014-09-03'[&!color=#ff0000]
+	'CHIKV|KU940225|Bahia08|Brazil|2015-07-15'[&!color=#ff0000]
+	'CHIKV|KU940226|Bahia09|Brazil|2015-08-01'[&!color=#ff0000]
+	'CHIKV|KX228391|BR33|Brazil_Pernambuco|2016-03-03'[&!color=#ff0000]
+	'CHIKV|KY421925|VS|Brazil_Salvador|2015-06-22'
+	'CHIKV|XXX|14_S122|Brazil_Alagoas_Maceio|2016-03-30'
+	'CHIKV|XXX|151_S139|Brazil_Alagoas_Maceio|2016-04-15'
+	'CHIKV|XXX|164_S138|Brazil_Alagoas_Maceio|2016-04-19'
+	'CHIKV|XXX|166_S137|Brazil_Alagoas_Maceio|2016-04-17'
+	'CHIKV|XXX|167_S136|Brazil_Alagoas_Maceio|2016-04-14'
+	'CHIKV|XXX|168_S135|Brazil_Alagoas_Maceio|2016-04-14'
+	'CHIKV|XXX|172_S134|Brazil_Alagoas_Maceio|2016-04-16'
+	'CHIKV|XXX|175_S132|Brazil_Alagoas_Maceio|2016-04-19'
+	'CHIKV|XXX|178_S130|Brazil_Alagoas_Maceio|2016-04-19'
+	'CHIKV|XXX|17AL_S121|Brazil_Alagoas_Maceio|2016-04-01'
+	'CHIKV|XXX|182_S119|Brazil_Alagoas_Maceio|2016-04-14'
+	'CHIKV|XXX|188_S114|Brazil_Alagoas_Capela|2016-04-17'
+	'CHIKV|XXX|190_S113|Brazil_Alagoas_Maceio|2016-04-15'
+	'CHIKV|XXX|191_S112|Brazil_Alagoas_Maceio|2016-04-19'
+	'CHIKV|XXX|194_S165|Brazil_Alagoas_Maceio|2016-04-07'
+	'CHIKV|XXX|195_S164|Brazil_Alagoas_Maceio|2016-04-07'
+	'CHIKV|XXX|197_S163|Brazil_Alagoas_Maceio|2016-04-13'
+	'CHIKV|XXX|19AP_S90|Brazil_Paraiba_Joao_Pessoa|2016-06-20'
+	'CHIKV|XXX|19_S120|Brazil_Alagoas_Maceio|2016-04-01'
+	'CHIKV|XXX|241_S183|Brazil_Alagoas_Maceio|2016-04-07'
+	'CHIKV|XXX|243_S182|Brazil_Alagoas_Maceio|2016-04-09'
+	'CHIKV|XXX|35AP_S150|Brazil_Paraiba_Joao_Pessoa|2016-06-17'
+	'CHIKV|XXX|6AL_S98|Brazil_Alagoas_Maceio|2016-03-30'
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (((((((((((((('CHIKV|XXX|188_S114|Brazil_Alagoas_Capela|2016-04-17':0.0,'CHIKV|XXX|14_S122|Brazil_Alagoas_Maceio|2016-03-30':2.99E-4)[&label=0.93]:5.83E-4,'CHIKV|XXX|197_S163|Brazil_Alagoas_Maceio|2016-04-13':5.94E-4)[&label=0.94]:9.14E-4,'CHIKV|XXX|19_S120|Brazil_Alagoas_Maceio|2016-04-01':5.68E-4)[&label=0.0]:0.0,(('CHIKV|XXX|182_S119|Brazil_Alagoas_Maceio|2016-04-14':8.98E-4,'CHIKV|XXX|168_S135|Brazil_Alagoas_Maceio|2016-04-14':5.0E-4)[&label=0.85]:3.3E-4,'CHIKV|XXX|194_S165|Brazil_Alagoas_Maceio|2016-04-07':1.44E-4)[&label=0.75]:1.48E-4)[&label=0.0]:2.02E-4,'CHIKV|XXX|178_S130|Brazil_Alagoas_Maceio|2016-04-19':0.0)[&label=0.0]:0.0,((((('CHIKV|XXX|17AL_S121|Brazil_Alagoas_Maceio|2016-04-01':1.17E-4,'CHIKV|XXX|190_S113|Brazil_Alagoas_Maceio|2016-04-15':1.97E-4)[&label=0.0]:9.0E-6,'CHIKV|XXX|6AL_S98|Brazil_Alagoas_Maceio|2016-03-30':1.09E-4)[&label=0.81]:9.3E-5,('CHIKV|XXX|164_S138|Brazil_Alagoas_Maceio|2016-04-19':3.84E-4,'CHIKV|XXX|191_S112|Brazil_Alagoas_Maceio|2016-04-19':5.78E-4)[&label=0.0]:0.0)[&label=0.0]:0.0,'CHIKV|XXX|175_S132|Brazil_Alagoas_Maceio|2016-04-19':4.34E-4)[&label=0.0]:0.0,'CHIKV|XXX|195_S164|Brazil_Alagoas_Maceio|2016-04-07':6.39E-4)[&label=0.9]:2.07E-4)[&label=0.0]:0.0,(('CHIKV|XXX|243_S182|Brazil_Alagoas_Maceio|2016-04-09':3.45E-4,'CHIKV|XXX|166_S137|Brazil_Alagoas_Maceio|2016-04-17':9.0E-5)[&label=0.0]:0.0,'CHIKV|XXX|241_S183|Brazil_Alagoas_Maceio|2016-04-07':5.52E-4)[&label=0.0]:0.0)[&label=0.0]:0.0,'CHIKV|XXX|167_S136|Brazil_Alagoas_Maceio|2016-04-14':9.56E-4)[&label=0.86]:9.0E-5,('CHIKV|XXX|172_S134|Brazil_Alagoas_Maceio|2016-04-16':5.4E-4,'CHIKV|XXX|151_S139|Brazil_Alagoas_Maceio|2016-04-15':0.001096)[&label=0.0]:0.0)[&label=0.98]:4.49E-4,('CHIKV|KU940225|Bahia08|Brazil|2015-07-15':0.0,'CHIKV|KY421925|VS|Brazil_Salvador|2015-06-22'[&!color=#0000ff]:0.001107)[&label=0.0]:0.0)[&label=0.0]:0.0,'CHIKV|KU940226|Bahia09|Brazil|2015-08-01':0.0)[&label=0.95]:2.69E-4,'CHIKV|KP164570|BHI3745_H804709|Brazil_Feira_de_Santana-BA|2014-09-03':0.0)[&label=0.0]:0.0,((('CHIKV|XXX|35AP_S150|Brazil_Paraiba_Joao_Pessoa|2016-06-17':3.6E-4,'CHIKV|XXX|19AP_S90|Brazil_Paraiba_Joao_Pessoa|2016-06-20':4.49E-4)[&label=0.93]:2.69E-4,'CHIKV|KX228391|BR33|Brazil_Pernambuco|2016-03-03':7.2E-4)[&label=0.77]:8.9E-5,'CHIKV|KP164569|BHI3741_H804705|Brazil_Feira_de_Santana-BA|2014-08-28':9.0E-5)[&label=0.0]:0.0)[&label=0.0]:0.0,'CHIKV|KP164568|BHI3734_H804698|Brazil_Feira_de_Santana-BA|2014-08-26':0.0);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="label";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=8;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=false;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
