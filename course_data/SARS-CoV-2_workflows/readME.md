@@ -7,6 +7,13 @@
 * Group: folder with various illumina sample data for full analysis ~0.5GB
 * Extra: extra data, simulated, size is ~100MB
 
+Data is stored in tar.gz. fast5_pass was compressed by sample to reduce size to 2GB to meet GitHub upload cap. MinION_general.tar.gz can be unpacked and moved to the batch dir - 20201229_1542_X1_FAO14190_c9e59aa7_Batch124A
+
+Can be uncompressed with the 
+```
+tar -xvf example.tar.gz command
+```
+
 ## Modular directory for data
 
 Upload corresponding data in the course materials directory- course_data under your specific module 
