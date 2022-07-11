@@ -9,9 +9,9 @@
 
 Data is stored in tar.gz. fast5_pass was compressed by sample to reduce size to 2GB to meet GitHub upload cap. MinION_general.tar.gz can be unpacked and moved to the batch dir - 20201229_1542_X1_FAO14190_c9e59aa7_Batch124A
 
-Can be uncompressed with the 
+Can be uncompressed with the following command:
 ```
-tar -xvf example.tar.gz command
+tar -xvf example.tar.gz 
 ```
 
 ## Modular directory for data
