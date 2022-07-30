@@ -77,27 +77,58 @@ Execute the command `ls -lh *_stats` to see the contents of these directories. N
 
 You should now see something like this:
 
-INSERT IMAGE HERE
+![Qualimap reports opened in Firefox web browser](https://github.com/WCSCourses/ViralBioinfAsia2022/raw/main/course_data/Coverage_Plots_Stats/images/Screenshot%202022-07-29%20at%2021.17.12.png)
 
+Note that the web browser contains two tabs; one contains the report for ERR8261957.bam and the other contains report for ERR8261968.bam.
 
-
-
-
-
-
-
-   
-
+Take a look at the reports to see the range of information provided. Then close the Firefox web browser.
  
 
+## Qualimap (graphical interface)
 
+As an alternative to the command-line, we can launch a graphical interface for Qualimap. 
+   
+Start the Qualimap graphical interface by executing the command `qualimap &` in the Terminal. Don't worry about the warning message concerning missing R packages; just click the *Ok* button.  You should now see something like this:
+
+![enter image description here](https://github.com/WCSCourses/ViralBioinfAsia2022/raw/main/course_data/Coverage_Plots_Stats/images/Screenshot%202022-07-30%20at%2011.07.42.png)
+
+Notice the File menu item at the top left corner of the Qualimap window. Select *File* -> *New analysis* -> *BAM QC* and then select one of the BAM files. When the analysis is complete you will see the results in the Qualimap window and you can click on the various sections of the results report in the menu on the left:
+
+![enter image description here](https://github.com/WCSCourses/ViralBioinfAsia2022/raw/main/course_data/Coverage_Plots_Stats/images/Screenshot%202022-07-30%20at%2011.12.25.png)
+
+Note that under the File menu, we can export the results report as an HTML or PDF file. 
+
+You can find some good information about interpreting the Qualimap results here: http://qualimap.conesalab.org/doc_html/analysis.html#output.
+
+For our datasets, try to answer these questions:
+
+ - What is the depth of coverage?
+ - Is sequencing coverage uniform across the whole genome?
+ - How long are the sequence reads?
+ - For paired-read data, what is the insert size (i.e. the length of the sequenced fragments)?
 
 ### Visualising the data using IGV
-Before we calculate the QC metrics on out data, first, let's visually inspect it using the Integrative Genome Viewer (IGV). This is will provide us with an overview of the data. Alternatively, we can use Tablet instead of IGV, if you prefer.
+If you have any spare time then optionally, let's visually inspect the alignment data using the Integrative Genome Viewer (IGV). This will provide us with an overview of the data. (Alternatively, you can use Tablet instead of IGV, if you prefer).
+
+To do this, we need the BAM files, obviously; we also need files containing the reference genome sequence. Lets download those now. First, make sure that we are in the correct directory:
+
+    cd /home/manager/ViralBioinfAsia2022/course_data/Coverage_Plots_Stats
+
+Then use *wget* to download the reference-genome files:
+
+    wget https://github.com/WCSCourses/ViralBioinfAsia2022/raw/main/reference_genome.fasta https://github.com/WCSCourses/ViralBioinfAsia2022/raw/main/reference_genome.fasta.fai https://github.com/WCSCourses/ViralBioinfAsia2022/raw/main/reference_genome.gff3
+    --2022-07-30 12:07:19--  https://github.com/WCSCourses/ViralBioinfAsia2022/raw/main/reference_genome.fasta
+
+Now, when you execute `ls -lh` , you will notice we now have the following files: `reference_genome.fasta`,  `reference_genome.fasta.fai` and `reference_genome.gff3`. We are ready to run the IGV genome browser software by executing the command `igv`.
+
+Click on *Genomes* -> *Load genome from file* and select `reference_genome.fasta`.
+Click on *File* -> *Load from file* and select `reference_genome.gff3`.
+Click on  *File* -> *Load from file* and select  `ERR8261957.bam` and `ERR8261968.bam`. 
+
+You can now explore the two alignments in the IGV browser, which should look something like this:
 
 ![Alignments of sequence reads against the Wuhan-Hu-1 reference genome, visualised using IGV.](https://github.com/WCSCourses/ViralBioinfAsia2022/raw/main/course_data/Coverage_Plots_Stats/images/Screenshot%202022-07-04%20at%2016.25.00.png)
 Alignments of sequence reads against the Wuhan-Hu-1 reference genome, visualised using IGV.
 
 What do you notice about the patterns of coverage of the reference genome? Are there any differences between the Illumina sequencing data versus the Oxford Nanopore sequencing data?
-
 
