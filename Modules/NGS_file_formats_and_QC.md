@@ -124,6 +124,12 @@ You should then see some output something like this:
     reads written   : 117,650
 
 And when you type `ls -lh` you will notice that new files have been created called *ERR9810276_1.fastq*  and *ERR9810276_2.fastq*. There are two files because this dataset consists of paired sequence reads. 
+
+# Quality control for FastQ-formatted data
+
+
+## Visualising quality metrics using FastQC
+
 Let's examine the quality of these sequence data using the FastQC software.
 
     fastqc *.fastq
@@ -189,14 +195,11 @@ Let's examine the quality of these sequence data using the FastQC software.
 
 
 
-# Quality control for FastQ-formatted data
 
-## Visualising quality metrics using FastQC
+
+
 
 ## Trimming and filtering to remove poor-quality data
-
-
-
 
 
 
