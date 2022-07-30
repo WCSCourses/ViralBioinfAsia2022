@@ -69,21 +69,21 @@ FASTQ is a simple text-based format that allows us to include quality scores. A 
 - The third line is redundant  and can be safely ignored. Sometimes it simply repeats the first line. Sometimes it is blank or just contains a '+' character.
 - The fourth line contains a string of characters that encode quality scores for each nucleotide in the sequence. Each single character encodes a score, typically   a number between 0 and 40; this score is encoded by a single character, as we saw during the introductory lecture.
 
-Character | ASCII | FASTQ quality score (ASCII – 33) 
---|--|--
-! | 33 | 0
-“ | 34 | 1
-# | 35 | 2
-$ | 36 | 3
-% | 37 | 4
-... | ... | ...
-C | 67 | 34
-D | 68 | 35
-E | 69 | 36
-F | 70 | 37
-G | 71 | 38
-H | 72 | 39
-40 | 73 | 40
+| Character | ASCII | FASTQ quality score (ASCII – 33) 
+| --|--|--
+| ! | 33 | 0
+| “ | 34 | 1
+| # | 35 | 2
+| $ | 36 | 3
+| % | 37 | 4
+| ... | ... | ...
+| C | 67 | 34
+| D | 68 | 35
+| E | 69 | 36
+| F | 70 | 37
+| G | 71 | 38
+| H | 72 | 39
+|40 | 73 | 40
 
 So, in the example above, we can see that most of the positions within the 97-nucleotide sequence have scores in the high 30s, which indicates a high degree of confidence in their accuracy.
 - A score of 30 denotes a 1 in 1000 chance of an error, i.e. 99.9 %accuracy.
@@ -94,6 +94,17 @@ Cock, P. J., Fields, C. J., Goto, N., Heuer, M. L., & Rice, P. M. (2010). The Sa
 
 
 ## SAM and BAM
+
+A SAM file (usually named *.sam) is used to represent aligned sequences. It is particularly useful for storing the results of aligning genomic or transcriptomic sequence reads aligned against a reference genome sequence. The BAM file format is a compressed form of SAM. This has the disadvantage that it is not readable by a human but has the advantage of being smaller than the corresponding SAM file and thus easier to share and copy between locations.
+
+You can read about SAM and BAM formats here:
+ - Li, H., Handsaker, B., Wysoker, A., Fennell, T., Ruan, J., Homer, N., Marth, G., Abecasis, G., Durbin, R., & 1000 Genome Project Data Processing Subgroup (2009). The Sequence Alignment/Map format and SAMtools. *Bioinformatics*, **25**, 2078–2079. https://doi.org/10.1093/bioinformatics/btp352 and
+-  [https://samtools.github.io/hts-specs/SAMv1.pdf](https://samtools.github.io/hts-specs/SAMv1.pdf).
+
+We can view BAM files graphically using a specialised genome browser software such as:
+- [IGV](https://igv.org/)
+- [Tablet](https://ics.hutton.ac.uk/tablet/)
+- [Artemis / BAMview](http://sanger-pathogens.github.io/Artemis/BamView/) 
 
 # Public repositories of NGS data 
 
