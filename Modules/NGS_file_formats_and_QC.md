@@ -6,7 +6,14 @@
 
 ## SAM and BAM
 
-# Quality control for FastQ-formatted data using FastQC
-
 # Public repositories of NGS data 
+
+# Quality control for FastQ-formatted data
+
+## Visualising quality metrics using FastQC
+
+## Trimming and filtering to remove poor-quality data
+
+
+
 
