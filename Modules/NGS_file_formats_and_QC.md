@@ -1,5 +1,7 @@
 # Commonly used file formats for next-generation sequencing (NGS) data
 
+In this session, we are going to get familiar with several common file formats used for sequence data. Then we are going to perform some quality control (QC) on some FASTQ-formatted sequence data.
+
 ## FASTA
 
 Among the most common and simplest file formats for representing nucleotide sequences is FASTA.  Essentially, each sequence is represented by a 'header' line that begins with a '>', followed by lines containing the actual nucleotide sequence. By convention, the first 'word' in the header line is a unique identifier, which is usually as accession number. Consider this example of a FASTA-formatted nucleotide sequence:
