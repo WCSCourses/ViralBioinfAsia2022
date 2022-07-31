@@ -1,4 +1,3 @@
-
 # Commonly used file formats for next-generation sequencing (NGS) data
 
 ## FASTA
@@ -112,7 +111,13 @@ The Sequence Read Archive (SRA) contains a huge number of sequence reads generat
 
 . Which virus does this sequencing dataset come from?
 
-Now let's download the sequence data from this sequencing run from the SRA. Unfortunately it is not easy to download the data directly from the NCBI website; instead we have to use the *fasterq-dump* tool from the [NCBI's SRA Toolkit](https://github.com/ncbi/sra-tools/wiki/01.-Downloading-SRA-Toolkit). I recommend that we work in the directory /home/manager/ViralBioinfAsia2022/course_data/NGS_file_formats_and_data_QC/. So, first execute this command in the Terminal:
+Let's use the web interface to take a look at a few of the sequence reads in this dataset. Click on where it says [SRR19504912](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR19504912) under 'Run'. Then click on the 'Reads' tab. This will take you to [this page](https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&page_size=10&acc=SRR19504912&display=reads), which looks like this:
+
+![enter image description here](https://github.com/WCSCourses/ViralBioinfAsia2022/raw/main/course_data/NGS_file_formats_and_data_QC/images/Screenshot%202022-07-31%20at%2016.05.10.png)
+
+In the figure above, we can see a single sequence read along with the quality scores for each nucleotide position in its sequence. Notice that the scores are high (well above 30) for most of this sequence read.
+
+Now let's download the sequence data (i.e. the whole set of reads) from this sequencing run from the SRA. Unfortunately it is not easy to download the data directly from the NCBI website; instead we have to use the *fasterq-dump* tool from the [NCBI's SRA Toolkit](https://github.com/ncbi/sra-tools/wiki/01.-Downloading-SRA-Toolkit). I recommend that we work in the directory /home/manager/ViralBioinfAsia2022/course_data/NGS_file_formats_and_data_QC/. So, first execute this command in the Terminal:
 
     cd /home/manager/ViralBioinfAsia2022/course_data/NGS_file_formats_and_data_QC
 
@@ -167,7 +172,6 @@ This will generate some messages something like this:
 Now, execute the command `ls- lh` and you should see some new files have appeared:
 
  
-
     total 400M
     -rw-rw-r-- 1 manager manager 1.2K Jul 25 16:20 readME.md
     -rw-rw-r-- 1 manager manager 199M Jul 31 13:26 SRR19504912_1.fastq
@@ -186,20 +190,44 @@ You should then see something like this:
 
 ![enter image description here](https://github.com/WCSCourses/ViralBioinfAsia2022/raw/main/course_data/NGS_file_formats_and_data_QC/images/Screenshot%202022-07-31%20at%2015.28.02.png)
 
+Note that there are two tabs in the Firefox web browser; there is one for the QC report for *SRR19504912_1.fastq*  and another for *SRR19504912_2.fastq*.
 
+There is a lot of QC information in these reports. Feel free to explore these in your own time and take a look at the FastQC homepage at https://www.bioinformatics.babraham.ac.uk/projects/fastqc/ and see the tutorial video at http://www.youtube.com/watch?v=bz93ReOv87Y.
 
+For now, we are just going to look at
+- Basic statistics
+- Per-base sequence quality 
+- Adapter content
 
+### Questions:
 
-
-
-
-
+ - How many sequence reads are there? Does your answer match your
+   previous answer (based on `wc -l`) ?
+ - With respect to quality scores, which of the two files has better-quality data: *SRR19504912_1.fastq* or *SRR19504912_2.fastq*.
+ - Are these datasets contaminated with any Illumina sequencing adapter oligonucleotides?
 
 ## Trimming and filtering to remove poor-quality data
 
+When you inspected the FastQC reports, you probably noticed that *SRR19504912_1.fastq* and *SRR19504912_2.fastq* include some sequence reads that contain very poor quality scores and some reads that are derived from the Illumina adapters rather than from the target viral nucleotide sequences. Now, we are going to look at how we can remove poor data and contamination by trimming and filtering. We will use [TrimGalore](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/) by executing the following command on the Terminal:
 
+    trim_galore -q 25 --length 50 --paired SRR19504912_1.fastq SRR19504912_2.fastq
 
+Now, when you list the contents of the directory with `ls -lh`, you will notice two new files called *SRR19504912_1_val_1.fq* and *SRR19504912_2_val_2.fq*. These are the trimmed-and-filtered versions of original files *SRR19504912_1.fastq* and *SRR19504912_2.fastq*. Now, let's run FastQC on these two new 'cleaned' files:
 
+    fastqc *.fq
 
+ This will create QC reports, in HTML format, for the cleaned FASTQ files. Now let's take a look at these files:
 
+     firefox *.html
+
+### Questions:
+
+ - How many reads were removed by TrimGalore from each FASTQ file?
+ - What impact has TrimGalore had upon the lengths of the sequence reads?
+ - What impact has TrimGalore had upon adapter contamination?
+ - Has TrimGalore altered  the distribution of quality scores?
+ 
+ You can read more about TrimGalore at https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/.
+
+Congratulations on reaching the end of this session! You should now be familiar with some of the most common file formats used in analysing NGS data and you know how to access and perform some basic QC on datasets of NGS sequence reads.
 
