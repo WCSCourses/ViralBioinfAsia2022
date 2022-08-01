@@ -49,7 +49,25 @@ The Viral Genomics and Bioinformatics course will teach participants how to anal
 **Module 5 - **  
 
 **Module 6 - **  
-  
+ 
+**Module 7 - Coverage Plots and Stats **  
+
+[Online Manual - Coverage Plots and stats](Modules/Coverage_plots_and_statistics.md)
+ 
+**Module 8 - **  
+
+**Module 9 - **  
+
+**Module 10 - **  
+ 
+**Module 11 - Phylogeny and Virus Typing **  
+
+[Online Manual - Phylogeny and Virus Typing](Modules/Phylogeny_&_Virus_Typing_HandsOnEx.md)
+
+**Module 12 - **  
+
+**Module 13 - **  
+
   
 **Task 1 - **  
 
