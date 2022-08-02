@@ -45,6 +45,7 @@ The Viral Genomics and Bioinformatics course will teach participants how to anal
 
   
 **Module 4 - **  
+[Online Manual - Introduction to NGS](Modules/Introduction_to_NGS.md)
 
 **Module 5 - **  
 
