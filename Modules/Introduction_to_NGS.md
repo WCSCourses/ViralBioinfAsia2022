@@ -2,6 +2,8 @@
 
 This introductory lecture has been pre-recorded for the course and is accessible as a YouTube playlist from: [here](https://www.youtube.com/playlist?list=PL7pQ8oKpQhFWR-_R26obCTtBSFprLlkLP).
 
+![title slide from lecture](https://github.com/WCSCourses/ViralBioinfAsia2022/raw/main/Modules/images/Introduction%20to%20next-generation%20sequencing.png)
+
 It consists of five videos:
 - Part 1: https://youtu.be/vDYaKvOFh_k 12:47
 - Part 2 https://youtu.be/b7cbuw81iU8 4:22
