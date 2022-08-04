@@ -128,16 +128,27 @@ ls -lh
 The output of this command should look something like this:
 
 -rw-r\-\-\-\-- 1 eno staff 18B Aug 1 18:28 annotation.txt
+
 -rw-r\-\-\-\-- 1 eno staff 11K Aug 1 16:55 dengue-genome.fa
+
 -rw-r\-\-\-\-- 1 eno staff 10B Aug 1 17:03 dengue-genome.fa.amb
+
 -rw-r\-\-\-\-- 1 eno staff 100B Aug 1 17:03 dengue-genome.fa.ann
+
 -rw-r\-\-\-\-- 1 eno staff 11K Aug 1 17:03 dengue-genome.fa.bwt
+
 -rw-r\-\-\-\-- 1 eno staff 26B Aug 1 19:27 dengue-genome.fa.fai
+
 -rw-r\-\-\-\-- 1 eno staff 2.6K Aug 1 17:03 dengue-genome.fa.pac
+
 -rw-r\-\-\-\-- 1 eno staff 5.3K Aug 1 17:03 dengue-genome.fa.sa
+
 -rw-r\-\-\-\-- 1 eno staff 424M Aug 1 17:22 dengue.bam
+
 -rw-r\-\-\-\-- 1 eno staff 96B Aug 1 17:23 dengue.bam.bai
+
 -rw-r\-\-\-\-- 1 eno staff 289M Aug 1 16:55 dengue.read1.fq.gz
+
 -rw-r\-\-\-\-- 1 eno staff 311M Aug 1 16:56 dengue.read2.fq.gz
 
 One common thing to check is how many reads have aligned to the
@@ -189,13 +200,21 @@ alignment. If you open the file you just made, you should be able to
 look through and find these numbers (among other things!):
 
 SN raw total sequences: 6910050
+
 SN last fragments: 3455025
+
 SN reads mapped: 5169544
+
 SN reads mapped and paired: 5036738
+
 SN average length: 150
+
 SN maximum length: 150
+
 SN average quality: 35.1
+
 SN insert size average: 241.1
+
 SN insert size standard deviation: 70.9
 
 *7.6 Group practical*
