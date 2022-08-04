@@ -2,9 +2,7 @@
 
 7.1 Overview
 
-![Diagram Description automatically
-generated](media/image1.jpg){width="5.763888888888889in"
-height="5.415972222222222in"}
+![Reference-alignment-image1](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/Modules/images/Reference-alignment-image1.png)
 
 7.2 Practical data sets
 
