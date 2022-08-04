@@ -48,7 +48,7 @@ The Viral Genomics and Bioinformatics course will teach participants how to anal
 [Online Manual - NGS data Quality Control QC](Modules/NGS_file_formats_and_QC.md)
 
 **Module 5 - Introduction to BASH scripting**  
-[PDF Manual](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/Modules/BASH_scripting.pdf)
+[PDF Manual - Bash Scripting](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/Modules/BASH_scripting.pdf)
 
 **Module 6 - Reference Alignment**  
  
