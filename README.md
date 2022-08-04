@@ -36,40 +36,41 @@ The Viral Genomics and Bioinformatics course will teach participants how to anal
 
 
 ## Course manual
-**Module 1 - **  
+**Module 1 - Introduction to Linux** 
 
-**Module 2 - **  
+**Module 2 - Linux text processing**  
 
-  
-**Module 3 - **  
-
-  
-**Module 4 - **  
+**Module 3 - Introduction to NGS sequencing**  
 [Online Manual - Introduction to NGS](Modules/Introduction_to_NGS.md)
 
+  
+**Module 4 - NGS file formats and data & QC**  
 [Online Manual - NGS data Quality Control QC](Modules/NGS_file_formats_and_QC.md)
 
-**Module 5 - **  
+**Module 5 - Introduction to BASH scripting**  
 
-**Module 6 - **  
+**Module 6 - Reference Alignment**  
  
 **Module 7 - Coverage Plots and Stats **  
-
 [Online Manual - Coverage Plots and stats](Modules/Coverage_plots_and_statistics.md)
  
-**Module 8 - **  
+**Module 8 - Consensus & variant calling**  
 
-**Module 9 - **  
+**Module 9 - De Novo assembly**  
 
-**Module 10 - **  
+**Module 10 - Metagenomics**  
  
-**Module 11 - Phylogeny and Virus Typing **  
+**Module 11 - Introduction to phylogenetic methods**  
+Manual for Intro to MSA
 
 [Online Manual - Phylogeny and Virus Typing](Modules/Phylogeny_&_Virus_Typing_HandsOnEx.md)
 
-**Module 12 - **  
+Manual for treebuilding
 
-**Module 13 - **  
+**Module 12 - Typing of viruses**  
+Manual for typing of viruses
+
+**Module 13 - SARS-CoV-2 workflows**  
 
   
 **Task 1 - **  
