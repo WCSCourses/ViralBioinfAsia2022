@@ -122,8 +122,7 @@ genome dengue-genome.fa we can see the ambiquity present in the
 **dengue-consensus-bcftools.fa** merely shows a complete consensus
 change at this position.
 
-![](media/image2.png){width="5.763888888888889in"
-height="0.49930555555555556in"}
+![Consensus-image2.png](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/Modules/images/Consensus-image2.png)
 
 9.4 Variant calling
 
