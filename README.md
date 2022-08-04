@@ -62,7 +62,7 @@ The Viral Genomics and Bioinformatics course will teach participants how to anal
 **Module 10 - Pathogen sequence detection using metagenomics**  
 [Online Manual - Metagenomics](course_data/Pathogen_sequence_detection_using_metagenomics/Module10-Metagnomics.md)
 
-[PDF Manual - Metagenomics](course_data/Pathogen_sequence_detection_using_metagenomics/Module10-Metagnomics.md)
+[PDF Manual - Metagenomics](course_data/Pathogen_sequence_detection_using_metagenomics/Module10-Metagnomics.pdf)
 
 
 **Module 11 - Introduction to phylogenetic methods**  
