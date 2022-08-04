@@ -6,7 +6,9 @@
 
 7.2 Practical data sets
 
-Something/somewhere/here
+Let's start by navigating to the proper folder:
+
+cd /home/manager/ViralBioinfAsia2022/course_data/
 
 7.3 Preparing our raw reads for mapping
 
