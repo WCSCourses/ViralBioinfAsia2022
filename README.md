@@ -59,19 +59,20 @@ The Viral Genomics and Bioinformatics course will teach participants how to anal
 
 **Module 9 - De Novo assembly**  
 
-**Module 10 - Metagenomics**  
- 
+**Module 10 - Pathogen sequence detection using metagenomics**  
+[Online Manual - Metagenomics](course_data/Pathogen_sequence_detection_using_metagenomics/Module10-Metagnomics.md)
+
+[PDF Manual - Metagenomics](course_data/Pathogen_sequence_detection_using_metagenomics/Module10-Metagnomics.md)
+
+
 **Module 11 - Introduction to phylogenetic methods**  
 Manual for Intro to MSA
 
 [Online Manual - Phylogeny and Virus Typing](Modules/Phylogeny_&_Virus_Typing_HandsOnEx.md)
 
-Manual for treebuilding
+Manual for treebuilding?
 
-**Module 12 - Typing of viruses**  
-Manual for typing of viruses
-
-**Module 13 - SARS-CoV-2 workflows**  
+**Module 12 - SARS-CoV-2 workflows**  
 
   
 **Task 1 - **  
