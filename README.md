@@ -51,11 +51,13 @@ The Viral Genomics and Bioinformatics course will teach participants how to anal
 [PDF Manual - Bash Scripting](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/Modules/BASH_scripting.pdf)
 
 **Module 6 - Reference Alignment**  
+[Online Manual - Reference Alignment](Modules/Reference_alignment.md)
  
 **Module 7 - Coverage Plots and Stats**  
 [Online Manual - Coverage Plots and stats](Modules/Coverage_plots_and_statistics.md)
  
 **Module 8 - Consensus & variant calling**  
+[Online Manual - Consensus & variant calling](Modules/Consensus-and-variant-calling-theory-and-practical.md)
 
 **Module 9 - De Novo assembly**  
 
