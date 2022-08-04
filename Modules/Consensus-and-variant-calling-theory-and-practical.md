@@ -1,10 +1,16 @@
 **9 Consensus and variant calling theory and practical**
 
-9.1 Overview
+*9.1 Overview*
 
 ![Consensus-image1.png](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/Modules/images/Consensus-image1.png)
 
-9.2 Creating a consensus with SAMtools/BCFtools
+*9.2 Creating a consensus with SAMtools/BCFtools*
+
+Let's start by navigating to the proper folder:
+
+-----------------------------------------------------------------------
+cd /home/manager/ViralBioinfAsia2022/course_data/Consensus_and_variant_calling
+-----------------------------------------------------------------------
 
 Now that we have our alignment file, we can now generate a consensus
 sequence. We will explore two separate ways to generate this consensus.
@@ -112,7 +118,7 @@ output file:
 We created (and removed) several files here. The one that contains the
 consensus genome you are looking for is **dengue-consensus-vcf2fq.fq**
 
-9.3 Visualizing the difference between these files
+*9.3 Visualizing the difference between these files*
 
 So what effectively is the difference between the
 **dengue-consensus-bcftools.fa** and **dengue-consensus-vcf2fq.fq**
@@ -124,7 +130,7 @@ change at this position.
 
 ![Consensus-image2.png](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/Modules/images/Consensus-image2.png)
 
-9.4 Variant calling
+*9.4 Variant calling*
 
 There are a number of different variant callers available including
 FreeBayes, LoFreq, VarDict, and VarScan2. In this tutorial, we will be
@@ -163,7 +169,7 @@ today is lofreq call which, will call variants in our dengue alignment
 from the previous section. The output for our variant calls will be in
 variant call format or, vcf.
 
-9.5 Running LoFreq\*
+*9.5 Running LoFreq\**
 
 Let\'s start by checking to make sure we are working with the right
 files. Usually this isn\'t necessary if you\'ve just made these files
@@ -217,7 +223,7 @@ should soon see a new file in your directory called:
 
 Done!
 
-9.5 Group practical
+*9.5 Group practical*
 
 Now let's take what you've learned and try it out on another dataset! In
 this example, we will be looking for variants from a Chikungunya virus
@@ -225,14 +231,15 @@ alignment.
 
 To start, navigate to:
 
-\~/location
+-----------------------------------------------------------------------
+cd ../09-chik-lofreq
+-----------------------------------------------------------------------
 
 You should see two files:
 
 chikv-consensus-bcftools.fa
-
 chikv-direct_10p.bam
 
-Question 1: What mutation is present at position 269?
+**Question 1: What mutation is present at position 269?**
 
-Question 2: What is the allele frequency at position 2318?
+**Question 2: What is the allele frequency at position 2318?**
