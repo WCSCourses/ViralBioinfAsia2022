@@ -32,7 +32,7 @@ The Viral Genomics and Bioinformatics course will teach participants how to anal
 
 
 ### Detailed timetable
-[Download here]()
+[View Timetable here](https://docs.google.com/document/d/1cWLFSGWpWVE9NmPKHcIAOIH_2WHfgVog/edit?usp=sharing&ouid=101020480766226270980&rtpof=true&sd=true)
 
 
 ## Course manual
