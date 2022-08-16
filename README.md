@@ -34,6 +34,8 @@ The Viral Genomics and Bioinformatics course will teach participants how to anal
 ### Detailed timetable
 [View Timetable here](https://docs.google.com/document/d/1cWLFSGWpWVE9NmPKHcIAOIH_2WHfgVog/edit?usp=sharing&ouid=101020480766226270980&rtpof=true&sd=true)
 
+### Advanced Learning and Training Handout
+[View ALT Handout here](Modules/Advanced%20Courses%20ALT%20Sessions%20handouts%20edited.pdf)
 
 ## Course manual
 **Module 1 - Introduction to Linux + Module 2 - Linux text processing**   
