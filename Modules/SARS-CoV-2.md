@@ -451,7 +451,6 @@ You should now choose atleast one sample to create a consensus sequence for your
 
 ```
 bwa mem -t4 ~/SARS-CoV-2/MN908947.fasta CVR2058_R1.fastq CVR2058_R2.fastq > CVR2058.sam
-
 ```
 
 ```
@@ -460,7 +459,6 @@ samtools sort -@4 CVR2058.sam -o CVR2058.bam
 
 ```
 rm CVR2058.sam 
-
 ```
 
 ```
