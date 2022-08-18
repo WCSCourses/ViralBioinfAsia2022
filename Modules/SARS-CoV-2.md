@@ -28,8 +28,8 @@ E-mail: Richard.Orton@glasgow.ac.uk
 		+ [1.2.3: Exercise: Generating Illumina conensus sequences yourself](#123-exercise-generating-illumina-conensus-sequences-yourself)
 
 * [2: SARS-CoV-2 Lineages and Mutations](#2-sars-cov-2-lineages-and-mutations)
-* [3: SARS-CoV-2 Phylogenetics](3-sars-cov-2-phylogenetics)
-* [4: SARS-CoV-2 Group Practical](4-sars-cov-2-group-practical)
+* [3: SARS-CoV-2 Phylogenetics](#3-sars-cov-2-phylogenetics)
+* [4: SARS-CoV-2 Group Practical](#4-sars-cov-2-group-practical)
 
 ## 1: SARS-CoV-2 Reference Alignment
 
