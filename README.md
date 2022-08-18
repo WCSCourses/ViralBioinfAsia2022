@@ -73,10 +73,15 @@ The Viral Genomics and Bioinformatics course will teach participants how to anal
 
 **Module 12 - SARS-CoV-2 workflows**  
 
-  
-**Task 1 - **  
+[Online Manual - SARS-CoV-2 Reference Alignment](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/Modules/SARS-CoV-2.md)
 
-**Task 2 - **  
+[Online Manual - SARS-CoV-2 Lineages and Mutations](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/Modules/SARS-CoV-2.md#2-sars-cov-2-lineages-and-mutations)
+
+[Online Manual - SARS-CoV-2 Phylogenetics](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/Modules/SARS-CoV-2.md#3-sars-cov-2-phylogenetics)
+
+[Online Manual - SARS-CoV-2 Group Practical](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/Modules/SARS-CoV-2.md#4-sars-cov-2-group-practical)
+
+
 
 **Appendix**  
 
