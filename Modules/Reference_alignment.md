@@ -4,9 +4,9 @@
 
 ![Reference-alignment-image1](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/Modules/images/Reference-alignment-image1.png)
 
-*7.2 Practical data sets*
+>*7.2 Practical data sets*
 
-Let's start by doing some quick prep/housekeeping on our dataset:
+>Let's start by doing some quick prep/housekeeping on our dataset:
 
 -----------------------------------------------------------------------
 unzip /home/manager/course_data/Reference_alignment/Reference_alignment.zip
@@ -21,46 +21,46 @@ rm -r /home/manager/course_data/Reference_alignment/__MACOSX/
 -----------------------------------------------------------------------
 
 
-*NOTE* Be careful when using 'rm -r' ! You can easily delete quite a bit of data this way with no chance to recover it! When doing this, it's  a good idea to use *absolute paths* to avoid deleting something important by accident.
+>*NOTE* Be careful when using 'rm -r' ! You can easily delete quite a bit of data this way with no chance to recover it! When doing this, it's  a >good idea to use *absolute paths* to avoid deleting something important by accident.
 
-Now that is done, let's navigate to the proper folder:
+>Now that is done, let's navigate to the proper folder:
 
 -----------------------------------------------------------------------
 cd /home/manager/course_data/Reference_alignment/07-dengue_align/
 -----------------------------------------------------------------------
 
-*7.3 Preparing our raw reads for mapping*
+>*7.3 Preparing our raw reads for mapping*
 
-Let's first start by cleaning up our data:
+>Let's first start by cleaning up our data:
 
 -----------------------------------------------------------------------
 Trim_galore -q 25 --length 50 \--paired dengue.read1.fq.gz
 dengue.read2.fq.gz
 -----------------------------------------------------------------------
 
-**--q 25** = trim the 3' end of the reads -- remove nucleotides less
+>**--q 25** = trim the 3' end of the reads -- remove nucleotides less
 than Phred Quality 25
 
-**\--length 50** = after adapter and quality trimming, remove reads less
+>**\--length 50** = after adapter and quality trimming, remove reads less
 than 50bp in length
 
-**\--paired** = the names of the paired fastq files to analyze in order
+>**\--paired** = the names of the paired fastq files to analyze in order
 (Read 1 then Read 2)
 
-*7.4 Aligning your reads to a reference genome with BWA*
+>*7.4 Aligning your reads to a reference genome with BWA*
 
-There are many tools available to align reads onto a reference sequence:
-BWA, Novoalign, bowtie2, STAR to name but a few. In this practical, we
-will be using BWA ([http://bio-bwa.sourceforge.net]{.underline}).
+>There are many tools available to align reads onto a reference sequence:
+>BWA, Novoalign, bowtie2, STAR to name but a few. In this practical, we
+>will be using BWA ([http://bio-bwa.sourceforge.net]{.underline}).
 
-BWA (Burrows--Wheeler aligner) is a commonly used software designed to
-map sequence reads to a reference genome. BWA actually has three
-variations: BWA-backtrack (Li and Durbin, 2009), BWA-SW (Li and Durbin,
-2010) and BWA-MEM (Li, 2013). In this exercise, we will be using
-BWA-MEM, which is typically preferred for longer reads due to its speed
-and accuracy.
+>BWA (Burrows--Wheeler aligner) is a commonly used software designed to
+>map sequence reads to a reference genome. BWA actually has three
+>variations: BWA-backtrack (Li and Durbin, 2009), BWA-SW (Li and Durbin,
+>2010) and BWA-MEM (Li, 2013). In this exercise, we will be using
+>BWA-MEM, which is typically preferred for longer reads due to its speed
+>and accuracy.
 
-To get started, let's start by indexing the reference genome:
+>To get started, let's start by indexing the reference genome:
 
   -----------------------------------------------------------------------
   bwa index dengue-genome.fa
