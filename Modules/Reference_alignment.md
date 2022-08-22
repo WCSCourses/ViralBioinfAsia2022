@@ -21,7 +21,9 @@ rm -r /home/manager/course_data/Reference_alignment/__MACOSX/
 -----------------------------------------------------------------------
 
 
-Finally let's navigate to the proper folder:
+*NOTE* Be careful when using 'rm -r' ! You can easily delete quite a bit of data this way with no chance to recover it! When doing this, it's  a good idea to use *absolute paths* to avoid deleting something important by accident.
+
+Now that is done, let's navigate to the proper folder:
 
 -----------------------------------------------------------------------
 cd /home/manager/course_data/Reference_alignment/07-dengue_align/
