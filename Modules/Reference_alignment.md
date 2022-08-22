@@ -173,7 +173,7 @@ ls -lh
 >One common thing to check is how many reads have aligned to the
 >reference, and how many did not. Samtools can report this for us easily:
 
->**Number of mapped reads**
+>**Number of mapped reads**:
 -----------------------------------------------------------------------
 samtools view -c -F4 dengue.bam
 -----------------------------------------------------------------------
@@ -186,7 +186,7 @@ samtools view -c -F4 dengue.bam
 
 >-   --F4 = skip read alignments that have the unmapped Flag 4
 
->**Number of unmapped reads**
+>**Number of unmapped reads**:
 -----------------------------------------------------------------------
 samtools view -c -f4 dengue.bam
 -----------------------------------------------------------------------
@@ -194,8 +194,8 @@ samtools view -c -f4 dengue.bam
 >This time we use --f4 = only include read alignments that do have the
 >unmapped flag 4
 
->If your results show that you have 5,178,553 **mapped** reads and
->1,740,506 **unmapped** reads, you are doing great!
+>If your results show that you have **5,178,553 mapped** reads and
+>**1,740,506 unmapped** reads, you are doing great!
 
 >Another way you can get these data is to use:
 
