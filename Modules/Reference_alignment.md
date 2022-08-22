@@ -244,7 +244,7 @@ SN insert size standard deviation: 70.9
 >To start, navigate to:
 
 -----------------------------------------------------------------------
-cd /home/manager/course_data/Reference_alignment/Reference_alignment/07-chikv-align/
+cd /home/manager/course_data/Reference_alignment/07-chikv-align/
 -----------------------------------------------------------------------
 
 >You should see four files:
