@@ -39,7 +39,11 @@ The Viral Genomics and Bioinformatics course will teach participants how to anal
 
 ## Course manual
 **Module 1 - Introduction to Linux + Module 2 - Linux text processing**   
-[PDF Manual - Introduction to Linux + Text processing](Modules/Intro_to_linux_text_processing.pdf)
+[PDF Manual - Introduction to Linux + Text processing](Modules/Intro_to_linux_text_processing.pdf)     
+[PDF Lectures - Introduction to Linux + Text processing](Modules/Lectures_and_Answers/Intro_to_linux_Asia2022.pdf)  
+[PDF Manual - Introduction to Linux + Text processing](Modules/Lectures_and_Answers/Linux_solutions_to_exercises_and_quiz.pdf) 
+
+
 
 **Module 3 - Introduction to NGS sequencing**  
 [Online Manual - Introduction to NGS](Modules/Introduction_to_NGS.md)
