@@ -6,10 +6,24 @@
 
 *7.2 Practical data sets*
 
-Let's start by navigating to the proper folder:
+Let's start by doing some quick prep/housekeeping on our dataset:
 
 -----------------------------------------------------------------------
-cd /home/manager/ViralBioinfAsia2022/course_data/Reference_alignment
+unzip /home/manager/course_data/Reference_alignment/Reference_alignment.zip
+
+mv /home/manager/course_data/Reference_alignment/Reference_alignment/07-dengue_align /home/manager/course_data/Reference_alignment/
+
+mv /home/manager/course_data/Reference_alignment/Reference_alignment/07-chikv-align /home/manager/course_data/Reference_alignment/
+
+rm -r /home/manager/course_data/Reference_alignment/Reference_alignment/
+
+rm -r /home/manager/course_data/Reference_alignment/__MACOSX/
+-----------------------------------------------------------------------
+
+Finally let's navigate to the proper folder:
+
+-----------------------------------------------------------------------
+cd /home/manager/course_data/Reference_alignment/07-dengue_align/
 -----------------------------------------------------------------------
 
 *7.3 Preparing our raw reads for mapping*
