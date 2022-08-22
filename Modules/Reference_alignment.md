@@ -20,6 +20,7 @@ rm -r /home/manager/course_data/Reference_alignment/Reference_alignment/
 rm -r /home/manager/course_data/Reference_alignment/__MACOSX/
 -----------------------------------------------------------------------
 
+
 Finally let's navigate to the proper folder:
 
 -----------------------------------------------------------------------
