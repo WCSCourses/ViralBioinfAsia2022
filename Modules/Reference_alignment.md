@@ -10,13 +10,9 @@ Let's start by doing some quick prep/housekeeping on our dataset:
 
 -----------------------------------------------------------------------
 unzip /home/manager/course_data/Reference_alignment/Reference_alignment.zip
-
 mv /home/manager/course_data/Reference_alignment/Reference_alignment/07-dengue_align /home/manager/course_data/Reference_alignment/
-
 mv /home/manager/course_data/Reference_alignment/Reference_alignment/07-chikv-align /home/manager/course_data/Reference_alignment/
-
 rm -r /home/manager/course_data/Reference_alignment/Reference_alignment/
-
 rm -r /home/manager/course_data/Reference_alignment/__MACOSX/
 -----------------------------------------------------------------------
 
