@@ -110,6 +110,7 @@ this:
 To prepare our new .bam file for downstream use, we should now sort and
 index it using **SAMtools**:
 
+-----------------------------------------------------------------------
 samtools sort dengue-aln.bam -o dengue.bam
 
 samtools index dengue.bam
@@ -117,6 +118,7 @@ samtools index dengue.bam
 rm dengue-aln.sam
 
 rm dengue-aln.bam
+-----------------------------------------------------------------------
 
 > In this set of commands, we are using **SAMtools** to sort the BAM
 > file **dengue-aln.bam** and output (**-o**) a new file called
@@ -239,7 +241,7 @@ this example, we will be mapping reads to a Chikungunya virus genome.
 To start, navigate to:
 
 -----------------------------------------------------------------------
-cd ../07-chikv-align
+cd /home/manager/course_data/Reference_alignment/Reference_alignment/07-chikv-align/
 -----------------------------------------------------------------------
 
 You should see four files:
