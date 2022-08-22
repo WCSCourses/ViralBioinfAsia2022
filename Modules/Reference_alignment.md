@@ -146,29 +146,29 @@ ls -lh
 
 >The output of this command should look something like this:
 
--rw-r\-\-\-\-- 1 eno staff 18B Aug 1 18:28 annotation.txt
+-rw-r\-\-\-\-- 1 manager manager 18B Aug 1 18:28 annotation.txt
 
--rw-r\-\-\-\-- 1 eno staff 11K Aug 1 16:55 dengue-genome.fa
+-rw-r\-\-\-\-- 1 manager manager 11K Aug 1 16:55 dengue-genome.fa
 
--rw-r\-\-\-\-- 1 eno staff 10B Aug 1 17:03 dengue-genome.fa.amb
+-rw-r\-\-\-\-- 1 manager manager 10B Aug 1 17:03 dengue-genome.fa.amb
 
--rw-r\-\-\-\-- 1 eno staff 100B Aug 1 17:03 dengue-genome.fa.ann
+-rw-r\-\-\-\-- 1 manager manager 100B Aug 1 17:03 dengue-genome.fa.ann
 
--rw-r\-\-\-\-- 1 eno staff 11K Aug 1 17:03 dengue-genome.fa.bwt
+-rw-r\-\-\-\-- 1 manager manager 11K Aug 1 17:03 dengue-genome.fa.bwt
 
--rw-r\-\-\-\-- 1 eno staff 26B Aug 1 19:27 dengue-genome.fa.fai
+-rw-r\-\-\-\-- 1 manager manager 26B Aug 1 19:27 dengue-genome.fa.fai
 
--rw-r\-\-\-\-- 1 eno staff 2.6K Aug 1 17:03 dengue-genome.fa.pac
+-rw-r\-\-\-\-- 1 manager manager 2.6K Aug 1 17:03 dengue-genome.fa.pac
 
--rw-r\-\-\-\-- 1 eno staff 5.3K Aug 1 17:03 dengue-genome.fa.sa
+-rw-r\-\-\-\-- 1 manager manager 5.3K Aug 1 17:03 dengue-genome.fa.sa
 
--rw-r\-\-\-\-- 1 eno staff 424M Aug 1 17:22 dengue.bam
+-rw-r\-\-\-\-- 1 manager manager 424M Aug 1 17:22 dengue.bam
 
--rw-r\-\-\-\-- 1 eno staff 96B Aug 1 17:23 dengue.bam.bai
+-rw-r\-\-\-\-- 1 manager manager 96B Aug 1 17:23 dengue.bam.bai
 
--rw-r\-\-\-\-- 1 eno staff 289M Aug 1 16:55 dengue.read1.fq.gz
+-rw-r\-\-\-\-- 1 manager manager 289M Aug 1 16:55 dengue.read1.fq.gz
 
--rw-r\-\-\-\-- 1 eno staff 311M Aug 1 16:56 dengue.read2.fq.gz
+-rw-r\-\-\-\-- 1 manager manager 311M Aug 1 16:56 dengue.read2.fq.gz
 
 >One common thing to check is how many reads have aligned to the
 >reference, and how many did not. Samtools can report this for us easily:
