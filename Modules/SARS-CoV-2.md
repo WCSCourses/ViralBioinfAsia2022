@@ -417,7 +417,7 @@ By default, ivar consensus uses a minimum depth (-m) of 10 and a minimum base qu
 ivar will output some basic statistics to the screen such as:
 
 ```
-DO NOT ENTER THIS - IT IS THE IVAR OUTPUT YOU SHOULD SEE
+#DO NOT ENTER THIS - IT IS THE IVAR OUTPUT YOU SHOULD SEE
 Reference length: 29903
 Positions with 0 depth: 121
 Positions with depth below 10: 121
@@ -552,24 +552,24 @@ To run Pangolin to get a lineage assignment on these sequences we simply type:
 pangolin variant_seqs.fasta
 ```
 
-It is important to remember that a pangolin lineage assignment is a **best guess** at what the lineage of an unknown sequence may be based on available data. Once finished this will create a file called ```lineage_report.csv```. This is a comma separated file which can simply view using ```more``` or ```less``` or ```cat``` etc. The file contains one line of output per input sequence, and each line consists of a number of fields (full descriptions can be found [here](https://cov-lineages.org/resources/pangolin/output.html)):
+It is important to remember that a pangolin lineage assignment is a **best guess** at what the lineage of a sequence may be based on available data. Once finished this will create a file called ```lineage_report.csv```. This is a comma separated file which can simply view using ```more``` or ```less``` or ```cat``` etc. The file contains one line of output per input sequence, and each line consists of a number of fields (full descriptions can be found [here](https://cov-lineages.org/resources/pangolin/output.html)):
 
 1. **taxon:** the name of sequence
-* **lineage:** the **most likely** linage assigned by pangolin
-* **conflict:** if the number (N) in this field is > 0, then it means the sequence could have fitted into N different lineage categories. 
-* **ambiguity_score:** SARS-CoV-2 amplicon generated genomes can frequently have failed amplicons creating tracts of Ns in the genome sequence. The ambiguity score is a function of the quantity of missing data at relevant positions in a sequence i.e. lineage defining mutation positions. It represents the proportion of relevant sites in a sequnece which were imputed to the reference values. A score of 1 indicates that no sites were imputed, while a score of 0 indicates that more sites were imputed than were not imputed. This score only includes sites which are used by the decision tree to classify a sequence.
-* **scorpio_call:** [Scorpio](https://github.com/cov-lineages/scorpio) is a tool that assigns a constellation to the sequence. A [constellation](https://github.com/cov-lineages/constellations) is a collection of mutations which are functionally meaningful, but which may have arisen independently a number of times. One of the uses of Scorpio constellations is to define [lineages of concern](https://cov-lineages.org/constellations.html), and if appropriate assign the input sequence to one e.g. 'Omicron (BA.5-like)'.
-* **scorpio_support:** see [Pangolin documentation](https://cov-lineages.org/resources/pangolin/output.html))
-* **scorpio_conflict:** see [Pangolin documentation](https://cov-lineages.org/resources/pangolin/output.html))
-* **scorpio_notes:** see [Pangolin documentation](https://cov-lineages.org/resources/pangolin/output.html))
-* **version:** see [Pangolin documentation](https://cov-lineages.org/resources/pangolin/output.html))
-* **pangolin_version:** see [Pangolin documentation](https://cov-lineages.org/resources/pangolin/output.html))
-* **scorpio_version:** see [Pangolin documentation](https://cov-lineages.org/resources/pangolin/output.html))
-* **constellation_version:** see [Pangolin documentation](https://cov-lineages.org/resources/pangolin/output.html))
-* **is_designated:** see [Pangolin documentation](https://cov-lineages.org/resources/pangolin/output.html))
-* **qc_status:** whether the sequence passed the min length and max N base thresholds
-* **qc_notes:** see [Pangolin documentation](https://cov-lineages.org/resources/pangolin/output.html))
-* **note:** see [Pangolin documentation](https://cov-lineages.org/resources/pangolin/output.html))
+2. **lineage:** the **most likely** linage assigned by pangolin
+3. **conflict:** if the number (N) in this field is > 0, then it means the sequence could have fitted into N different lineage categories. 
+4. **ambiguity_score:** SARS-CoV-2 amplicon generated genomes can frequently have failed amplicons creating tracts of Ns in the genome sequence. The ambiguity score is a function of the quantity of missing data at relevant positions in a sequence i.e. lineage defining mutation positions. It represents the proportion of relevant sites in a sequnece which were imputed to the reference values. A score of 1 indicates that no sites were imputed, while a score of 0 indicates that more sites were imputed than were not imputed. This score only includes sites which are used by the decision tree to classify a sequence.
+5. **scorpio_call:** [Scorpio](https://github.com/cov-lineages/scorpio) is a tool that assigns a constellation to the sequence. A [constellation](https://github.com/cov-lineages/constellations) is a collection of mutations which are functionally meaningful, but which may have arisen independently a number of times. One of the uses of Scorpio constellations is to define [lineages of concern](https://cov-lineages.org/constellations.html), and if appropriate assign the input sequence to one e.g. 'Omicron (BA.5-like)'.
+6. **scorpio_support:** see [Pangolin documentation](https://cov-lineages.org/resources/pangolin/output.html))
+7. **scorpio_conflict:** see [Pangolin documentation](https://cov-lineages.org/resources/pangolin/output.html))
+8. **scorpio_notes:** see [Pangolin documentation](https://cov-lineages.org/resources/pangolin/output.html))
+9. **version:** see [Pangolin documentation](https://cov-lineages.org/resources/pangolin/output.html))
+10. **pangolin_version:** see [Pangolin documentation](https://cov-lineages.org/resources/pangolin/output.html))
+11. **scorpio_version:** see [Pangolin documentation](https://cov-lineages.org/resources/pangolin/output.html))
+12. **constellation_version:** see [Pangolin documentation](https://cov-lineages.org/resources/pangolin/output.html))
+13. **is_designated:** see [Pangolin documentation](https://cov-lineages.org/resources/pangolin/output.html))
+14. **qc_status:** whether the sequence passed the min length and max N base thresholds
+15. **qc_notes:** see [Pangolin documentation](https://cov-lineages.org/resources/pangolin/output.html))
+16. **note:** see [Pangolin documentation](https://cov-lineages.org/resources/pangolin/output.html))
 
 As there are many fields in the file, we will ```cut``` the first 5 columns out to ease reading:
 
@@ -599,11 +599,27 @@ cut -f1-5 -d ',' lineage_report.csv
 * Scotland/QEUH-13ADEF6/2021
 * Scotland/QEUH-138F944/2021
 
-As we have now finished with pangolin we should deactivate the Conda environment:
+As we have now finished with Pangolin we should deactivate the Conda environment:
 
 ```
 conda deactivate
 ```
+
+To finish, one of the best places to keep an eye on potentially new lineages is the Pangolin [cov-lienages GitHub issues](https://github.com/cov-lineages/pango-designation/issues) web page.
+
+Other potentially useful websites are:
+
+* [SARS-CoV-2 Variant definitions](https://github.com/phe-genomics/variant_definitions)
+* [WHO SARS-CoV-2 Variants](https://www.who.int/en/activities/tracking-SARS-CoV-2-variants/)
+* [European Centre for Disease Control - Variants of Concern](https://www.ecdc.europa.eu/en/covid-19/variants-concern)
+* [cov-lineages lineage list](https://cov-lineages.org/lineage_list.html)
+* [Pangolin Lineage aliases](https://github.com/cov-lineages/pango-designation/blob/master/pango_designation/alias_key.json)
+* [Outbreak.info](https://outbreak.info)
+* [Virological](http://virological.org/)
+* [NextStrain-ncov](https://nextstrain.org/ncov)
+* [COV-GLUE](http://cov-glue.cvr.gla.ac.uk/)
+* [COG-UK Mutation Explorer](http://sars2.cvr.gla.ac.uk/cog-uk/)
+* [ARTIC Network Field Bioinformatics](https://github.com/artic-network/fieldbioinformatics)
 
 
 ### 2.2: SPEAR mutations
@@ -634,8 +650,7 @@ If you list the contents of the directory you should now see lots of ```.fa``` f
 ls
 ```
 
-We are not ready to use SPEAR
-We can now run SPEAR on all the ```.fa``` files in the current directory using this command:
+We are not ready to use SPEAR. We can now run SPEAR on all the ```.fa``` files in the current directory using this command:
 
 ```
 spear consensus --pangolin=none Scotland_CAMC-14DE972_2021.fa spear_camc
