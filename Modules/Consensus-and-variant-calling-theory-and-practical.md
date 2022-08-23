@@ -100,7 +100,7 @@ cd /home/manager/course_data/Consensus_and_variant_calling/09-dengue-lofreq/
   cat dengue-genome.fa \| bcftools consensus calls.vcf.gz \> dengue-cns.fa
   -----------------------------------------------------------------------
 
->Finally, we will use an ugly hack to rename the header of the .fasta
+>Finally, we will use a quick hack to rename the header of the .fasta
 >file we just generated:
 
   -----------------------------------------------------------------------
@@ -136,7 +136,7 @@ cd /home/manager/course_data/Consensus_and_variant_calling/09-dengue-lofreq/
   dengue-consensus-full.fq
   -----------------------------------------------------------------------
 
->Finally, we will again use an ugly hack to rename the header of your
+>Finally, we will again use a quick hack to rename the header of your
 >output file:
 
   -----------------------------------------------------------------------
