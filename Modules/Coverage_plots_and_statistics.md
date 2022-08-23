@@ -116,8 +116,8 @@ To do this, we need the BAM files, obviously; we also need files containing the 
 
 Then use *wget* to download the reference-genome files:
 
-    wget https://github.com/WCSCourses/ViralBioinfAsia2022/raw/main/reference_genome.fasta https://github.com/WCSCourses/ViralBioinfAsia2022/raw/main/reference_genome.fasta.fai https://github.com/WCSCourses/ViralBioinfAsia2022/raw/main/reference_genome.gff3
-    --2022-07-30 12:07:19--  https://github.com/WCSCourses/ViralBioinfAsia2022/raw/main/reference_genome.fasta
+    wget https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/course_data/Coverage_Plots_Stats/reference_genome.fasta https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/course_data/Coverage_Plots_Stats/reference_genome.fasta.fai https://github.com/WCSCourses/ViralBioinfAsia2022/raw/main/course_data/Coverage_Plots_Stats/reference_genome.gff3
+    
 
 Now, when you execute `ls -lh` , you will notice we now have the following files: `reference_genome.fasta`,  `reference_genome.fasta.fai` and `reference_genome.gff3`. We are ready to run the IGV genome browser software by executing the command `igv`.
 
