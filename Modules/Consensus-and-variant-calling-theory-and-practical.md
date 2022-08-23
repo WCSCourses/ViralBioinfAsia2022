@@ -51,7 +51,8 @@ sudo apt install bcftools
 -----------------------------------------------------------------------
 
 >You'll be using the 'sudo' (super user) command to install this so your system will ask you for a password.  Type in your login (which should be 'manager')
->All done.  Now let's navigate to the proper folder so we can get started:
+>
+>Ok, all the prep work is done!  Now let's navigate to the proper folder so we can get started:
 
 -----------------------------------------------------------------------
 cd /home/manager/course_data/Consensus_and_variant_calling/09-dengue-lofreq/
