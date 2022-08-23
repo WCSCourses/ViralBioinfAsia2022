@@ -80,11 +80,11 @@ The metagenomes from any environment can contain the contamination for example, 
         ```
     * Map filtered reads on these reference genomes
         ```
-        bowtie2-align-s -1 tutorial_filtered_R1.fastq.gz -2 tutorial_filtered_R2.fastq.gz -x reference -p 8 -S reference_mapped.sam
+        bowtie2-align-s -1 tutorial_filtered_R1.fastq.gz -2 tutorial_filtered_R2.fastq.gz -x reference -S reference_mapped.sam
         ```
     * Convert sam to bam file format
         ```
-        samtools view -S -b reference_mapped.sam >reference_mapped.bam
+        samtools view -S -b -F 4 reference_mapped.sam >reference_mapped.bam
         ```
     * Extract mapped reads (reference) from bam file
         ```
@@ -92,7 +92,7 @@ The metagenomes from any environment can contain the contamination for example, 
         ```
 3. **Genome assembly**: The extracted reads belong to the reference genomes we used in step above (viral genomes). We will no assemble all reads to generate scaffolds.
     ```
-    spades.py -1 reference_mapped_R1.fastq -2 reference_mapped_R2.fastq -o genome_assembly --meta -t 8
+    spades.py -1 reference_mapped_R1.fastq -2 reference_mapped_R2.fastq -o genome_assembly --meta
     ```
 4. **Binning**: This step is required when metagenome is complex (include multiple viral genomes or organisms). If the genome quality is good then this step can be skipped.
 
@@ -107,6 +107,7 @@ For identification of viral genomes,
     blastn -query genome_assembly/scaffolds.fasta -db blastdb_ref -out blast_out.txt -outfmt "6 qseqid sseqid stitle pident length mismatch gapopen qstart qend sstart send evalue bitscore" -max_target_seqs 1
     ```
     **Read more about blast** [output format 6](https://www.metagenomics.wiki/tools/blast/blastn-output-format-6)
+    **Annotation/Identification server** [CORONAVIRUS ANTIVIRAL & RESISTANCE DATABASE](https://covdb.stanford.edu/)
 
 ## 2. Raw-reads based
 The aim of this approach is to calculate the abundance of each virus in the metagenomic sample. There are multiple tools available to do so. One popular tool is [MetaPhlAn](https://huttenhower.sph.harvard.edu/metaphlan/). The filtering and decontamination step remains the same followed by the tutorial given at MetaPhlAn [webpage](https://github.com/biobakery/biobakery/wiki/metaphlan3).
