@@ -4,7 +4,7 @@
 
 ![Consensus-image1.png](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/Modules/images/Consensus-image1.png)
 
->*9.2 Creating a consensus with SAMtools/BCFtools*
+>*9.2 Creating a consensus with BCFtools*
 
 >Let's start by doing some quick prep/housekeeping:
 
