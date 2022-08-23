@@ -6,7 +6,7 @@ Here we are going to use the software packages [SAMtools](http://samtools.source
    multi-sample quality control for high-throughput sequencing data.
    *Bioinformatics*. **32**:292-4. doi:[10.1093/bioinformatics/btv566](https://doi.org/10.1093/bioinformatics/btv566).
 
- The SAMtools package contains many really useful tools for analysing and manipulating BAM files. You can read more about SamTools here: 
+ The SAMtools package contains many really useful tools for analysing and manipulating BAM files. You can read more about SAMtools here: 
  
  - Li, H., Handsaker, B., Wysoker, A., Fennell, T., Ruan, J., Homer, N.,    Marth, G., Abecasis, G., Durbin, R., & 1000 Genome Project
    Data          Processing Subgroup (2009). The Sequence Alignment/Map
@@ -48,7 +48,7 @@ Now, when you list the contents of the current directory with `ls -lh`, you shou
     drwxrwxr-x 2 manager manager 4.0K Jul 25 16:20 images
     -rw-rw-r-- 1 manager manager 1.2K Jul 25 16:20 readME.md
 
-So, you can see we have the two BAM files, along with their accompanying index files. These BAM files consist of genomic sequence reads aligned against Alignments of sequence reads against the [Wuhan-Hu-1 reference genome]([https://github.com/WCSCourses/ViralBioinfAsia2022/raw/main/course_data/Coverage_Plots_Stats/images/Screenshot%202022-07-04%20at%2016.25.00.png](https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2)) sequence.
+So, you can see we have the two BAM files, along with their accompanying index files. These BAM files consist of genomic sequence reads aligned against Alignments of sequence reads against the [Wuhan-Hu-1 reference genome](https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2)) sequence.
 
 ## SAMtools flagstat
 
