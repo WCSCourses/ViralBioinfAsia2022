@@ -6,32 +6,75 @@
 
 >*9.2 Creating a consensus with SAMtools/BCFtools*
 
->Let's start by navigating to the proper folder:
+>Let's start by doing some quick prep/housekeeping:
 
 -----------------------------------------------------------------------
-cd /home/manager/ViralBioinfAsia2022/course_data/Consensus_and_variant_calling
+unzip /home/manager/course_data/Consensus_and_variant_calling/Consensus_and_variant_calling.zip
+-----------------------------------------------------------------------
+mv /home/manager/course_data/Consensus_and_variant_calling/Consensus_and_variant_calling/09-dengue-lofreq/ /home/manager/course_data/Consensus_and_variant_calling/
+-----------------------------------------------------------------------
+mv /home/manager/course_data/Consensus_and_variant_calling/Consensus_and_variant_calling/09-chikv-lofreq/ /home/manager/course_data/Consensus_and_variant_calling/
+-----------------------------------------------------------------------
+rm -r /home/manager/course_data/Consensus_and_variant_calling/Consensus_and_variant_calling/
+-----------------------------------------------------------------------
+
+>We need the genome files from the Reference_alignment section so let's copy those over:
+
+-----------------------------------------------------------------------
+cp /home/manager/course_data/Reference_alignment/07-dengue_align/dengue-genome.fa /home/manager/course_data/Consensus_and_variant_calling/09-dengue-lofreq/
+-----------------------------------------------------------------------
+cp /home/manager/course_data/Reference_alignment/07-chikv-align/chikv-genome.fasta /home/manager/course_data/Consensus_and_variant_calling/09-chikv-lofreq/
+-----------------------------------------------------------------------
+>We will also need the annotation files so let's bring those over as well:
+-----------------------------------------------------------------------
+cp /home/manager/course_data/Reference_alignment/07-dengue_align/annotation.txt /home/manager/course_data/Consensus_and_variant_calling/09-dengue-lofreq/
+-----------------------------------------------------------------------
+cp /home/manager/course_data/Reference_alignment/07-chikv-align/annotation.txt /home/manager/course_data/Consensus_and_variant_calling/09-chikv-lofreq/
+-----------------------------------------------------------------------
+
+>I've already run this analysis for you so you can check your results.  In order to not overwrite these files, let's rename them:
+
+-----------------------------------------------------------------------
+mv /home/manager/course_data/Consensus_and_variant_calling/09-dengue-lofreq/dengue-consensus-bcftools.fa /home/manager/course_data/Consensus_and_variant_calling/09-dengue-lofreq/OMS-dengue-consensus-bcftools.fa
+-----------------------------------------------------------------------
+mv /home/manager/course_data/Consensus_and_variant_calling/09-chikv-lofreq/chikv-consensus-bcftools.fa /home/manager/course_data/Consensus_and_variant_calling/09-chikv-lofreq/OMS-chikv-consensus-bcftools.fa 
+-----------------------------------------------------------------------
+mv /home/manager/course_data/Consensus_and_variant_calling/09-dengue-lofreq/dengue-direct-low-requenncy-variants.vcf /home/manager/course_data/Consensus_and_variant_calling/09-dengue-lofreq/OMS-dengue-direct-low-requenncy-variants.vcf
+-----------------------------------------------------------------------
+mv /home/manager/course_data/Consensus_and_variant_calling/09-chikv-lofreq/chikv-direct-low-requenncy-variants.vcf /home/manager/course_data/Consensus_and_variant_calling/09-chikv-lofreq/OMS-chikv-direct-low-requenncy-variants.vcf
+-----------------------------------------------------------------------
+
+>Finally, one of the programs we are going to use isn't installed so let's do that now:
+
+-----------------------------------------------------------------------
+sudo apt install bcftools
+-----------------------------------------------------------------------
+
+>You'll be using the 'sudo' (super user) command to install this so your system will ask you for a password.  Type in your login (which should be 'manager')
+>All done.  Now let's navigate to the proper folder so we can get started:
+
+-----------------------------------------------------------------------
+cd /home/manager/course_data/Consensus_and_variant_calling/09-dengue-lofreq/
 -----------------------------------------------------------------------
 
 >Now that we have our alignment file, we can now generate a consensus
 >sequence. We will explore two separate ways to generate this consensus.
->In the first example we will use **SAMtools mpileup** and **BCFtools
+>In the first example we will use **bcftools mpileup** and **bcftools
 >call** to generate a "majority rules" consensus and the output format
 >will be in **.fasta** file format. For many downstream applications this
 >will be the output you will likely want. In the second example, we will
->also be using use **SAMtools mpileup** and **BCFtools call** but will
+>also be using use **bcftools mpileup** and **bcftools call** but will
 >also add in the **vcfutils.pl vcf2fq** script to generate a **.fastq**
 >file that allows for ambiguities at each position if there is a mixture
 >of variants present in the sample.
 
->Example 1 - Using **samtools/bcftools** to generate a **.fasta**
+>Example 1 - Using **bcftools** to generate a **.fasta**
 >\"majority rules\" consensus file
 
->We will be using the following options for samtools mpileup and bcftools
+>We will be using the following options for bcftools mpileup and bcftools
 >call respectively:
 
->**samtools mpileup**
-
->-u, \--uncompressed generate uncompressed VCF/BCF output
+>**bcfools mpileup**
 
 >-f, \--fasta-ref FILE faidx indexed reference sequence file
 
@@ -45,8 +88,7 @@ cd /home/manager/ViralBioinfAsia2022/course_data/Consensus_and_variant_calling
 >Here is how we will call this command:
 
   -----------------------------------------------------------------------
-  samtools mpileup -uf dengue-genome.fa dengue.bam \| bcftools call -mv
-  -Oz \--ploidy-file annotation.txt -o calls.vcf.gz
+  bcftools mpileup -f dengue-genome.fa dengue-direct_10p.bam | bcftools call -mv -Oz --ploidy-file annotation.txt -o calls.vcf.gz
   -----------------------------------------------------------------------
 
   -----------------------------------------------------------------------
@@ -54,8 +96,7 @@ cd /home/manager/ViralBioinfAsia2022/course_data/Consensus_and_variant_calling
   -----------------------------------------------------------------------
 
   -----------------------------------------------------------------------
-  cat dengue-genome.fa \| bcftools consensus calls.vcf.gz \>
-  dengue-cns.fa
+  cat dengue-genome.fa \| bcftools consensus calls.vcf.gz \> dengue-cns.fa
   -----------------------------------------------------------------------
 
 >Finally, we will use an ugly hack to rename the header of the .fasta
@@ -78,9 +119,7 @@ cd /home/manager/ViralBioinfAsia2022/course_data/Consensus_and_variant_calling
 >Here we will be using the following options for samtools mpileup and
 >bcftools call respectively:
 
->**samtools mpileup**
-
->-u, \--uncompressed generate uncompressed VCF/BCF output
+>**bcftools mpileup**
 
 >-f, \--fasta-ref FILE faidx indexed reference sequence file
 
@@ -91,7 +130,7 @@ cd /home/manager/ViralBioinfAsia2022/course_data/Consensus_and_variant_calling
 >Here\'s how we will call this command:
 
   -----------------------------------------------------------------------
-  samtools mpileup -uf dengue-genome.fa dengue.bam \| bcftools call -c
+  bcftools mpileup -f dengue-genome.fa dengue-direct_10p.bam \| bcftools call -c
   \--ploidy-file annotation.txt \| vcfutils.pl vcf2fq \>
   dengue-consensus-full.fq
   -----------------------------------------------------------------------
@@ -208,14 +247,15 @@ Done!
 >To start, navigate to:
 
 -----------------------------------------------------------------------
-cd ../09-chik-lofreq
+cd /home/manager/course_data/Consensus_and_variant_calling/09-chikv-lofreq/
 -----------------------------------------------------------------------
 
->You should see two files:
+>You should see four files:
 
->chikv-consensus-bcftools.fa
-
+>OMS-chikv-consensus-bcftools.fa
 >chikv-direct_10p.bam
+>annotation.txt
+>chikv-genome.fasta
 
 **Question 1: What mutation is present at position 269?**
 
