@@ -48,7 +48,7 @@ Now, when you list the contents of the current directory with `ls -lh`, you shou
     drwxrwxr-x 2 manager manager 4.0K Jul 25 16:20 images
     -rw-rw-r-- 1 manager manager 1.2K Jul 25 16:20 readME.md
 
-So, you can see we have the two BAM files, along with their accompanying index files. These BAM files consist of genomic sequence reads aligned against Alignments of sequence reads against the [Wuhan-Hu-1 reference genome](https://github.com/WCSCourses/ViralBioinfAsia2022/raw/main/course_data/Coverage_Plots_Stats/images/Screenshot%202022-07-04%20at%2016.25.00.png) sequence.
+So, you can see we have the two BAM files, along with their accompanying index files. These BAM files consist of genomic sequence reads aligned against Alignments of sequence reads against the [Wuhan-Hu-1 reference genome]([https://github.com/WCSCourses/ViralBioinfAsia2022/raw/main/course_data/Coverage_Plots_Stats/images/Screenshot%202022-07-04%20at%2016.25.00.png](https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2)) sequence.
 
 ## SAMtools flagstat
 
@@ -108,7 +108,7 @@ For our datasets, try to answer these questions:
  - For paired-read data, what is the insert size (i.e. the length of the sequenced fragments)?
 
 ### Visualising the data using IGV
-If you have any spare time then optionally, let's visually inspect the alignment data using the Integrative Genome Viewer (IGV). This will provide us with an overview of the data. (Alternatively, you can use Tablet instead of IGV, if you prefer).
+If you have any spare time then optionally, let's visually inspect the alignment data using the Integrative Genome Viewer (IGV). This will provide us with an overview of the data. (Alternatively, you can use Tablet instead of IGV, if you pr).
 
 To do this, we need the BAM files, obviously; we also need files containing the reference genome sequence. Lets download those now. First, make sure that we are in the correct directory:
 
