@@ -254,8 +254,11 @@ cd /home/manager/course_data/Consensus_and_variant_calling/09-chikv-lofreq/
 >You should see four files:
 
 >OMS-chikv-consensus-bcftools.fa
+>
 >chikv-direct_10p.bam
+>
 >annotation.txt
+>
 >chikv-genome.fasta
 
 **Question 1: What mutation is present at position 269?**
