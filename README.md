@@ -67,6 +67,7 @@ The Viral Genomics and Bioinformatics course will teach participants how to anal
 [Online Manual - Consensus & variant calling](Modules/Consensus-and-variant-calling-theory-and-practical.md)
 
 **Module 9 - De Novo assembly**  
+[PDF Manual - De Novo assembly](Modules/DeNovo-Sreenu-Asia-2022.pdf)      
 
 **Module 10 - Pathogen sequence detection using metagenomics**  
 [Online Manual - Metagenomics](course_data/Pathogen_sequence_detection_using_metagenomics/Module10-Metagnomics.md)
