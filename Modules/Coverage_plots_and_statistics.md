@@ -52,7 +52,7 @@ So, you can see we have the two BAM files, along with their accompanying index f
 
 ## SAMtools flagstat
 
-Let's gather some information about these alignments. First, let's use the rather basic *flagstat* tool from the SamTools package:
+Let's gather some information about these alignments. First, let's use the rather basic *flagstat* tool from the SAMools package:
 
     samtools flagstat ERR8261957.bam
     samtools flagstat ERR8261968.bam
