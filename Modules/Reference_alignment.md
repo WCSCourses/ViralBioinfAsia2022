@@ -34,7 +34,7 @@ cd /home/manager/course_data/Reference_alignment/07-dengue_align/
 >Let's first start by cleaning up our data:
 
 -----------------------------------------------------------------------
-Trim_galore -q 25 --length 50 \--paired dengue.read1.fq.gz
+trim_galore -q 25 --length 50 \--paired dengue.read1.fq.gz
 dengue.read2.fq.gz
 -----------------------------------------------------------------------
 
