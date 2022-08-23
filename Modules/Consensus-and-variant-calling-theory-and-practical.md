@@ -214,6 +214,7 @@ cd ../09-chik-lofreq
 >You should see two files:
 
 >chikv-consensus-bcftools.fa
+
 >chikv-direct_10p.bam
 
 **Question 1: What mutation is present at position 269?**
