@@ -68,8 +68,13 @@ than 50bp in length
 
   -----------------------------------------------------------------------
 
->You should now have an additional file in your directory called
->**dengue-genome.fa.fai**
+>You should now have some additional files in your directory:
+
+-rw-r----- 1 manager manager 10B Aug 1 17:03 dengue-genome.fa.amb
+-rw-r----- 1 manager manager 100B Aug 1 17:03 dengue-genome.fa.ann
+-rw-r----- 1 manager manager 11K Aug 1 17:03 dengue-genome.fa.bwt
+-rw-r----- 1 manager manager 2.6K Aug 1 17:03 dengue-genome.fa.pac
+-rw-r----- 1 manager manager 5.3K Aug 1 17:03 dengue-genome.fa.sa
 
 >Now let's align the samples to our reference genome using bwa mem.
 >Alignment is just one single step with **bwa mem**:
