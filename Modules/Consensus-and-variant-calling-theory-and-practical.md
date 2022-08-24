@@ -145,7 +145,7 @@ lofreq call -b dengue-subsample_01p.bam -f dengue-genome.fa > dengue-variants-or
 
 >This will take a few minutes to run depending on your system, but you should soon see a new file in your directory called: **dengue-variants-original-ref.vcf**
 
->If you open this file will *less* should see that we have a large number of 'consensus variants' (i.e. variants with frequencies greater than 50%).  This means that the reference we used here was not ideal.  We can get better results if re-map the reads to the new consensus genome we derived above (dengue-consensus-bcftools.fa) and then re-run lofreq:
+>If you open this file with the **less** command, you should see that we have a large number of 'consensus variants' (i.e. variants with frequencies greater than 50%).  This means that the reference we used here was not ideal.  We can get better results if re-map the reads to the new consensus genome we derived above (dengue-consensus-bcftools.fa) and then re-run lofreq:
 
 -----------------------------------------------------------------------
 bwa index dengue-consensus-bcftools.fa
