@@ -137,7 +137,7 @@ rm dengue-consensus-full.fq
 
 *9.5 Running LoFreq\**
 
->Now let's see what all **lofreq call** can do. 
+>Now let's see what **lofreq call** can do. For this tutorial, we will be using the standard presets for lofreq but when running this on your own datasets, I would encourage you to explore all the options available in lofreq by checking out the github page: https://github.com/andreas-wilm/lofreq3
 
 -----------------------------------------------------------------------
 lofreq call -b dengue-subsample_01p.bam -f dengue-genome.fa > dengue-variants-original-ref.vcf
