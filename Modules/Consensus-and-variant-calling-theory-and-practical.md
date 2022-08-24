@@ -218,6 +218,7 @@ cd /home/manager/course_data/Consensus_and_variant_calling/chikv-corrected/
 
 >From here you should be able to follow the steps above to answer the questions below:
 
-**Question 1: What mutation is present at position 269?**
-
-**Question 2: What is the allele frequency at position 2318?**
+**Question 1: How many mapped reads do you have in the 1% subsampled 'chikv-consensus-subsample_01p.bam' file?**
+>Answer: 48194
+**Question 2: What is the allele frequency at position 757?**
+>Answer: A-->G AF=0.062893
