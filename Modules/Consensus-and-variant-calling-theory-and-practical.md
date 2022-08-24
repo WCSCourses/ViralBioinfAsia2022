@@ -9,7 +9,7 @@
 >Let's start by preparing the folder and files we will be working with.  **Note**: To make this run much faster on your laptops, we are going to be subsampling the .bam file you created in the 'Reference_alignment' module.  When generating a consensus sequence on real data, I would strongly recommend using the full .bam file as the result may be more accurate.  Here are the scripts you can copy and paste into your terminal:
 
 -----------------------------------------------------------------------
-mkdir home/manager/course_data/Consensus_and_variant_calling/dengue-corrected
+mkdir /home/manager/course_data/Consensus_and_variant_calling/dengue-corrected
 -----------------------------------------------------------------------
 cp /home/manager/course_data/Reference_alignment/07-dengue_align/annotation.txt /home/manager/course_data/Consensus_and_variant_calling/dengue-corrected/
 -----------------------------------------------------------------------
@@ -198,7 +198,7 @@ lofreq call -b dengue-consensus-subsample_01p.bam -f dengue-consensus-bcftools.f
 >To start, let's repeat the first set of instructions from above to prepare a new folder:
 
 -----------------------------------------------------------------------
-mkdir home/manager/course_data/Consensus_and_variant_calling/chikv-corrected
+mkdir /home/manager/course_data/Consensus_and_variant_calling/chikv-corrected
 -----------------------------------------------------------------------
 cp /home/manager/course_data/Reference_alignment/07-chikv-align/annotation.txt /home/manager/course_data/Consensus_and_variant_calling/chikv-corrected/
 -----------------------------------------------------------------------
