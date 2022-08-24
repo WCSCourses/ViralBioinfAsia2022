@@ -39,9 +39,9 @@ mv /home/manager/course_data/Consensus_and_variant_calling/09-dengue-lofreq/deng
 -----------------------------------------------------------------------
 mv /home/manager/course_data/Consensus_and_variant_calling/09-chikv-lofreq/chikv-consensus-bcftools.fa /home/manager/course_data/Consensus_and_variant_calling/09-chikv-lofreq/OMS-chikv-consensus-bcftools.fa 
 -----------------------------------------------------------------------
-mv /home/manager/course_data/Consensus_and_variant_calling/09-dengue-lofreq/dengue-direct-low-requenncy-variants.vcf /home/manager/course_data/Consensus_and_variant_calling/09-dengue-lofreq/OMS-dengue-direct-low-requenncy-variants.vcf
+mv /home/manager/course_data/Consensus_and_variant_calling/09-dengue-lofreq/dengue-direct-low-frequency-variants.vcf /home/manager/course_data/Consensus_and_variant_calling/09-dengue-lofreq/OMS-dengue-direct-low-frequency-variants.vcf
 -----------------------------------------------------------------------
-mv /home/manager/course_data/Consensus_and_variant_calling/09-chikv-lofreq/chikv-direct-low-requenncy-variants.vcf /home/manager/course_data/Consensus_and_variant_calling/09-chikv-lofreq/OMS-chikv-direct-low-requenncy-variants.vcf
+mv /home/manager/course_data/Consensus_and_variant_calling/09-chikv-lofreq/chikv-direct-low-frequency-variants.vcf /home/manager/course_data/Consensus_and_variant_calling/09-chikv-lofreq/OMS-chikv-direct-low-frequency-variants.vcf
 -----------------------------------------------------------------------
 
 >Finally, one of the programs we are going to use isn't installed so let's do that now:
