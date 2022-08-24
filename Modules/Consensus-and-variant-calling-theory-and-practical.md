@@ -222,4 +222,4 @@ cd /home/manager/course_data/Consensus_and_variant_calling/chikv-corrected/
 >Answer: 48194
 >
 **Question 2: What is the allele frequency at position 757?**
->Answer: A-->G AF=0.062893
+>Answer: A-->G    AF=0.062893
