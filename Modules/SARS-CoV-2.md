@@ -16,7 +16,6 @@ E-mail: Richard.Orton@glasgow.ac.uk
 
 
 ## Contents
-**CONTENT IS STILL UNDER DEVELOPMENT - DO NOT USE BEFORE FRIDAY 26TH AUGUST 2022!**
 
 * [1: SARS-CoV-2 Reference Alignment](#1-sars-cov-2-reference-alignment)
 	+ [1.1: MinION Tutorial](#11-minion-tutorial)
@@ -348,7 +347,7 @@ rm CVR2058.sam
 Now we need to index the BAM file, this makes downstream analyses faster and many downstream tools will only work if the index file has been created:
 
 ```
-bwa index CVR2058.bam
+samtools index CVR2058.bam
 ```
 
 If we list the contents of the directory we should see the index file with a .bai extension has been created:
@@ -457,7 +456,7 @@ rm CVR2058.sam
 ```
 
 ```
-bwa index CVR2058.bam
+samtools index CVR2058.bam
 ```
 
 ```
@@ -639,10 +638,10 @@ wget https://tinyurl.com/vgba2022/seq_splitter.sh
 ```
 **NB:** I made a shortcut URL using [tinyurl](https://tinyurl.com), the full URL was https://raw.githubusercontent.com/WCSCourses/ViralBioinfAsia2022/main/course\_data/SARS-CoV-2\_workflows/seq\_splitter.sh
 
-We now run the BASH script on the ```variants_seqs.fasta``` file:
+We now run the BASH script on the ```variant_seqs.fasta``` file:
 
 ```
-bash seq_splitter.sh variants_seqs.fasta
+bash seq_splitter.sh variant_seqs.fasta
 ```
 
 If you list the contents of the directory you should now see lots of ```.fa``` files.
@@ -729,6 +728,13 @@ Although we can examine the same files as above (qc, annotation summary etc), we
 ```
 firefox spear_output/report/report.html 
 ```
+
+Once finished with SPEAR, deactivate the conda environment:
+
+```
+conda deactivate
+```
+
 
 **Question:** what percentage of the samples contain the N501Y mutation in Spike (surface glycoprotein)? 
 
@@ -890,6 +896,13 @@ The CIVET Conda environment has already been installed on the VM, but as before 
 conda activate civet
 ```
 
+There was an issue when we installed civet, so to get things working properley when need to run
+
+```
+chmod 755 ~/miniconda/envs/civet/bin/gofasta
+```
+**NB:** this was raised as an issue on GitHub and should be fixed now if you were to do a fresh intall on your own machine.
+
 To run a CIVET analysis we need:
 
 * background data alignment file: **BA53/ba.5.3_aligned.fasta** 
@@ -946,7 +959,7 @@ You should see a tree like this:
 
 ![](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/course_data/SARS-CoV-2_workflows/civet_tree.png)
 
-**Figure 3.2.2:** CIVET catchment tree containing all 7 of all hypothetical SARS-CoV-2 input sequences. By default, input sequences are coloured with turquoise circles and sequences from the background data in purple.
+**Figure 3.2.2:** CIVET catchment tree containing all 7 of all hypothetical SARS-CoV-2 input sequences. By default, input sequences are coloured with turquoise circles and sequences from the background data in purple. **NB:** There are NEXUS versions of each catchment tree in the **catchments** subfolder in the civet_output folder.
 
 It is important to emphasise that this type of analysis is not able to infer direct transmission between two samples; even identical sequences may be unrelated as
 SARS-CoV-2 is relatively slow evolving for an RNA virus. Furthermore, the completeness of the background will obviously be an important factor. All our samples form part of the same catchment and are relatively close to one another. Samples 6 and 7 are identical and are a 1 SNP distance from many other samples (e.g.Scotland/LSPA-3E7E789/2022). Sample 5 is identical to the background sequence Scotland/LSPA-3E8210C, whereas sample 1-4 branch of from that, with samples 1 and 2 being identical, and sample 4 having a number of additional mutations.
@@ -956,6 +969,12 @@ The nucleotide mutations that each sample contains can be examined and compared 
 ![](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/course_data/SARS-CoV-2_workflows/civet_snipit.png)
 
 **Figure 3.2.3:** snipit plot of the nucleotide mutations contained within each input sequence in the catchment; coloured by base: A (dark blue), C (red), G (light blue), T (green). The x-axis is the genome position the mutation is located, the y-axis are the samples. The grey bar at the bottom represented the SARS-CoV-2 genome and highlights where on the genome each mutation is located.
+
+Once finished, lets deactivate the conda environment:
+
+```
+conda deactivate
+```
 
 ### 3.3: SARS-CoV-2 Alignments
 
@@ -994,3 +1013,4 @@ As a group you could:
 ## 5: Warnings
 
 I would consider this VM a good place to learn BUT not necessarily a good place to conduct 'real' analyses. The reason being is that many of the SARS-CoV-2 tools and datasets are updated very frequently which means many will be out of date on the VM already (many of the tools were installed a few months ago). Tools such as Pangolin and SPEAR do however have good update functions.
+
