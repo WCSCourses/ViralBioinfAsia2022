@@ -93,7 +93,9 @@ The Viral Genomics and Bioinformatics course will teach participants how to anal
 
 
 **Appendix**      
-[PDF - Answers ALT Learning Outcomes Exercise](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/766ad82cc5b841448adda9377e977363668ba3a9/Modules/9_ALT_LO_answersCOG-Train%20ALT%20slides%20-%20Session2.pdf)   
+[PDF - ALT Learning Outcomes Session 2 Slides](Modules/COG-TrainALTslides-Session2.pdf)    
+[PDF - Answers ALT Learning Outcomes Exercise](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/766ad82cc5b841448adda9377e977363668ba3a9/Modules/9_ALT_LO_answersCOG-Train%20ALT%20slides%20-%20Session2.pdf)       
+      
 
 
 
