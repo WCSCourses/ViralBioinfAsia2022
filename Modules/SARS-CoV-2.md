@@ -635,8 +635,9 @@ conda activate spear
 Unfortunately, SPEAR does not seem to work on a multi-sequence FASTA file so we will need to split the ```variant_seqs.fasta``` into individual sequence FASTA files. I wrote a simple BASH script called **seq_splitter.sh** to do this which you can download from the [course GitHub repository](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/course_data/SARS-CoV-2_workflows/seq_splitter.sh) using ```wget```:
 
 ```
-wget https://raw.githubusercontent.com/WCSCourses/ViralBioinfAsia2022/main/course_data/SARS-CoV-2_workflows/seq_splitter.sh
+wget https://tinyurl.com/vgba2022/seq_splitter.sh
 ```
+**NB:** I made a shortcut URL using [tinyurl](https://tinyurl.com), the full URL was https://raw.githubusercontent.com/WCSCourses/ViralBioinfAsia2022/main/course\_data/SARS-CoV-2\_workflows/seq\_splitter.sh
 
 We now run the BASH script on the ```variants_seqs.fasta``` file:
 
@@ -689,7 +690,7 @@ SPEAR also output a VCF file for each sequence in the ```final_vcfs``` folder of
 more spear_camc/spear_annotation_summary.tsv 
 ```
 
-For a full definition of the fields see the [SPEAR documentation](https://github.com/m-crown/SPEAR) under the **Column headings for annotation files** section. If we ```cut``` some of the most important fields to easy visibility:
+For a full definition of the fields see the [SPEAR documentation](https://github.com/m-crown/SPEAR) under the **Column headings for annotation files** section. If we ```cut``` some of the most important fields to ease visibility:
 
 ```
 cut -f 1-5,7,9,11 spear_camc/spear_annotation_summary.tsv 
@@ -740,9 +741,229 @@ If you have reached this point and have time to spare you could:
 
 ## 3: SARS-CoV-2 Phylogenetics
 
-### 3.1: USHER
+In the previous sessions of this course you have learnt how to create sequence alignments and construct phylogenetic trees, using tools such as mafft and iqtree, these tools can (and are) readily applied to SARS-CoV-2 datasets. However, this session introduces a couple of additional phylogenetic tools that are available for SARS-CoV-2 (although though in general they are can be applied to other viruses), one focussed on placing your query genome sequences in the context of the millions already available and another focussed on epidemiological investigations. 
+
+### 3.1: UShER
+
+UShER stands for **U**ltrafast **S**ample placement on **E**xisting t**R**ees. UShER is a program for rapid, accurate placement of samples to existing phylogenies. It essentially enables real-time phylogenetic analyses of the SARS-CoV-2 pandemic which currently (August 2022) has over 11 million genome sequences publicly available.
+
+* [UShER paper](https://www.nature.com/articles/s41588-021-00862-7)
+* [UShER manual](https://usher-wiki.readthedocs.io/en/latest/)
+* [UShER GitHub](https://github.com/yatisht/usher)
+* [UShER Web Tool](https://genome.ucsc.edu/cgi-bin/hgPhyloPlace)
+
+UShER works by adding your sequence onto an exsiting phylogenetic tree. It is rapid because it does not need to re-build the phylogenetic tree from scratch - it is essentially just adding your sequence(s) to certain clusters within the existing tree (the clusters that contain the closest sequences in terms of mutations to the query sequence). However, creating an existing phylogenetic tree of millions of SARS-CoV-2 sequences to add to is by no means trivial - but UShER provide a daily update of all fully public SARS-CoV-2 sequences available for download [here](http://hgdownload.soe.ucsc.edu/goldenPath/wuhCor1/UShER_SARS-CoV-2/). 
+
+**NB:** An important point here is that GISAID sequences are NOT fully public due to the GISAID license agreements to protect the rights of sequence submitters. Therefore, this 'fully public' UShER tree only contains sequences from GenBank, COG-UK, and the China National Center for Bioinformation - although this does represent around two thirds of all sequences available. 
+
+In this session, we will be using the [UShER Web Tool](https://genome.ucsc.edu/cgi-bin/hgPhyloPlace) (part of the [UCSC Genome Browser](https://genome.ucsc.edu/util.html)) to phylogenetically place  our sequences into the global tree of the SARS-CoV-2 pandemic. One advantage of this web tool is that it can utilise a phylogenetic tree which includes all available SARS-CoV-2 genomes (including those found only on GISAID).
+
+* On the VM use the Firefox browser to vist the [UShER Web Tool](https://genome.ucsc.edu/cgi-bin/hgPhyloPlace).
+* Click the **Browse** button at the top (depending on the browser, this is sometimes called **Choose File**)
+* Use the pop-up window to navigate to the ~/SARS-CoV-2/Variants folder and select the **Scotland\_CAMC-14DE972\_2021.fa** file
+* Under the 'Phylogenetic tree version' select the GISAID tree
+* Click the **Upload** button
+* **Wait for UShER to run** (it may take a while!)
+
+***
+
+![](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/course_data/SARS-CoV-2_workflows/usher.png)
+**Figure 3.1.1:** UShER Web Tool Screenshot: [https://genome.ucsc.edu/cgi-bin/hgPhyloPlace](https://genome.ucsc.edu/cgi-bin/hgPhyloPlace).
+
+***
+
+When UShER has finished it will automatically redirect to a results page. A screenshot of the results you should obtain for the sequence Scotland\_CAMC-14DE972\_2021.fa is below.
+
+
+***
+
+![](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/course_data/SARS-CoV-2_workflows/usher2.png)
+
+**Figure 3.1.2:** UShER results page for genome sequence Scotland\_CAMC-14DE972\_2021.fa 
+***
+
+The UShER output contains alot of useful information such as lineage assignments and mutations for each sequence analysed. To actually examine the cluster our sequence has been placed in within the glonal tree we can follow the automatic links to [NextStrain](https://nextstrain.org). You should see a tree similar to this (I changed the "Color By" option to "Pango lineage assigned by UShER").
+
+**NB:** As the global tree is updated daily, there is a chance the tree you get may be slightly different depending to the one belon when it is run.
+
+***
+
+![](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/course_data/SARS-CoV-2_workflows/nextstrain.png)
+**Figure 3.1.3:** NextStrain visualisation of subtree for sequence Scotland\_CAMC-14DE972\_2021.fa. The colour scheme was changed using the "Color By" option to "Pango lineage assigned by UShER". Our uploaded seqeunce is highlighted in yellow. Note that our sequence was actually already in the gloabl tree - you can see the original Scotland/CAMC-14DE972/2021 sequence about 10 nodes above our uploaded on. 
+
+***
+
+
+As UShER may take a while to run (because this is a free and public resource), I have prerun each sequence and the NextStrain view of the subtree's can be found here:
+
+* [Scotland/LSPA-3E62463/2022](https://nextstrain.org/fetch/genome.ucsc.edu/trash/ct/subtreeAuspice1_genome_12d2a_5fd460.json)
+* [Scotland/LSPA-3E3B700/2022](https://nextstrain.org/fetch/genome.ucsc.edu/trash/ct/subtreeAuspice2_genome_12d2a_5fd460.json)
+* [Scotland/QEUH-3DC59CA/2022](https://nextstrain.org/fetch/genome.ucsc.edu/trash/ct/subtreeAuspice3_genome_12d2a_5fd460.json)
+* [Scotland/QEUH-3D90306/2022](https://nextstrain.org/fetch/genome.ucsc.edu/trash/ct/subtreeAuspice4_genome_12d2a_5fd460.json)
+* [Scotland/QEUH-3D43C43/2022](https://nextstrain.org/fetch/genome.ucsc.edu/trash/ct/subtreeAuspice5_genome_12d2a_5fd460.json)
+* [Scotland/CVR14531/2022](https://nextstrain.org/fetch/genome.ucsc.edu/trash/ct/subtreeAuspice6_genome_12d2a_5fd460.json)
+* [Scotland/QEUH-36897FC/2022](https://nextstrain.org/fetch/genome.ucsc.edu/trash/ct/subtreeAuspice7_genome_12d2a_5fd460.json)
+* [Scotland/QEUH-36491AF/2022](https://nextstrain.org/fetch/genome.ucsc.edu/trash/ct/subtreeAuspice8_genome_12d2a_5fd460.json)
+* [Scotland/QEUH-2D86BD1/2021](https://nextstrain.org/fetch/genome.ucsc.edu/trash/ct/subtreeAuspice9_genome_12d2a_5fd460.json)
+* [Scotland/QEUH-2D7F704/2021](https://nextstrain.org/fetch/genome.ucsc.edu/trash/ct/subtreeAuspice10_genome_12d2a_5fd460.json)
+* [Scotland/QEUH-1BA3933/2021](https://nextstrain.org/fetch/genome.ucsc.edu/trash/ct/subtreeAuspice11_genome_12d2a_5fd460.json)
+* [Scotland/QEUH-1B0246E/2021](https://nextstrain.org/fetch/genome.ucsc.edu/trash/ct/subtreeAuspice12_genome_12d2a_5fd460.json)
+* [Scotland/QEUH-1725CCB/2021](https://nextstrain.org/fetch/genome.ucsc.edu/trash/ct/subtreeAuspice13_genome_12d2a_5fd460.json)
+* [Scotland/QEUH-1585B0A/2021](https://nextstrain.org/fetch/genome.ucsc.edu/trash/ct/subtreeAuspice14_genome_12d2a_5fd460.json)
+* [Scotland/QEUH-158D786/2021](https://nextstrain.org/fetch/genome.ucsc.edu/trash/ct/subtreeAuspice15_genome_12d2a_5fd460.json)
+* [Scotland/CAMC-14DE972/2021](https://nextstrain.org/fetch/genome.ucsc.edu/trash/ct/subtreeAuspice16_genome_12d2a_5fd460.json)
+* [Scotland/QEUH-147E6F5/2021](https://nextstrain.org/fetch/genome.ucsc.edu/trash/ct/subtreeAuspice17_genome_12d2a_5fd460.json)
+* [Scotland/QEUH-13ADEF6/2021](https://nextstrain.org/fetch/genome.ucsc.edu/trash/ct/subtreeAuspice18_genome_12d2a_5fd460.json)
+* [Scotland/QEUH-138F944/2021](https://nextstrain.org/fetch/genome.ucsc.edu/trash/ct/subtreeAuspice19_genome_12d2a_5fd460.json)
+
+The overall UShER report on all sequences is available [here]()
+
+If you have a set of potentially related sequences you would upload them together into an UShER run and then examine if they are being assigned to the same subtree cluster by UShER - this is similar to what we will be doing next with CIVET.
+
+[Old Link](https://nextstrain.org/fetch/genome.ucsc.edu/trash/ct/subtreeAuspice1_genome_1dd2a_56d490.json)
 
 ### 3.2: CIVET
+
+[CIVET](https://github.com/artic-network/civet) stands for **C**luster **I**nvestigation & **V**irus **E**pidemiology **T**ool, its full documentation is available [here](https://cov-lineages.org/resources/civet.html). CIVET was developed to aid SARS-CoV-2 outbreak investigations, it puts new sequences into the context of known background diversity, and can summarise the background diversity based on the users input.
+
+We will using CIVET to investigate a small cluster of 7 hypothetic SARS-CoV-2 sequences. Lets imagine these have all been obtained from a single epidemiological incident such as an outbreak at a school, and we are wanting to examine how related the sequences are to one another and also place them all into the context of the background sequences **available** at the time. All 7 hypothetical sequences are from Scotland and Pangolin assigned them to linage BA.5.3:
+
+* This lineage was simply chosen as an example of a current Omicron lineage with a small number of sequences (89 in total) to ease the burden of running things on the VM
+* May and June 2022 as those were the most recent months (downloaded 7th July 2022)
+* Scotland because the [MRC-University of Glasgow Centre for Virus Research](https://www.gla.ac.uk/research/az/cvr/) is in Scotland
+* Importantly, both the sequence and metadata is publicly available to download from the [COG-UK website](https://www.cogconsortium.uk/priority-areas/data-linkage-analysis/public-data-analysis/).
+* [cov-lineages BA.5.3 link](https://cov-lineages.org/lineage.html?lineage=BA.5.3)
+* [outbreak.info BA.5.3 link](https://outbreak.info/situation-reports?pango=BA.5.3)
+
+Here is a simple phylogenetic tree of all 89 BA.5.3 samples (created using iqtree2), and using the aligned sequences downloaded from the [COG-UK website](https://www.cogconsortium.uk/priority-areas/data-linkage-analysis/public-data-analysis/):
+
+![](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/course_data/SARS-CoV-2_workflows/ba53_tree.png)
+
+**Figure 3.2.1:** Phylogenetic tree of Scottish BA.5.3 sequences from May and June 2022. A single BA.3 sequence (Scotland/QEUH-3E1D6AD/2022) is used to the root the tree. 
+
+First lets create a directory to work in
+
+```
+mkdir ~/SARS-CoV-2/Phylo/civet
+```
+
+and then move into in
+
+```
+cd ~/SARS-CoV-2/Phylo/civet
+```
+
+and then download the data using the ```wget``` command:
+
+```
+wget https://tinyurl.com/vgba2022/civet_data.tar
+```
+
+Now untar (unpack) the data
+
+```
+tar -xvf civet_data.tar
+```
+
+If if we list the contents of the directory we should see a **samples.fasta** and **samples_metadata.csv** file, along with a folder called **BA53**.
+
+```
+ls
+```
+
+We have 7 SARS-CoV-2 genome sequences to investigates, these are simply called Sample1-7:
+
+```
+grep ">" samples.fasta
+```
+
+The **samples_metadata.csv** file is a simple comma separate file (csv) with two columns:
+
+1. **name:** the name of the sample - must match the names used in the FASTA file
+2. **sample_date:** the date the sample was taken in YYYY-MM-DD format
+
+This is the minimal metadata needed for CIVET to run. If you were using your own data and don't know the sample date you could simply estimate it. Many additional columns can be added to the metadata file and used for tip labels/colours in the tree: see the [CIVET documentation](https://cov-lineages.org/resources/civet.html) for full details.
+
+The CIVET Conda environment has already been installed on the VM, but as before we first need to activate it when we want to use it:
+
+```
+conda activate civet
+```
+
+To run a CIVET analysis we need:
+
+* background data alignment file: **BA53/ba.5.3_aligned.fasta** 
+* background data metadata: **BA53/ba.5.3_metadata.csv**
+* input sample sequences: **samples.fasta**
+* input sample metadata: **samples_metadata.csv**
+
+To create the CIVET report we need to type this command
+
+```
+civet -i samples_metadata.csv -f samples.fasta -d BA53 -o civet_output
+```
+
+Breaking this command down:
+
+* **civet:** the name of the program
+* **-i samples_metadata.csv**: the input metadata file in csv format
+* **-f samples.fasta**: the input sequence file in FASTA format
+* **-d BA53**: the background data directory - with the background sequence alignment and metadata
+* **-o civet_output**: the name of the folder to create and output the results into
+
+After finishing CIVET should create the output folder and results:
+
+```
+ls civet_output
+```
+
+Let's open up the main CIVET report file:
+
+```
+firefox civet_output/civet.html
+```
+**NB:** You could navigate to the output via the Files browser and double click to open
+
+**CIVET Report Table 1**
+
+This is a summary of the input sequences and their input data along with what **catchment** tree the sequence is contained in - all our samples should be within a single tree called **catchment_1**.
+
+Essentially, CIVET searches through the background sequences and finds all sequences that fall within a customisable SNP distance of each input sequence (I believe the default is 2 down and 2 up i.e. sequences that have all mutations and up to two more, and those that have  up to 2 of the mutations missing). All equally distant targets are included in the catchment. For a given input sequence, if no background sequences are found within the SNP distance cut off, the CIVET algorithm increases the SNP distance in all directions and attempts to get at least one sequence per category (up, down or side). This results in a set of background sequences for each input sequence, and any input sequences with overlapping targets have their catchments merged together.
+
+**CIVET Report Table 2**
+
+This is a table of tall the sequences that passed the CIVET quality control (QC) checks such as minimum length, and maximum N content.
+
+**CIVET Catchments**
+
+The report then contains details of each catchment find - our report only contains a single catchment. First there is a table summary of the catchment including information on the number of input sequences that are assigned to it and the earliest and latest dates of the background sequences in the catchment (from the background metadata file).
+
+One of the main results of the CIVET report is the catchment tree. We can expand the tree to ease visualisation by:
+* Clicking the + symbol on the Tree Option line
+* Sliding the Expansion slider along to expand the gaps between sequences in the tree
+
+You should see a tree like this:
+
+![](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/course_data/SARS-CoV-2_workflows/civet_tree.png)
+
+**Figure 3.2.2:** CIVET catchment tree containing all 7 of all hypothetical SARS-CoV-2 input sequences. By default, input sequences are coloured with turquoise circles and sequences from the background data in purple.
+
+It is important to emphasise that this type of analysis is not able to infer direct transmission between two samples; even identical sequences may be unrelated as
+SARS-CoV-2 is relatively slow evolving for an RNA virus. Furthermore, the completeness of the background will obviously be an important factor. All our samples form part of the same catchment and are relatively close to one another. Samples 6 and 7 are identical and are a 1 SNP distance from many other samples (e.g.Scotland/LSPA-3E7E789/2022). Sample 5 is identical to the background sequence Scotland/LSPA-3E8210C, whereas sample 1-4 branch of from that, with samples 1 and 2 being identical, and sample 4 having a number of additional mutations.
+
+The nucleotide mutations that each sample contains can be examined and compared using the [snipit](https://github.com/aineniamh/snipit) plot in the CIVET report. As can be seen, Sample 1-4 all contain a T to G mutation at position 3,154 that the other 3 samples do not contain, whilst samples 6 and 7 contain A to G at position 24,595 not seen in the other 5 samples, and sample 4 contains a number of unique mutations:
+
+![](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/course_data/SARS-CoV-2_workflows/civet_snipit.png)
+
+**Figure 3.2.3:** snipit plot of the nucleotide mutations contained within each input sequence in the catchment; coloured by base: A (dark blue), C (red), G (light blue), T (green). The x-axis is the genome position the mutation is located, the y-axis are the samples. The grey bar at the bottom represented the SARS-CoV-2 genome and highlights where on the genome each mutation is located.
+
+### 3.3: SARS-CoV-2 Alignments
+
+Just some quick notes on alignment (not part of this session). Aligning millions of SARS-CoV-2 sequences together can present problems computationally (not least the amount of time takes). Another issue is the large N tracts in sequences which have failed ARTIC amplicons, these can cause numerous issues during alignments resulting in spurious indels and an overall poor alignment. 
+
+Different groups have taken different approaches to solve this. COG-UK uses the [grapevine](https://github.com/COG-UK/grapevine) pipeline which utilises minimap2 to align each read individually against the SARS-CoV-2 reference sequence (similar to aligning each read in a FASTQ read to the reference), insertions are then trimmed and the data is outputted from the BAM file to create a FASTA alignment whose length is the size of original reference sequence; an obvious downside here is that you loose all the insertions from the alignment. This is often combined with aggressive filtering of sequences that are too short and have too many N bases.
+
+GISAID
 
 ## 4: SARS-CoV-2 Group Practical
 
@@ -772,4 +993,4 @@ As a group you could:
 
 ## 5: Warnings
 
-I would consider this VM a good place to learn BUT not necessarily a good place to conduct 'real' analyses. The reason being is that many of the SARS-CoV-2 tools and datasets and updated very frequently which means many will be out of date on the VM already (many of the tools were installed a few months ago). Tools such as Pangolin and SPEAR do however have good update functions.
+I would consider this VM a good place to learn BUT not necessarily a good place to conduct 'real' analyses. The reason being is that many of the SARS-CoV-2 tools and datasets are updated very frequently which means many will be out of date on the VM already (many of the tools were installed a few months ago). Tools such as Pangolin and SPEAR do however have good update functions.
