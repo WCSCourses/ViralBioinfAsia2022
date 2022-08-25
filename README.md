@@ -88,12 +88,12 @@ The Viral Genomics and Bioinformatics course will teach participants how to anal
 
 [Online Manual - SARS-CoV-2 Phylogenetics](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/Modules/SARS-CoV-2.md#3-sars-cov-2-phylogenetics)
 
-[Online Manual - SARS-CoV-2 Group Practical](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/Modules/SARS-CoV-2.md#4-sars-cov-2-group-practical)
+[Online Manual - SARS-CoV-2 Group Practical](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/Modules/SARS-CoV-2.md#4-sars-cov-2-group-practical) 
 
 
 
-**Appendix**  
-
+**Appendix**      
+[PDF - Answers ALT Learning Outcomes Exercise](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/766ad82cc5b841448adda9377e977363668ba3a9/Modules/9_ALT_LO_answersCOG-Train%20ALT%20slides%20-%20Session2.pdf)   
 
 
 
