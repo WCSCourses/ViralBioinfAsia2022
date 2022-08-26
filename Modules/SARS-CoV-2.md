@@ -83,8 +83,8 @@ The key files and folders in this run folder are (amongst others):
 
 * **fast5\_pass** - this folder contains all the raw FAST5 reads that PASSED the basic quality control filters of the guppy basecaller. 
 * **fast5\_fail** - this folder contains all the raw FAST5 reads that FAILED the basic quality control filters of the guppy basecaller
-* **fastq\_pass** - this folder contains all the FASTQ reads that were converted from the those within tge fast5\_pass fiolder
-* **fastq_fail**- this folder contains all the FASTQ reads that were converted from the those within tge fast5\_fail fiolder
+* **fastq\_pass** - this folder contains all the FASTQ reads that were converted from the those within the fast5\_pass fiolder
+* **fastq_fail**- this folder contains all the FASTQ reads that were converted from the those within the fast5\_fail fiolder
 * **sequencing\_summary\_FAO14190\_ad60b376.txt** - this sequencing_summary file is produced by the basecaller and contains a summary of each read such as it's name, length, barcode and what FAST5 and FASTQ files it is located in.
 
 **NB:** To save disk space on the VM, the fast5\_fail and fastq\_fail folders do not contain any read data, as failed reads are not used in the pipeline.
@@ -487,6 +487,33 @@ samtools view -c -F2308 input.bam
 
 Overall, you should again see that we are simply running the same set of commands over and over again for different samples but just changing the input and output names. This is where the power of simple bash scripting and bioinformatics pipelines come into play, as relatively simple scripts can be written to automate this process.
 
+### 1.2.4: Non-amplicon Illumina samples
+
+If the sample was shotgun rather than amplicons, simply omit the ivar trim (and subsequent BAM manipultion) steps:
+
+
+```
+bwa mem -t4 ~/SARS-CoV-2/MN908947.fasta CVR2058_R1.fastq CVR2058_R2.fastq > CVR2058.sam
+```
+
+```
+samtools sort -@4 CVR2058.sam -o CVR2058.bam
+```
+
+```
+rm CVR2058.sam 
+```
+
+```
+samtools index CVR2058.bam
+```
+
+```
+samtools mpileup -aa -A -d 0 -Q 0 CVR2058.bam | ivar consensus -p CVR0258 -t 0.4
+```
+
+
+
 ## 2: SARS-CoV-2 Lineages and Mutations
 
 In this session, we will be focussing on analysis steps you can do after you have created a SARS-CoV-2 consensus sequence:
@@ -498,7 +525,7 @@ In this session, we will be focussing on analysis steps you can do after you hav
 
 A **lineage** can be defined as a group of closely related viruses with a common ancestor. SARS-CoV-2 has now evolved into many different lineages, some of which are known as a Variant of Concern (VOC) or Variant Under Investigation (VUI), and some have World Health Organisation (WHO) labels. 
 
-In this tutorial we will be focussing on lineages defined by the [Pangolin](https://cov-lineages.org/index.html) tool. ([Pangolin](https://cov-lineages.org/index.html)) stands for **P**hylogenetic **A**ssignment of **N**amed **G**lobal **O**utbreak **LIN**eages.  Although [NextStrain](https://nextstrain.org/blog/2020-06-02-SARSCoV2-clade-naming) and [GISAID](https://gisaid.org/resources/statements-clarifications/clade-and-lineage-nomenclature-aids-in-genomic-epidemiology-of-active-hcov-19-viruses/) maintain their own clade and lineage nomenclatures we will simply be focussing on Pangolin in this tutorial.
+In this tutorial we will be focussing on lineages defined by the [Pangolin](https://cov-lineages.org/index.html) tool. [Pangolin](https://cov-lineages.org/index.html) stands for **P**hylogenetic **A**ssignment of **N**amed **G**lobal **O**utbreak **LIN**eages.  Although [NextStrain](https://nextstrain.org/blog/2020-06-02-SARSCoV2-clade-naming) and [GISAID](https://gisaid.org/resources/statements-clarifications/clade-and-lineage-nomenclature-aids-in-genomic-epidemiology-of-active-hcov-19-viruses/) maintain their own clade and lineage nomenclatures we will simply be focussing on Pangolin in this tutorial.
 
 Some of the most well known lineages are (sorted by lineage number):
 
@@ -556,7 +583,7 @@ It is important to remember that a pangolin lineage assignment is a **best guess
 1. **taxon:** the name of sequence
 2. **lineage:** the **most likely** linage assigned by pangolin
 3. **conflict:** if the number (N) in this field is > 0, then it means the sequence could have fitted into N different lineage categories. 
-4. **ambiguity_score:** SARS-CoV-2 amplicon generated genomes can frequently have failed amplicons creating tracts of Ns in the genome sequence. The ambiguity score is a function of the quantity of missing data at relevant positions in a sequence i.e. lineage defining mutation positions. It represents the proportion of relevant sites in a sequnece which were imputed to the reference values. A score of 1 indicates that no sites were imputed, while a score of 0 indicates that more sites were imputed than were not imputed. This score only includes sites which are used by the decision tree to classify a sequence.
+4. **ambiguity_score:** SARS-CoV-2 amplicon generated genomes can frequently have failed amplicons creating tracts of Ns in the genome sequence. The ambiguity score is a function of the quantity of missing data at relevant positions in a sequence i.e. lineage defining mutation positions. It represents the proportion of relevant sites in a sequence which were imputed to the reference values. A score of 1 indicates that no sites were imputed, while a score of 0 indicates that more sites were imputed than were not imputed. This score only includes sites which are used by the decision tree to classify a sequence.
 5. **scorpio_call:** [Scorpio](https://github.com/cov-lineages/scorpio) is a tool that assigns a constellation to the sequence. A [constellation](https://github.com/cov-lineages/constellations) is a collection of mutations which are functionally meaningful, but which may have arisen independently a number of times. One of the uses of Scorpio constellations is to define [lineages of concern](https://cov-lineages.org/constellations.html), and if appropriate assign the input sequence to one e.g. 'Omicron (BA.5-like)'.
 6. **scorpio_support:** see [Pangolin documentation](https://cov-lineages.org/resources/pangolin/output.html))
 7. **scorpio_conflict:** see [Pangolin documentation](https://cov-lineages.org/resources/pangolin/output.html))
@@ -1013,4 +1040,3 @@ As a group you could:
 ## 5: Warnings
 
 I would consider this VM a good place to learn BUT not necessarily a good place to conduct 'real' analyses. The reason being is that many of the SARS-CoV-2 tools and datasets are updated very frequently which means many will be out of date on the VM already (many of the tools were installed a few months ago). Tools such as Pangolin and SPEAR do however have good update functions.
-
