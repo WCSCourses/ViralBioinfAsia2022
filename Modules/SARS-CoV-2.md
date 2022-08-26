@@ -1015,10 +1015,16 @@ GISAID
 
 In this session, we will be working on some more Illumina paired end read data. The FASTQ data was downloaded from the [European Nucleotide Archive](https://www.ebi.ac.uk/ena/browser) (ENA), and there are 4 samples in total (the samples are not related to one another), with R1 and R2 FASTQ files for each:
 
-* ERR9105817 - ARTIC primer version 3
-* ERR9731990 - ARTIC primer version 3
-* ERR9761275 - ARTIC primer version 3
-* ERR9788433 - ARTIC primer version 3
+* ERR9105817 - ARTIC primer version 4.1
+* ERR9731990 - ARTIC primer version 4.1
+* ERR9761275 - ARTIC primer version 4.1
+* ERR9788433 - ARTIC primer version 4.1
+
+The primer scheme to use is:
+
+```
+~/artic-ncov2019/primer_schemes/nCoV-2019/V4.1/SARS-CoV-2.scheme.bed
+```
 
 Your task is to work as a group in the breakout rooms to analyse these samples. Initial read QC (with trim_galore) is not required (but you could add it if you wanted).  You should:
 
@@ -1040,3 +1046,4 @@ As a group you could:
 ## 5: Warnings
 
 I would consider this VM a good place to learn BUT not necessarily a good place to conduct 'real' analyses. The reason being is that many of the SARS-CoV-2 tools and datasets are updated very frequently which means many will be out of date on the VM already (many of the tools were installed a few months ago). Tools such as Pangolin and SPEAR do however have good update functions.
+
