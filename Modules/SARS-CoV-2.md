@@ -1009,7 +1009,8 @@ Just some quick notes on alignment (not part of this session). Aligning millions
 
 Different groups have taken different approaches to solve this. COG-UK uses the [grapevine](https://github.com/COG-UK/grapevine) pipeline which utilises minimap2 to align each read individually against the SARS-CoV-2 reference sequence (similar to aligning each read in a FASTQ read to the reference), insertions are then trimmed and the data is outputted from the BAM file to create a FASTA alignment whose length is the size of original reference sequence; an obvious downside here is that you loose all the insertions from the alignment. This is often combined with aggressive filtering of sequences that are too short and have too many N bases.
 
-GISAID
+Another approach when using [mafft](https://mafft.cbrc.jp/alignment/software/) is it's inbuilt (but experimental) option to [align all the sequences to a reference sequence]((https://mafft.cbrc.jp/alignment/software/closelyrelatedviralgenomes.html)) to build a full MSA, using options such as ```--6merpair --addfragments```, ```--keeplength``` to preserve the original alignment length (no insertions) and ```--maxambiguous X``` to remove sequences with too many ambiguous characters.
+
 
 ## 4: SARS-CoV-2 Group Practical
 
@@ -1046,4 +1047,10 @@ As a group you could:
 ## 5: Warnings
 
 I would consider this VM a good place to learn BUT not necessarily a good place to conduct 'real' analyses. The reason being is that many of the SARS-CoV-2 tools and datasets are updated very frequently which means many will be out of date on the VM already (many of the tools were installed a few months ago). Tools such as Pangolin and SPEAR do however have good update functions.
+
+
+
+
+
+
 
