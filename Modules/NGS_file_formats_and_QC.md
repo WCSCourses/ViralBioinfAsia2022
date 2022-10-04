@@ -121,7 +121,7 @@ In the figure above, we can see a single sequence read along with the quality sc
 
 Now let's download the sequence data (i.e. the whole set of reads) from this sequencing run from the SRA. Unfortunately it is not easy to download the data directly from the NCBI website; instead we have to use the *fasterq-dump* tool from the [NCBI's SRA Toolkit](https://github.com/ncbi/sra-tools/wiki/01.-Downloading-SRA-Toolkit). I recommend that we work in the directory /home/manager/ViralBioinfAsia2022/course_data/NGS_file_formats_and_data_QC/. So, first execute this command in the Terminal:
 
-    cd /home/manager/ViralBioinfAsia2022/course_data/NGS_file_formats_and_data_QC
+    cd ~/course_data/NGS_file_formats_and_data_QC
 
 The SRA Toolkit software is already installed on the virtual machine and we can execute it in the Terminal simply like this:
 
@@ -171,7 +171,7 @@ This will generate some messages something like this:
     Analysis complete for SRR19504912_2.fastq
 
 
-Now, execute the command `ls- lh` and you should see some new files have appeared:
+Now, execute the command `ls -lh` and you should see some new files have appeared:
 
  
     total 400M
@@ -233,3 +233,20 @@ Now, when you list the contents of the directory with `ls -lh`, you will notice 
 
 Congratulations on reaching the end of this session! You should now be familiar with some of the most common file formats used in analysing NGS data and you know how to access and perform some basic QC on datasets of NGS sequence reads.
 
+### Bonus!
+
+#### What if you had a large number of FastQC reports to analyze?
+
+Multiqc (https://multiqc.info/) is a tool that summarizes different types of NGS reports (not just FastQC).
+
+First, install the tool:
+
+    pip install multiqc
+
+In the folder with reports, run:
+
+    multiqc .
+
+See summarized report in a browser:
+
+    firefox multiqc_report.html &
