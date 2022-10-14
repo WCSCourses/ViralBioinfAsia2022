@@ -849,7 +849,7 @@ As UShER may take a while to run (because this is a free and public resource), I
 * [Scotland/QEUH-13ADEF6/2021](https://nextstrain.org/fetch/genome.ucsc.edu/trash/ct/subtreeAuspice18_genome_8bdf_97bb50.json)
 * [Scotland/QEUH-138F944/2021](https://nextstrain.org/fetch/genome.ucsc.edu/trash/ct/subtreeAuspice19_genome_8bdf_97bb50.json)
 
-The overall UShER report on all sequences is available [here]()
+The overall UShER report on all sequences is available [here](https://github.com/WCSCourses/ViralBioinfAsia2022/blob/main/course_data/SARS-CoV-2_workflows/UCSC_UShER_Results.pdf)
 
 If you have a set of potentially related sequences you would upload them together into an UShER run and then examine if they are being assigned to the same subtree cluster by UShER - this is similar to what we will be doing next with CIVET.
 
