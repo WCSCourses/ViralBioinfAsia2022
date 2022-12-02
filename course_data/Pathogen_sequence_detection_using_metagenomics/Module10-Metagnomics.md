@@ -32,6 +32,11 @@ sudo apt install spades
 # Download data for tutorial
 Download simulated tutorial data. The data is simulated using [InSilicoSeq](https://insilicoseq.readthedocs.io/en/latest/iss/generate.html) and includes reads from Influenza virus, coronavirus 2 isolate (B.1.1.519) and some human genome reads.
 
+```
+wget https://raw.githubusercontent.com/WCSCourses/ViralBioinfAsia2022/main/course_data/Pathogen_sequence_detection_using_metagenomics/tutorial_R1.fastq.gz
+wget https://raw.githubusercontent.com/WCSCourses/ViralBioinfAsia2022/main/course_data/Pathogen_sequence_detection_using_metagenomics/tutorial_R2.fastq.gz
+```
+
 # 1. Assembly based approach
 The goal of this approach is to generate genome assemblies of all present viruses in the metagenomic samples. Briefly, steps involved in this approach are filtering, decontamination or reference based selection of reads, genome assembly, identification and genome annotation.
 
@@ -107,6 +112,7 @@ For identification of viral genomes,
     blastn -query genome_assembly/scaffolds.fasta -db blastdb_ref -out blast_out.txt -outfmt "6 qseqid sseqid stitle pident length mismatch gapopen qstart qend sstart send evalue bitscore" -max_target_seqs 1
     ```
     **Read more about blast** [output format 6](https://www.metagenomics.wiki/tools/blast/blastn-output-format-6)
+    
     **Annotation/Identification server** [CORONAVIRUS ANTIVIRAL & RESISTANCE DATABASE](https://covdb.stanford.edu/)
 
 ## 2. Raw-reads based
